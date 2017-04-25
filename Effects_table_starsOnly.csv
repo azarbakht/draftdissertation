@@ -1,0 +1,17 @@
+Effect,1,2,3,4,5,6,7,8,9,10,11,12
+outdegree (density) ,***,***,***,***,***,***,,***,***,***,***,***
+reciprocity ,†,*,,,,,,,,***,***,
+transitive triplets ,**,***,***,***,***,***,,,***,***,***,***
+3-cycles ,†,**,,,,,,,,***,*,†
+out-out degree^(1/2) assortativity ,*,***,,,,,,†,,***,***,**
+devSeniority alter ,,N.A.,,,,,,N.A.,,,*,***
+devSeniority ego ,*,N.A.,,,†,,,N.A.,,,***,
+devSeniority ego x devSeniority alter ,,N.A.,,,,,,N.A.,,,,
+devScActivity alter ,,,--0.01 ,--0.01 ,--0.02 ,,,,,***,†,†
+devScActivity ego ,,,**,**,*,*,,,,,†,
+devScActivity ego x devScActivity alter ,,,--0.00 ,--0.00 ,--0.00 ,--0.00 ,,,,,,
+int. devScActivity ego x devSeniority ego,,,,,,,,,,,*,
+† p < 0.1; * p < 0.05; ** p < 0.01; *** p < 0.001; ,,,,,,,,,,,,
+,Personal differences,,Technical (Addition of functionality),,,,More community-driven development,,,No.Fork.,,
+,,,,,,,,,,,,
+,,,,,,,Re-do,Re-do,Re-do,,,

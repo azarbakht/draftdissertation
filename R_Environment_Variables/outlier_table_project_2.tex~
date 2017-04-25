@@ -1,0 +1,10 @@
+% latex table generated in R 3.3.2 by xtable 1.8-2 package
+% 
+\begin{tabular}{rlrrrr}
+  \hline
+ & type & ind & time & coefhat & tstat \\ 
+  \hline
+1 & AO &  62 & 2010-07-13 & 0.07 & 5.80 \\ 
+  2 & AO & 258 & 2011-01-25 & -0.05 & -4.25 \\ 
+   \hline
+\end{tabular}

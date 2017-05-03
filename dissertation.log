@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  1 MAY 2017 16:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  3 MAY 2017 11:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1018,7 +1018,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.91 \listoffigures
+l.92 \listoffigures
                     [1
 
 ] (./dissertation.lof [2
@@ -1041,33 +1041,33 @@ Overfull \hbox (22.32529pt too wide) in paragraph at lines 27--27
 \openout7 = `dissertation.lot'.
 
  [5] [6] [7] [8] [9] [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
 
  []
 
 [12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 267--267
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
 []|\OT1/cmr/m/n/12 Communities have
  []
 
 
-Underfull \hbox (badness 5189) in paragraph at lines 268--268
+Underfull \hbox (badness 5189) in paragraph at lines 269--269
 []|\OT1/cmr/m/n/12 Random walks have
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--270
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
 []|\OT1/cmr/m/n/12 Number of driver
  []
 
 [14]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 281.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 282.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 281.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 282.
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
@@ -1078,7 +1078,7 @@ Missing character: There is no â in font cmbx12!
 Missing character: There is no € in font cmbx12!
 Missing character: There is no ™ in font cmbx12!
  [15]
-Overfull \hbox (5.33905pt too wide) in paragraph at lines 302--303
+Overfull \hbox (5.33905pt too wide) in paragraph at lines 303--304
 \OT1/cmr/m/n/12 We used the R (Sta-tis-ti-cal Com-put-ing) [[]] pack-age Sen-ti
 -men-t-Anal-y-sis [[]][[]]
  []
@@ -1086,74 +1086,74 @@ Overfull \hbox (5.33905pt too wide) in paragraph at lines 302--303
 [16] <PLOTS_PDF/O_1.pdf, id=425, 794.97pt x 542.025pt>
 File: PLOTS_PDF/O_1.pdf Graphic file (type pdf)
  <use PLOTS_PDF/O_1.pdf>
-Package pdftex.def Info: PLOTS_PDF/O_1.pdf used on input line 312.
+Package pdftex.def Info: PLOTS_PDF/O_1.pdf used on input line 313.
 (pdftex.def)             Requested size: 390.0pt x 265.91711pt.
 
 <PLOTS_PDF/O_2.pdf, id=426, 794.97pt x 542.025pt>
 File: PLOTS_PDF/O_2.pdf Graphic file (type pdf)
  <use PLOTS_PDF/O_2.pdf>
-Package pdftex.def Info: PLOTS_PDF/O_2.pdf used on input line 313.
+Package pdftex.def Info: PLOTS_PDF/O_2.pdf used on input line 314.
 (pdftex.def)             Requested size: 390.0pt x 265.91711pt.
 
 <PLOTS_PDF/O_3.pdf, id=427, 794.97pt x 542.025pt>
 File: PLOTS_PDF/O_3.pdf Graphic file (type pdf)
  <use PLOTS_PDF/O_3.pdf>
-Package pdftex.def Info: PLOTS_PDF/O_3.pdf used on input line 314.
+Package pdftex.def Info: PLOTS_PDF/O_3.pdf used on input line 315.
 (pdftex.def)             Requested size: 195.0pt x 132.95029pt.
 
 
-LaTeX Warning: Float too large for page by 157.2845pt on input line 317.
+LaTeX Warning: Float too large for page by 157.2845pt on input line 318.
 
 <PLOTS_PDF/O_5.pdf, id=428, 794.97pt x 542.025pt>
 File: PLOTS_PDF/O_5.pdf Graphic file (type pdf)
  <use PLOTS_PDF/O_5.pdf>
-Package pdftex.def Info: PLOTS_PDF/O_5.pdf used on input line 321.
+Package pdftex.def Info: PLOTS_PDF/O_5.pdf used on input line 322.
 (pdftex.def)             Requested size: 234.00238pt x 159.54861pt.
 
 <PLOTS_PDF/O_6.pdf, id=429, 794.97pt x 542.025pt>
 File: PLOTS_PDF/O_6.pdf Graphic file (type pdf)
  <use PLOTS_PDF/O_6.pdf>
-Package pdftex.def Info: PLOTS_PDF/O_6.pdf used on input line 322.
+Package pdftex.def Info: PLOTS_PDF/O_6.pdf used on input line 323.
 (pdftex.def)             Requested size: 234.00238pt x 159.54861pt.
 
 <PLOTS_PDF/O_7.pdf, id=430, 794.97pt x 542.025pt>
 File: PLOTS_PDF/O_7.pdf Graphic file (type pdf)
  <use PLOTS_PDF/O_7.pdf>
-Package pdftex.def Info: PLOTS_PDF/O_7.pdf used on input line 323.
+Package pdftex.def Info: PLOTS_PDF/O_7.pdf used on input line 324.
 (pdftex.def)             Requested size: 234.00238pt x 159.54861pt.
 
 <PLOTS_PDF/O_9.pdf, id=431, 794.97pt x 542.025pt>
 File: PLOTS_PDF/O_9.pdf Graphic file (type pdf)
  <use PLOTS_PDF/O_9.pdf>
-Package pdftex.def Info: PLOTS_PDF/O_9.pdf used on input line 324.
+Package pdftex.def Info: PLOTS_PDF/O_9.pdf used on input line 325.
 (pdftex.def)             Requested size: 234.00238pt x 159.54861pt.
 
 
-LaTeX Warning: Float too large for page by 146.19444pt on input line 328.
+LaTeX Warning: Float too large for page by 146.19444pt on input line 329.
 
 <PLOTS_PDF/O_10.pdf, id=432, 794.97pt x 542.025pt>
 File: PLOTS_PDF/O_10.pdf Graphic file (type pdf)
  <use PLOTS_PDF/O_10.pdf>
-Package pdftex.def Info: PLOTS_PDF/O_10.pdf used on input line 334.
+Package pdftex.def Info: PLOTS_PDF/O_10.pdf used on input line 335.
 (pdftex.def)             Requested size: 272.99881pt x 186.13867pt.
 
 <PLOTS_PDF/O_11.pdf, id=433, 794.97pt x 542.025pt>
 File: PLOTS_PDF/O_11.pdf Graphic file (type pdf)
  <use PLOTS_PDF/O_11.pdf>
-Package pdftex.def Info: PLOTS_PDF/O_11.pdf used on input line 335.
+Package pdftex.def Info: PLOTS_PDF/O_11.pdf used on input line 336.
 (pdftex.def)             Requested size: 272.99881pt x 186.13867pt.
 
 <PLOTS_PDF/O_12.pdf, id=434, 794.97pt x 542.025pt>
 File: PLOTS_PDF/O_12.pdf Graphic file (type pdf)
  <use PLOTS_PDF/O_12.pdf>
-Package pdftex.def Info: PLOTS_PDF/O_12.pdf used on input line 336.
+Package pdftex.def Info: PLOTS_PDF/O_12.pdf used on input line 337.
 (pdftex.def)             Requested size: 272.99881pt x 186.13867pt.
 
 
-LaTeX Warning: Float too large for page by 50.916pt on input line 339.
+LaTeX Warning: Float too large for page by 50.916pt on input line 340.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 355--356
+Underfull \hbox (badness 10000) in paragraph at lines 356--357
 
  []
 
@@ -1164,50 +1164,50 @@ PDF/O_9.pdf>] [20 <./PLOTS_PDF/O_10.pdf> <./PLOTS_PDF/O_11.pdf> <./PLOTS_PDF/O_
 File: PLOTS_PDF/TS_1.pdf Graphic file (type pdf)
 
 <use PLOTS_PDF/TS_1.pdf>
-Package pdftex.def Info: PLOTS_PDF/TS_1.pdf used on input line 406.
+Package pdftex.def Info: PLOTS_PDF/TS_1.pdf used on input line 407.
 (pdftex.def)             Requested size: 214.50119pt x 146.24945pt.
  <PLOTS_PDF/TS_2.pdf, id=530, 794.97pt x 542.025pt>
 File: PLOTS_PDF/TS_2.pdf Graphic file (type pdf)
 
 <use PLOTS_PDF/TS_2.pdf>
-Package pdftex.def Info: PLOTS_PDF/TS_2.pdf used on input line 407.
+Package pdftex.def Info: PLOTS_PDF/TS_2.pdf used on input line 408.
 (pdftex.def)             Requested size: 214.50119pt x 146.24945pt.
  <PLOTS_PDF/TS_3.pdf, id=531, 794.97pt x 542.025pt>
 File: PLOTS_PDF/TS_3.pdf Graphic file (type pdf)
 
 <use PLOTS_PDF/TS_3.pdf>
-Package pdftex.def Info: PLOTS_PDF/TS_3.pdf used on input line 408.
+Package pdftex.def Info: PLOTS_PDF/TS_3.pdf used on input line 409.
 (pdftex.def)             Requested size: 214.50119pt x 146.24945pt.
  <PLOTS_PDF/TS_4.pdf, id=532, 794.97pt x 542.025pt>
 File: PLOTS_PDF/TS_4.pdf Graphic file (type pdf)
 
 <use PLOTS_PDF/TS_4.pdf>
-Package pdftex.def Info: PLOTS_PDF/TS_4.pdf used on input line 409.
+Package pdftex.def Info: PLOTS_PDF/TS_4.pdf used on input line 410.
 (pdftex.def)             Requested size: 214.50119pt x 146.24945pt.
  <PLOTS_PDF/TS_5.pdf, id=533, 794.97pt x 542.025pt>
 File: PLOTS_PDF/TS_5.pdf Graphic file (type pdf)
 
 <use PLOTS_PDF/TS_5.pdf>
-Package pdftex.def Info: PLOTS_PDF/TS_5.pdf used on input line 410.
+Package pdftex.def Info: PLOTS_PDF/TS_5.pdf used on input line 411.
 (pdftex.def)             Requested size: 214.50119pt x 146.24945pt.
  <PLOTS_PDF/TS_6.pdf, id=534, 794.97pt x 542.025pt>
 File: PLOTS_PDF/TS_6.pdf Graphic file (type pdf)
 
 <use PLOTS_PDF/TS_6.pdf>
-Package pdftex.def Info: PLOTS_PDF/TS_6.pdf used on input line 411.
+Package pdftex.def Info: PLOTS_PDF/TS_6.pdf used on input line 412.
 (pdftex.def)             Requested size: 214.50119pt x 146.24945pt.
 
-Overfull \hbox (41.61346pt too wide) in paragraph at lines 406--412
+Overfull \hbox (41.61346pt too wide) in paragraph at lines 407--413
 [][] []
  []
 
 
-Overfull \hbox (41.61346pt too wide) in paragraph at lines 406--412
+Overfull \hbox (41.61346pt too wide) in paragraph at lines 407--413
 [] []
  []
 
 
-Overfull \hbox (41.61346pt too wide) in paragraph at lines 406--412
+Overfull \hbox (41.61346pt too wide) in paragraph at lines 407--413
 [] [] 
  []
 
@@ -1215,163 +1215,163 @@ Overfull \hbox (41.61346pt too wide) in paragraph at lines 406--412
 File: PLOTS_PDF/TS_7.pdf Graphic file (type pdf)
 
 <use PLOTS_PDF/TS_7.pdf>
-Package pdftex.def Info: PLOTS_PDF/TS_7.pdf used on input line 418.
+Package pdftex.def Info: PLOTS_PDF/TS_7.pdf used on input line 419.
 (pdftex.def)             Requested size: 214.50119pt x 146.24945pt.
  <PLOTS_PDF/TS_8.pdf, id=549, 794.97pt x 542.025pt>
 File: PLOTS_PDF/TS_8.pdf Graphic file (type pdf)
 
 <use PLOTS_PDF/TS_8.pdf>
-Package pdftex.def Info: PLOTS_PDF/TS_8.pdf used on input line 419.
+Package pdftex.def Info: PLOTS_PDF/TS_8.pdf used on input line 420.
 (pdftex.def)             Requested size: 214.50119pt x 146.24945pt.
  <PLOTS_PDF/TS_9.pdf, id=550, 794.97pt x 542.025pt>
 File: PLOTS_PDF/TS_9.pdf Graphic file (type pdf)
 
 <use PLOTS_PDF/TS_9.pdf>
-Package pdftex.def Info: PLOTS_PDF/TS_9.pdf used on input line 420.
+Package pdftex.def Info: PLOTS_PDF/TS_9.pdf used on input line 421.
 (pdftex.def)             Requested size: 214.50119pt x 146.24945pt.
  <PLOTS_PDF/TS_10.pdf, id=551, 794.97pt x 542.025pt>
 File: PLOTS_PDF/TS_10.pdf Graphic file (type pdf)
 
 <use PLOTS_PDF/TS_10.pdf>
-Package pdftex.def Info: PLOTS_PDF/TS_10.pdf used on input line 421.
+Package pdftex.def Info: PLOTS_PDF/TS_10.pdf used on input line 422.
 (pdftex.def)             Requested size: 214.50119pt x 146.24945pt.
  <PLOTS_PDF/TS_11.pdf, id=552, 794.97pt x 542.025pt>
 File: PLOTS_PDF/TS_11.pdf Graphic file (type pdf)
 
 <use PLOTS_PDF/TS_11.pdf>
-Package pdftex.def Info: PLOTS_PDF/TS_11.pdf used on input line 422.
+Package pdftex.def Info: PLOTS_PDF/TS_11.pdf used on input line 423.
 (pdftex.def)             Requested size: 214.50119pt x 146.24945pt.
  <PLOTS_PDF/TS_12.pdf, id=553, 794.97pt x 542.025pt>
 File: PLOTS_PDF/TS_12.pdf Graphic file (type pdf)
 
 <use PLOTS_PDF/TS_12.pdf>
-Package pdftex.def Info: PLOTS_PDF/TS_12.pdf used on input line 423.
+Package pdftex.def Info: PLOTS_PDF/TS_12.pdf used on input line 424.
 (pdftex.def)             Requested size: 214.50119pt x 146.24945pt.
 
-Overfull \hbox (41.61346pt too wide) in paragraph at lines 418--424
+Overfull \hbox (41.61346pt too wide) in paragraph at lines 419--425
 [][] []
  []
 
 
-Overfull \hbox (41.61346pt too wide) in paragraph at lines 418--424
+Overfull \hbox (41.61346pt too wide) in paragraph at lines 419--425
 [] []
  []
 
 
-Overfull \hbox (41.61346pt too wide) in paragraph at lines 418--424
+Overfull \hbox (41.61346pt too wide) in paragraph at lines 419--425
 [] [] 
  []
 
 <PLOTS_PDF/D_1.pdf, id=556, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_1.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_1.pdf>
-Package pdftex.def Info: PLOTS_PDF/D_1.pdf used on input line 431.
+Package pdftex.def Info: PLOTS_PDF/D_1.pdf used on input line 432.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
 <PLOTS_PDF/D_2.pdf, id=557, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_2.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_2.pdf>
-Package pdftex.def Info: PLOTS_PDF/D_2.pdf used on input line 432.
+Package pdftex.def Info: PLOTS_PDF/D_2.pdf used on input line 433.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
 <PLOTS_PDF/D_3.pdf, id=558, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_3.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_3.pdf>
-Package pdftex.def Info: PLOTS_PDF/D_3.pdf used on input line 433.
+Package pdftex.def Info: PLOTS_PDF/D_3.pdf used on input line 434.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
 <PLOTS_PDF/D_4.pdf, id=559, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_4.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_4.pdf>
-Package pdftex.def Info: PLOTS_PDF/D_4.pdf used on input line 434.
+Package pdftex.def Info: PLOTS_PDF/D_4.pdf used on input line 435.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
-Overfull \hbox (57.2168pt too wide) in paragraph at lines 431--435
+Overfull \hbox (57.2168pt too wide) in paragraph at lines 432--436
 [][] []
  []
 
 
-Overfull \hbox (57.2168pt too wide) in paragraph at lines 431--435
+Overfull \hbox (57.2168pt too wide) in paragraph at lines 432--436
 [] [] 
  []
 
 
-LaTeX Warning: Float too large for page by 31.43388pt on input line 437.
+LaTeX Warning: Float too large for page by 31.43388pt on input line 438.
 
 <PLOTS_PDF/D_5.pdf, id=560, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_5.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_5.pdf>
-Package pdftex.def Info: PLOTS_PDF/D_5.pdf used on input line 440.
+Package pdftex.def Info: PLOTS_PDF/D_5.pdf used on input line 441.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
 <PLOTS_PDF/D_6.pdf, id=561, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_6.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_6.pdf>
-Package pdftex.def Info: PLOTS_PDF/D_6.pdf used on input line 441.
+Package pdftex.def Info: PLOTS_PDF/D_6.pdf used on input line 442.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
 <PLOTS_PDF/D_7.pdf, id=562, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_7.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_7.pdf>
-Package pdftex.def Info: PLOTS_PDF/D_7.pdf used on input line 442.
+Package pdftex.def Info: PLOTS_PDF/D_7.pdf used on input line 443.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
 <PLOTS_PDF/D_8.pdf, id=563, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_8.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_8.pdf>
-Package pdftex.def Info: PLOTS_PDF/D_8.pdf used on input line 443.
+Package pdftex.def Info: PLOTS_PDF/D_8.pdf used on input line 444.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
-Overfull \hbox (57.2168pt too wide) in paragraph at lines 440--444
+Overfull \hbox (57.2168pt too wide) in paragraph at lines 441--445
 [][] []
  []
 
 
-Overfull \hbox (57.2168pt too wide) in paragraph at lines 440--444
+Overfull \hbox (57.2168pt too wide) in paragraph at lines 441--445
 [] [] 
  []
 
 
-LaTeX Warning: Float too large for page by 31.43388pt on input line 446.
+LaTeX Warning: Float too large for page by 31.43388pt on input line 447.
 
 <PLOTS_PDF/D_9.pdf, id=564, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_9.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_9.pdf>
-Package pdftex.def Info: PLOTS_PDF/D_9.pdf used on input line 449.
+Package pdftex.def Info: PLOTS_PDF/D_9.pdf used on input line 450.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
 <PLOTS_PDF/D_10.pdf, id=565, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_10.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_10.pdf>
-Package pdftex.def Info: PLOTS_PDF/D_10.pdf used on input line 450.
+Package pdftex.def Info: PLOTS_PDF/D_10.pdf used on input line 451.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
 <PLOTS_PDF/D_11.pdf, id=566, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_11.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_11.pdf>
-Package pdftex.def Info: PLOTS_PDF/D_11.pdf used on input line 451.
+Package pdftex.def Info: PLOTS_PDF/D_11.pdf used on input line 452.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
 <PLOTS_PDF/D_12.pdf, id=567, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_12.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_12.pdf>
-Package pdftex.def Info: PLOTS_PDF/D_12.pdf used on input line 452.
+Package pdftex.def Info: PLOTS_PDF/D_12.pdf used on input line 453.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
-Overfull \hbox (57.2168pt too wide) in paragraph at lines 449--453
+Overfull \hbox (57.2168pt too wide) in paragraph at lines 450--454
 [][] []
  []
 
 
-Overfull \hbox (57.2168pt too wide) in paragraph at lines 449--453
+Overfull \hbox (57.2168pt too wide) in paragraph at lines 450--454
 [] [] 
  []
 
 
-LaTeX Warning: Float too large for page by 31.43388pt on input line 455.
+LaTeX Warning: Float too large for page by 31.43388pt on input line 456.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 595--597
+Underfull \hbox (badness 10000) in paragraph at lines 596--598
 
  []
 
@@ -1391,10 +1391,10 @@ Missing character: There is no ™ in font cmbx12!
 File: epc-flow-charts.pdf Graphic file (type pdf)
 
 <use epc-flow-charts.pdf>
-Package pdftex.def Info: epc-flow-charts.pdf used on input line 610.
+Package pdftex.def Info: epc-flow-charts.pdf used on input line 611.
 (pdftex.def)             Requested size: 507.00119pt x 435.9268pt.
 
-Overfull \hbox (117.00119pt too wide) in paragraph at lines 610--611
+Overfull \hbox (117.00119pt too wide) in paragraph at lines 611--612
  [][] 
  []
 
@@ -1406,40 +1406,35 @@ Package epstopdf Info: Source file: <flowchart.eps>
 (epstopdf)                    size: 211144 bytes
 (epstopdf)             Command: <repstopdf --outfile=flowchart-eps-converted-to
 .pdf flowchart.eps>
-(epstopdf)             \includegraphics on input line 617.
+(epstopdf)             \includegraphics on input line 618.
 Package epstopdf Info: Output file is already uptodate.
 <flowchart-eps-converted-to.pdf, id=753, 1782.66pt x 2320.67pt>
 File: flowchart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use flowchart-eps-converted-to.pdf>
-Package pdftex.def Info: flowchart-eps-converted-to.pdf used on input line 617.
+Package pdftex.def Info: flowchart-eps-converted-to.pdf used on input line 618.
 
 (pdftex.def)             Requested size: 350.99762pt x 456.90204pt.
 
-Overfull \hbox (6.35007pt too wide) in paragraph at lines 810--811
+Overfull \hbox (6.35007pt too wide) in paragraph at lines 811--812
 []\OT1/cmr/m/n/12 We de-fined conflict-driven (un-de-sir-able) and socially-rel
 ated Fork-ing (U.F.)
  []
 
 
-Overfull \hbox (12.78194pt too wide) in paragraph at lines 812--813
+Overfull \hbox (12.78194pt too wide) in paragraph at lines 813--814
 []\OT1/cmr/m/n/12 We de-fined non-conflict-driven and socially-related fork-ing
  (H.F.) as projects
  []
 
 [30] [31 <./epc-flow-charts.pdf>] [32 <./flowchart-eps-converted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 824--824
+Underfull \hbox (badness 10000) in paragraph at lines 825--825
 []|\OT1/cmr/bx/n/12 Year
  []
 
 
-Overfull \hbox (2.87073pt too wide) in paragraph at lines 824--825
+Overfull \hbox (2.87073pt too wide) in paragraph at lines 825--826
 []|\OT1/cmr/bx/n/12 Type| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 828--828
-[]|\OT1/cmr/m/n/12 More community-driven de-vel-op-
  []
 
 
@@ -1453,13 +1448,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 830--830
  []
 
 
-Underfull \hbox (badness 5519) in paragraph at lines 832--832
-[]|\OT1/cmr/m/n/12 Apache CouchDB & Big-
+Underfull \hbox (badness 10000) in paragraph at lines 831--831
+[]|\OT1/cmr/m/n/12 More community-driven de-vel-op-
  []
 
 
-Overfull \hbox (1.57602pt too wide) in paragraph at lines 835--835
-[]|\OT1/cmr/m/n/12 No.F.| 
+Underfull \hbox (badness 5519) in paragraph at lines 833--833
+[]|\OT1/cmr/m/n/12 Apache CouchDB & Big-
  []
 
 
@@ -1473,46 +1468,51 @@ Overfull \hbox (1.57602pt too wide) in paragraph at lines 837--837
  []
 
 
-Overfull \hbox (1.57602pt too wide) in paragraph at lines 838--839
+Overfull \hbox (1.57602pt too wide) in paragraph at lines 838--838
 []|\OT1/cmr/m/n/12 No.F.| 
  []
 
 
-Overfull \hbox (77.24881pt too wide) in paragraph at lines 822--841
+Overfull \hbox (1.57602pt too wide) in paragraph at lines 839--840
+[]|\OT1/cmr/m/n/12 No.F.| 
+ []
+
+
+Overfull \hbox (77.24881pt too wide) in paragraph at lines 823--842
  [][] 
  []
 
 
-Overfull \hbox (16.46837pt too wide) in paragraph at lines 853--854
+Overfull \hbox (16.46837pt too wide) in paragraph at lines 854--855
 []\OT1/cmr/m/n/12 A \OT1/cmr/m/it/12 network-specific \OT1/cmr/m/n/12 ap-proach
 , which can be called a skin-deep \OT1/cmr/m/it/12 measurement-
  []
 
 [33] [34] [35] [36] [37]
-Overfull \hbox (8.09567pt too wide) detected at line 914
+Overfull \hbox (8.09567pt too wide) detected at line 915
 \OML/cmm/m/it/12 ^^U[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = []
  []P[][][]\OML/cmm/m/it/12 :
  []
 
 [38]
-Overfull \hbox (5.81113pt too wide) in paragraph at lines 941--942
+Overfull \hbox (5.81113pt too wide) in paragraph at lines 942--943
  []\OT1/cmr/bx/n/12 Gratification Func-tion \OT1/cmr/m/n/12 Some-times the or-d
 er in which changes oc-cur makes
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 941--942
+Underfull \hbox (badness 10000) in paragraph at lines 942--943
 
  []
 
 [39]
-Overfull \hbox (17.57869pt too wide) in paragraph at lines 958--959
+Overfull \hbox (17.57869pt too wide) in paragraph at lines 959--960
  []\OT1/cmr/bx/n/12 Markov Chain Tran-si-tion Rate Ma-trix \OT1/cmr/m/n/12 The 
 com-po-nents of the developers-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 966--967
+Underfull \hbox (badness 10000) in paragraph at lines 967--968
 
  []
 
@@ -1521,100 +1521,100 @@ ion.0.4.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1008 \item T
+l.1009 \item T
               ransitive ties, which reflects network embeddedness. It is sim...
 ]
-Overfull \hbox (16.08467pt too wide) in paragraph at lines 1014--1015
+Overfull \hbox (16.08467pt too wide) in paragraph at lines 1015--1016
 []\OT1/cmr/m/n/12 Activity, which re-flects the ten-dency of de-vel-op-ers with
  high in-degree/out-
  []
 
 [42] [43]
-Underfull \hbox (badness 10000) in paragraph at lines 1107--1108
+Underfull \hbox (badness 10000) in paragraph at lines 1108--1109
 
  []
 
 [44]
-Overfull \hbox (60.55627pt too wide) in paragraph at lines 1142--1144
+Overfull \hbox (60.55627pt too wide) in paragraph at lines 1143--1145
 []\OT1/cmr/m/n/12 The sim-u-la-tion out-put will be the ran-dom vari-ables $(\O
 ML/cmm/m/it/12 S; R\OT1/cmr/m/n/12 ) = (\OML/cmm/m/it/12 S[]; :::; S[]; R[]; ::
 :; R[]\OT1/cmr/m/n/12 )$.
  []
 
 [45] [46] [47]
-Underfull \hbox (badness 10000) in paragraph at lines 1201--1202
+Underfull \hbox (badness 10000) in paragraph at lines 1202--1203
 
  []
 
 [48]
 
 Package caption Warning: \captionsetup{type*=...} or \captionof
-(caption)                outside box or environment on input line 1274.
+(caption)                outside box or environment on input line 1275.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1274.
+(caption)                particular \caption on input line 1275.
 See the caption package documentation for explanation.
 
 [49]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1316.
+(caption)                particular \caption on input line 1317.
 See the caption package documentation for explanation.
 
 [50]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1353.
+(caption)                particular \caption on input line 1354.
 See the caption package documentation for explanation.
 
 [51]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1394.
+(caption)                particular \caption on input line 1395.
 See the caption package documentation for explanation.
 
 [52]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1435.
+(caption)                particular \caption on input line 1436.
 See the caption package documentation for explanation.
 
 [53]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1476.
+(caption)                particular \caption on input line 1477.
 See the caption package documentation for explanation.
 
 [54]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1517.
+(caption)                particular \caption on input line 1518.
 See the caption package documentation for explanation.
 
 [55]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1554.
+(caption)                particular \caption on input line 1555.
 See the caption package documentation for explanation.
 
 [56]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1588.
+(caption)                particular \caption on input line 1589.
 See the caption package documentation for explanation.
 
 [57]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1629.
+(caption)                particular \caption on input line 1630.
 See the caption package documentation for explanation.
 
 [58]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1670.
+(caption)                particular \caption on input line 1671.
 See the caption package documentation for explanation.
 
 [59]
@@ -1622,7 +1622,7 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1717--1720
+Underfull \hbox (badness 10000) in paragraph at lines 1718--1721
 
  []
 
@@ -1636,7 +1636,7 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ¢ in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1721--1725
+Underfull \hbox (badness 10000) in paragraph at lines 1722--1726
 
  []
 
@@ -1650,7 +1650,7 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ¢ in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1726--1730
+Underfull \hbox (badness 10000) in paragraph at lines 1727--1731
 
  []
 
@@ -1667,7 +1667,7 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1737--1739
+Underfull \hbox (badness 10000) in paragraph at lines 1738--1740
 
  []
 
@@ -1681,7 +1681,7 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ¢ in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1740--1744
+Underfull \hbox (badness 10000) in paragraph at lines 1741--1745
 
  []
 
@@ -1693,7 +1693,7 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ¢ in font cmr12!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1745--1747
+Underfull \hbox (badness 10000) in paragraph at lines 1746--1748
 
  []
 
@@ -1710,7 +1710,7 @@ Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
 [61]
-Underfull \hbox (badness 10000) in paragraph at lines 1882--1883
+Underfull \hbox (badness 10000) in paragraph at lines 1883--1884
 
  []
 
@@ -1718,42 +1718,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 1882--1883
 
 
 ]
-Underfull \hbox (badness 1122) in paragraph at lines 1904--1904
+Underfull \hbox (badness 1122) in paragraph at lines 1905--1905
 []|\OT1/cmr/bx/n/12 M.L. data ac-ces-si-
  []
 
 
-Overfull \hbox (22.44205pt too wide) in paragraph at lines 1904--1905
+Overfull \hbox (22.44205pt too wide) in paragraph at lines 1905--1906
 []|\OT1/cmr/bx/n/12 Collected?| 
  []
 
 
-Overfull \hbox (1.46982pt too wide) in paragraph at lines 1918--1918
+Overfull \hbox (1.46982pt too wide) in paragraph at lines 1919--1919
 []|\OT1/cmr/m/n/12 jMonkeyEngine| 
  []
 
 
-Overfull \hbox (20.99762pt too wide) in paragraph at lines 1902--1924
+Overfull \hbox (20.99762pt too wide) in paragraph at lines 1903--1925
  [][] 
  []
 
 [64]
-Underfull \hbox (badness 1122) in paragraph at lines 1934--1934
+Underfull \hbox (badness 1122) in paragraph at lines 1935--1935
 []|\OT1/cmr/bx/n/12 M.L. data ac-ces-si-
  []
 
 
-Overfull \hbox (4.7184pt too wide) in paragraph at lines 1941--1941
+Overfull \hbox (4.7184pt too wide) in paragraph at lines 1942--1942
 []|\OT1/cmr/m/n/12 GraphicsMagick| 
  []
 
 
-Underfull \hbox (badness 4279) in paragraph at lines 1957--1957
+Underfull \hbox (badness 4279) in paragraph at lines 1958--1958
 []|\OT1/cmr/m/n/12 Project Dark-
  []
 
 
-Overfull \hbox (79.49524pt too wide) in paragraph at lines 1932--1966
+Overfull \hbox (79.49524pt too wide) in paragraph at lines 1933--1967
  [][] 
  []
 
@@ -1766,17 +1766,17 @@ Package epstopdf Info: Source file: <centrality.eps>
 (epstopdf)                    size: 759320 bytes
 (epstopdf)             Command: <repstopdf --outfile=centrality-eps-converted-t
 o.pdf centrality.eps>
-(epstopdf)             \includegraphics on input line 1977.
+(epstopdf)             \includegraphics on input line 1978.
 Package epstopdf Info: Output file is already uptodate.
  <centrality-eps-converted-to.pdf, id=1073, 1004.75375pt x 998.73125pt>
 File: centrality-eps-converted-to.pdf Graphic file (type pdf)
 
 <use centrality-eps-converted-to.pdf>
 Package pdftex.def Info: centrality-eps-converted-to.pdf used on input line 197
-7.
+8.
 (pdftex.def)             Requested size: 272.99881pt x 271.35262pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1982--1983
+Underfull \hbox (badness 10000) in paragraph at lines 1983--1984
 []\OT1/cmr/m/n/12 There are many ways of look-ing at an in-di-vid-ual's im-por-
 
  []
@@ -1790,7 +1790,7 @@ Package epstopdf Info: Source file: <NodesEdgesTime.eps>
 (epstopdf)                    size: 23445 bytes
 (epstopdf)             Command: <repstopdf --outfile=NodesEdgesTime-eps-convert
 ed-to.pdf NodesEdgesTime.eps>
-(epstopdf)             \includegraphics on input line 1996.
+(epstopdf)             \includegraphics on input line 1997.
 Package epstopdf Info: Output file is already uptodate.
 
 <NodesEdgesTime-eps-converted-to.pdf, id=1105, 744.7825pt x 697.60625pt>
@@ -1798,7 +1798,7 @@ File: NodesEdgesTime-eps-converted-to.pdf Graphic file (type pdf)
 
 <use NodesEdgesTime-eps-converted-to.pdf>
 Package pdftex.def Info: NodesEdgesTime-eps-converted-to.pdf used on input line
- 1996.
+ 1997.
 (pdftex.def)             Requested size: 390.0pt x 365.30139pt.
 Package epstopdf Info: Source file: <DiameterTime.eps>
 (epstopdf)                    date: 2015-11-05 12:44:05
@@ -1808,7 +1808,7 @@ Package epstopdf Info: Source file: <DiameterTime.eps>
 (epstopdf)                    size: 17890 bytes
 (epstopdf)             Command: <repstopdf --outfile=DiameterTime-eps-converted
 -to.pdf DiameterTime.eps>
-(epstopdf)             \includegraphics on input line 2003.
+(epstopdf)             \includegraphics on input line 2004.
 Package epstopdf Info: Output file is already uptodate.
 
 <DiameterTime-eps-converted-to.pdf, id=1106, 744.7825pt x 697.60625pt>
@@ -1816,7 +1816,7 @@ File: DiameterTime-eps-converted-to.pdf Graphic file (type pdf)
 
 <use DiameterTime-eps-converted-to.pdf>
 Package pdftex.def Info: DiameterTime-eps-converted-to.pdf used on input line 2
-003.
+004.
 (pdftex.def)             Requested size: 390.0pt x 365.30139pt.
 
 <2.png, id=1108, 502.87875pt x 520.94624pt> <use 2.png>
@@ -1826,27 +1826,27 @@ Package pdftex.def Info: DiameterTime-eps-converted-to.pdf used on input line 2
 <use 5.png> <use 7.png>
 File: 2.png Graphic file (type png)
  <use 2.png>
-Package pdftex.def Info: 2.png used on input line 2024.
+Package pdftex.def Info: 2.png used on input line 2025.
 (pdftex.def)             Requested size: 97.49696pt x 97.49435pt.
 File: 3.png Graphic file (type png)
  <use 3.png>
-Package pdftex.def Info: 3.png used on input line 2024.
+Package pdftex.def Info: 3.png used on input line 2025.
 (pdftex.def)             Requested size: 97.49626pt x 97.49167pt.
 File: 5.png Graphic file (type png)
  <use 5.png>
-Package pdftex.def Info: 5.png used on input line 2024.
+Package pdftex.def Info: 5.png used on input line 2025.
 (pdftex.def)             Requested size: 97.50012pt x 97.49626pt.
 File: 7.png Graphic file (type png)
  <use 7.png>
-Package pdftex.def Info: 7.png used on input line 2024.
+Package pdftex.def Info: 7.png used on input line 2025.
 (pdftex.def)             Requested size: 97.49626pt x 97.49315pt.
 
-Overfull \hbox (53.98961pt too wide) in alignment at lines 2024--2024
+Overfull \hbox (53.98961pt too wide) in alignment at lines 2025--2025
 [][][]
  []
 
 
-LaTeX Warning: File `Kamailio_chart.eps' not found on input line 2032.
+LaTeX Warning: File `Kamailio_chart.eps' not found on input line 2033.
 
 Package epstopdf Info: Source file: <Kamailio_chart.eps>
 (epstopdf)             Output file: <Kamailio_chart-eps-converted-to.pdf>
@@ -1854,14 +1854,14 @@ Package epstopdf Info: Source file: <Kamailio_chart.eps>
 (epstopdf)                    size: 268635 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kamailio_chart-eps-convert
 ed-to.pdf Kamailio_chart.eps>
-(epstopdf)             \includegraphics on input line 2032.
+(epstopdf)             \includegraphics on input line 2033.
 Package epstopdf Info: Output file is already uptodate.
 <Kamailio_chart-eps-converted-to.pdf, id=1112, 1229.59375pt x 506.89375pt>
 File: Kamailio_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Kamailio_chart-eps-converted-to.pdf>
 Package pdftex.def Info: Kamailio_chart-eps-converted-to.pdf used on input line
- 2032.
+ 2033.
 (pdftex.def)             Requested size: 390.0pt x 160.77841pt.
 Package epstopdf Info: Source file: <Kamailio_diameter.eps>
 (epstopdf)                    date: 2015-11-05 12:44:05
@@ -1871,7 +1871,7 @@ Package epstopdf Info: Source file: <Kamailio_diameter.eps>
 (epstopdf)                    size: 11882 bytes
 (epstopdf)             Command: <repstopdf --outfile=Kamailio_diameter-eps-conv
 erted-to.pdf Kamailio_diameter.eps>
-(epstopdf)             \includegraphics on input line 2034.
+(epstopdf)             \includegraphics on input line 2035.
 Package epstopdf Info: Output file is already uptodate.
 
 <Kamailio_diameter-eps-converted-to.pdf, id=1113, 1229.59375pt x 145.54375pt>
@@ -1879,14 +1879,14 @@ File: Kamailio_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Kamailio_diameter-eps-converted-to.pdf>
 Package pdftex.def Info: Kamailio_diameter-eps-converted-to.pdf used on input l
-ine 2034.
+ine 2035.
 (pdftex.def)             Requested size: 390.0pt x 46.1641pt.
  [68] [69 <./NodesEdgesTime-eps-converted-to.pdf>] [70 <./DiameterTime-eps-conv
 erted-to.pdf>] [71 <./2.png (PNG copy)> <./3.png (PNG copy)> <./5.png (PNG copy
 )> <./7.png (PNG copy)> <./Kamailio_chart-eps-converted-to.pdf> <./Kamailio_dia
 meter-eps-converted-to.pdf>]
 
-LaTeX Warning: File `Amarok_chart.eps' not found on input line 2046.
+LaTeX Warning: File `Amarok_chart.eps' not found on input line 2047.
 
 Package epstopdf Info: Source file: <Amarok_chart.eps>
 (epstopdf)             Output file: <Amarok_chart-eps-converted-to.pdf>
@@ -1894,14 +1894,14 @@ Package epstopdf Info: Source file: <Amarok_chart.eps>
 (epstopdf)                    size: 348509 bytes
 (epstopdf)             Command: <repstopdf --outfile=Amarok_chart-eps-converted
 -to.pdf Amarok_chart.eps>
-(epstopdf)             \includegraphics on input line 2046.
+(epstopdf)             \includegraphics on input line 2047.
 Package epstopdf Info: Output file is already uptodate.
 <Amarok_chart-eps-converted-to.pdf, id=1169, 1233.60875pt x 521.95pt>
 File: Amarok_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Amarok_chart-eps-converted-to.pdf>
 Package pdftex.def Info: Amarok_chart-eps-converted-to.pdf used on input line 2
-046.
+047.
 (pdftex.def)             Requested size: 390.0pt x 165.01244pt.
 Package epstopdf Info: Source file: <Amarok_diameter.eps>
 (epstopdf)                    date: 2015-11-05 12:44:05
@@ -1911,7 +1911,7 @@ Package epstopdf Info: Source file: <Amarok_diameter.eps>
 (epstopdf)                    size: 12377 bytes
 (epstopdf)             Command: <repstopdf --outfile=Amarok_diameter-eps-conver
 ted-to.pdf Amarok_diameter.eps>
-(epstopdf)             \includegraphics on input line 2048.
+(epstopdf)             \includegraphics on input line 2049.
 Package epstopdf Info: Output file is already uptodate.
 
 <Amarok_diameter-eps-converted-to.pdf, id=1170, 1229.59375pt x 145.54375pt>
@@ -1919,11 +1919,11 @@ File: Amarok_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Amarok_diameter-eps-converted-to.pdf>
 Package pdftex.def Info: Amarok_diameter-eps-converted-to.pdf used on input lin
-e 2048.
+e 2049.
 (pdftex.def)             Requested size: 360.75119pt x 42.70184pt.
 
 
-LaTeX Warning: File `Asterisk_chart.eps' not found on input line 2058.
+LaTeX Warning: File `Asterisk_chart.eps' not found on input line 2059.
 
 Package epstopdf Info: Source file: <Asterisk_chart.eps>
 (epstopdf)             Output file: <Asterisk_chart-eps-converted-to.pdf>
@@ -1931,14 +1931,14 @@ Package epstopdf Info: Source file: <Asterisk_chart.eps>
 (epstopdf)                    size: 304010 bytes
 (epstopdf)             Command: <repstopdf --outfile=Asterisk_chart-eps-convert
 ed-to.pdf Asterisk_chart.eps>
-(epstopdf)             \includegraphics on input line 2058.
+(epstopdf)             \includegraphics on input line 2059.
 Package epstopdf Info: Output file is already uptodate.
 <Asterisk_chart-eps-converted-to.pdf, id=1174, 1223.57124pt x 523.9575pt>
 File: Asterisk_chart-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Asterisk_chart-eps-converted-to.pdf>
 Package pdftex.def Info: Asterisk_chart-eps-converted-to.pdf used on input line
- 2058.
+ 2059.
 (pdftex.def)             Requested size: 390.0pt x 167.00624pt.
 Package epstopdf Info: Source file: <Asterisk_diameter.eps>
 (epstopdf)                    date: 2015-11-05 12:44:05
@@ -1948,7 +1948,7 @@ Package epstopdf Info: Source file: <Asterisk_diameter.eps>
 (epstopdf)                    size: 12112 bytes
 (epstopdf)             Command: <repstopdf --outfile=Asterisk_diameter-eps-conv
 erted-to.pdf Asterisk_diameter.eps>
-(epstopdf)             \includegraphics on input line 2060.
+(epstopdf)             \includegraphics on input line 2061.
 Package epstopdf Info: Output file is already uptodate.
 
 <Asterisk_diameter-eps-converted-to.pdf, id=1175, 1230.5975pt x 145.54375pt>
@@ -1956,12 +1956,12 @@ File: Asterisk_diameter-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Asterisk_diameter-eps-converted-to.pdf>
 Package pdftex.def Info: Asterisk_diameter-eps-converted-to.pdf used on input l
-ine 2060.
+ine 2061.
 (pdftex.def)             Requested size: 366.60095pt x 43.35698pt.
  [72 <./Amarok_chart-eps-converted-to.pdf> <./Amarok_diameter-eps-converted-to.
 pdf>] [73 <./Asterisk_chart-eps-converted-to.pdf> <./Asterisk_diameter-eps-conv
 erted-to.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 2070--2071
+Underfull \hbox (badness 10000) in paragraph at lines 2071--2072
 
  []
 
@@ -1993,12 +1993,12 @@ ps://CRAN.R-
 
 [81] [82])
 No file dissertation.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2302.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2303.
 [83]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2302.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2303.
  (./dissertation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2302.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2302.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2303.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2303.
 
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: 8801168A736A50FF3F563BA15C13E23F;1551.
@@ -2006,7 +2006,7 @@ Package rerunfilecheck Info: File `dissertation.out' has not changed.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2302.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2303.
  ) 
 Here is how much of TeX's memory you used:
  24220 strings out of 494985
@@ -2032,7 +2032,7 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on dissertation.pdf (84 pages, 3315680 bytes).
+Output written on dissertation.pdf (84 pages, 3315706 bytes).
 PDF statistics:
  1408 PDF objects out of 1440 (max. 8388607)
  1188 compressed objects within 12 object streams

@@ -1729,162 +1729,18 @@ In summary,
 
 
 
-\subsection{Time series analysis of communication sentiments}
-Here’s my data:
-The contents of the messages sent and received on the projects developers mailing
-list, for the time period of 10-month run-up to the fork.\\
 
-Here’s what I found:
-• Conflict-driven forks exhibited anomalies; time series analysis of sentiments shows the
-anomalies occur before the fork event.
-• Non-conflict-driven forks did not suffer from pre-fork anomalies\\
 
-Here’s why it matters:
-•The objective was to be able to intervene, or evaluate the health.
-•Anomaly detection of the time series analysis may be used by the project
-stakeholders/investors as key indicators left in the record, that can reliably be used to predict, or to identify problems among the developers, and intervene if need be.\\
 
-Here’s the implications of what I found
-•It’s not great, but a good way of caring about an open source project that you rely on.
 
-
-\subsection{SNA}
-
-Here’s my data:
-The interaction graphs of the developers that sent and received messages on the projects developers mailing list, for the time period of 10-month run-up to the fork event. And the source code contribution levels of the developers\\
-
-Here’s what I found:
-• In conflict-driven forks, (1) the developers maintained a preference for interacting with developers who had similar out-degrees, in contrast to the non-conflict-driven forks, where the developers did not require similar out-degrees. (2) In conflict-driven forks, the interactions were reciprocal, in contrast to the non-conflict-driven forks, where the interactions did not need to be reciprocal to happen. (3) In conflict-driven forks, the more senior developers preferred to interact with other more senior developers, in contrast to the non-conflict-driven forks.
-• In non-conflict-driven forks, (1) the interactions did not necessarily need to be reciprocal, in contrast to the conflict-driven forks, where the interactions needed to be reciprocal to continue to happen. (2) In non-conflict-driven forks, the developers with high source code contribution levels interacted more with other high source code contributors. (3) In non-conflict-driven forks, high levels of contribution to the source code brings you connections more rapidly,
-while high levels of contributions to the mailing list is not suggestive of this. This can be interpreted as a sign of meritocracy based on code, rather than talk, which captures a healthy dynamic in these project.\\
-
-Here’s why it matters:
-•Estimating the influence of several factors on how developers interact provides indicators of healthy dynamics, such as meritocracy in the project.\\
-
-Here’s the implications of what I found:
-•It’s not a great way of measuring up a project, but it’s not a bad way of finding out who in the project deserves credit, who is mostly talk and no action, and whether the project is a meritocracy.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%
-%
-%% Table based on sienaFit object ans
-%\begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
-%\hline
-%\rule{0pt}{2ex}\relax
-%Effect &\multicolumn{2}{c}{par.}&\multicolumn{2}{c | }{(s.e.)} &\multicolumn{2}{c}{$t$ stat.} \\[0.5ex]
-%\hline
-%\rule{0pt}{2ex}\relax
-%Rate 1 & 4 & 62 & (0 & 78) & \omit & -\\
-%Rate 2 & 3 & 68 & (0 & 65) & \omit & -\\
-%Rate 3 & 4 & 68 & (1 & 02) & \omit & -\\
-%Rate 4 & 6 & 89 & (1 & 54) & \omit & -\\
-%Rate 5 & 3 & 98 & (0 & 65) & \omit & -\\
-%Rate 6 & 2 & 70 & (0 & 39) & \omit & -\\
-%Rate 7 & 2 & 66 & (0 & 52) & \omit & -\\
-%Rate 8 & 5 & 54 & (1 & 15) & \omit & -\\
-%Rate 9 & 8 & 29 & (1 & 80) & \omit & -\\
-%\hline
-%\rule{0pt}{2ex}\relax
-%outdegree (density)                        & --2 & 81$^{\ast\ast\ast}$ & ( 0 & 12) & --22 & 61\\
-%reciprocity                                & --0 & 63                  & ( 0 & 68) &  --0 & 93\\
-%transitive triplets                        &   2 & 24$^{\ast\ast\ast}$ & ( 0 & 38) &    5 & 85\\
-%3-cycles                                   & --0 & 78                  & ( 0 & 52) &  --1 & 49\\
-%out-out degree assortativity         & --0 & 52$^{\ast\ast}$     & ( 0 & 20) &  --2 & 66\\
-%devSeniority alter                         & --0 & 01$^{\ast\ast\ast}$ & ( 0 & 00) &  --3 & 58\\
-%devSeniority ego                           &   0 & 00                  & ( 0 & 00) &    0 & 04\\
-%devSeniority ego x devSeniority alter      & --0 & 00                  & (31 & 61) &  --0 & 00\\
-%devScActivity alter                        & --0 & 08$^\dagger$        & ( 0 & 05) &  --1 & 65\\
-%devScActivity ego                          &   0 & 01                  & ( 0 & 04) &    0 & 36\\
-%devScActivity ego x devScActivity alter    &   0 & 01                  & ( 0 & 01) &    0 & 46\\
-%int.  devScActivity ego x devSeniority ego &   0 & 00                  & ( 0 & 00) &    0 & 85\\
-%\hline
-%\multicolumn{5}{l}{\footnotesize{$^\dagger$ $p$ $<$ 0.1;
-%$^\ast$ $p$ $<$ 0.05; $^{\ast\ast}$ $p$ $<$ 0.01;
-%$^{\ast\ast\ast}$ $p$ $<$ 0.001;}}\\
-%\multicolumn{5}{l}
-%   {\footnotesize{convergence $t$ ratios all $<$ 0.69,}}\\
-%\multicolumn{5}{l}{\footnotesize{overall maximum convergence ratio 1.03.}}
-%\end{tabular}
 
 \pagebreak
 
 \section{Threats to Validity}
 \label{threatsToValidity}
-The study findings may not be generalized to all FOSS projects. 
+
+
+The study findings should not be generalized to all FOSS projects, without further research. 
 
 First, one reason is that the projects is this research study were selected from a pool of candidate projects, based on a filtering criteria that included availability of their data. Given access, a larger number of projects as the sample size could result in a more robust investigation. 
 

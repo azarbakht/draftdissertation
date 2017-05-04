@@ -1709,12 +1709,27 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}\\
 \end{tabular}
 
 
-
 \pagebreak
 \section{Conclusion}
 \label{Discussion}
 
-\subsection{TS}
+In this research, we investigated the pre-fork time periods for open source projects that had forked. Our aim was to investigate whether there are patterns left in the projects records that could be used to identify the pre-fork dynamics, and use them as key indicators to identify problems, and design an intervention, if needed, before the project disintegrates and the irreversible damage is done. \\
+
+Several stakeholders benefit from such important research findings, as involvement in open source software development, either as an individual developer, or a business/government sponsor, is an investment of time, energy and resources. The findings of our research helps decision-makers make better informed decisions both when choosing to be affiliated with or involved in certain open source projects, and when there have been involved in the projects.\\
+
+We analyzed both the contents and the interaction patterns of the developers in forked open source software projects, that had gone through various types of forking. Contents of the developer communication messages were analyzed using time series analysis and sentiment analysis, and the interaction patterns were analyzed using social network analysis methods for longitudinal change. \\
+
+Our findings show that the conflict-driven forks experienced a period of pre-fork negativity, manifested in the developers' communication sentiments. Our anomaly detection algorithms detected these anomalies. In contrast, the non-conflict-driven forks did not exhibit any anomalies, or showed periods of positive spikes, which is indicative of positive communication sentiments. \\
+
+Our findings also show that in conflict-driven forks, the social graph tended to have local hierarchies \cite{Snijders2010}, which was manifested as statistically significant negative three-cycles effects combined with statistically significant positive transitive triplets effects. This indicated several local hierarchies within the project community, which depending on the context, can be an indicator of several factions. \\ 
+
+Our findings also show that conflict-driven forks had communities where there existed a tendency for heavy mailing-list poster developers to be interacting with to other heavy mailing-list poster developers, which was manifested as a statistically significant out-out degree assortativity effect. In contrast, non-conflict-driven forks has communities where there existed a tendency for heavy code contributors to be interacting with other heavy code contributors, which was manifested as a statistically significant developer source code activity effect. This can be interpreted as a unhealthy vs. healthy dynamic, whereas, in the non-conflict-driven forked projects more code contributions translated into more conversations, so, the communication was backed by solid code. Whereas, in conflict-driven forked projects, the could have been much talk and not much code. One cannot help but think of Linus Torvald's quote \textit{``Talk is cheap. Show me the code.''}\\
+
+In summary, 
+
+
+
+\subsection{Time series analysis of communication sentiments}
 Here’s my data:
 The contents of the messages sent and received on the projects developers mailing
 list, for the time period of 10-month run-up to the fork.\\

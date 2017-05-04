@@ -1,5 +1,6 @@
 \documentclass[12pt]{report}
 
+\usepackage{setspace}
 \usepackage{url}
 \usepackage{epsfig} 
 \usepackage{makeidx}  % allows index generation
@@ -60,6 +61,12 @@
 \usepackage{blindtext}
 \usepackage{pdfpages}
 
+\pagestyle{myheadings}
+
+%\usepackage{fancyhdr}
+%\pagestyle{fancy}
+%\fancyhf{}
+%\fancyhead[R]{\thepage}
 
 %%%%%%%%%%%%%%%%%
 
@@ -86,6 +93,8 @@ Prof. Yelda Turkan\\
 
 \maketitle
 
+\doublespacing
+
 \tableofcontents
 
 \thispagestyle{empty}
@@ -102,11 +111,19 @@ Not everything works smoothly all the time in open source projects. Problems ari
 
 Forking in FOSS, either as an non-friendly split or a friendly divide, affects the community. Such effects have been studied, shedding light on how forking happens. However, most existing research on forking is post-hoc. In this study, we focus on the seldom-studied run-up to forking events. 
 
-We used the following two approaches to to study the evolution and social dynamics of FOSS communities; 1) Time series analysis of the contents of the messages sent and received on the projects developers mailing list, for the time period of 10-month run-up to the fork was analyzed for anomalies, indicative of simmering conflicts. 2) Social network analysis using a developer-oriented approach to statistically model the changes a community goes through in the run-up to a fork, in which the model represents tie formation, tie breakage, and tie maintenance between developers. We estimated several model parameters that capture the variance in the changes the community goes through. 
+In this research, we investigated the pre-fork time periods for open source projects that had forked. Our aim was to investigate whether there are patterns left in the projects records that could be used to identify the pre-fork dynamics, and use them as key indicators to identify problems, and design an intervention, if needed, before the project disintegrates and the irreversible damage is done. 
 
-We found that conflict-driven forks exhibited anomalies; time series analysis of sentiments showed the anomalies occurred before and close to the fork event. Whereas non-conflict-driven forks did not suffer from such pre-fork anomalies. The objective was to be able to evaluate the operational health of the project community, and intervene if need be. We suggest anomaly detection of the time series analysis may be used by the project stakeholders/investors as key indicators left in the record, that can be used to identify problems among developers, and intervene if need be.
+Several stakeholders benefit from such important research findings, as involvement in open source software development, either as an individual developer, or a business/government sponsor, is an investment of time, energy and resources. The findings of our research helps decision-makers make better informed decisions both when choosing to be affiliated with or involved in certain open source projects, and when there have been involved in the projects.
 
-We also found that in conflict-driven forks, (1) the developers maintained a preference for interacting with developers who had similar out-degrees, in contrast to the non-conflict-driven forks, where the developers did not require similar out-degrees. The interpretation may be that a projects with non-conflict-driven forks had a more inclusive and classless core developer team. (2) The interactions were reciprocal, in contrast to the non-conflict-driven forks, where the interactions did not need to be reciprocal to happen. The interpretation may be that the projects with non-conflict-driven forks were more open to interactions whether or not they would get something back in return from the other developer. (3) In conflict-driven forks, the more senior developers preferred to interact with other more senior developers, in contrast to the non-conflict-driven forks. The interpretation may be that the senior developers in projects with conflict-driven forks were less involved with junior developers than in projects with non-conflict-driven forks. (4) In non-conflict-driven forks, the developers with high source code contribution levels interacted more with other high source code contributors. (5) In non-conflict-driven forks, high levels of contribution to the source code brings you connections more rapidly, while high levels of contributions to the mailing list is not suggestive of this. This can be interpreted as a sign of meritocracy based on code, rather than talk, which captures a healthy dynamic in these project.
+We analyzed both the contents and the interaction patterns of the developers in forked open source software projects, that had gone through various types of forking. Contents of the developer communication messages were analyzed using time series analysis and sentiment analysis, and the interaction patterns were analyzed using social network analysis methods for longitudinal change. 
+
+Our findings show that the conflict-driven forks experienced a period of pre-fork negativity, manifested in the developers' communication sentiments. Our anomaly detection algorithms detected these anomalies. In contrast, the non-conflict-driven forks did not exhibit any anomalies, or showed periods of positive spikes, which is indicative of positive communication sentiments. 
+
+Our findings also show that in conflict-driven forks, the social graph tended to have local hierarchies \cite{Snijders2010}, which was manifested as statistically significant negative three-cycles effects combined with statistically significant positive transitive triplets effects. This indicated several local hierarchies within the project community, which depending on the context, can be an indicator of several factions.
+
+Our findings also show that conflict-driven forks had communities where there existed a tendency for heavy mailing-list poster developers to be interacting with to other heavy mailing-list poster developers, which was manifested as a statistically significant out-out degree assortativity effect. In contrast, non-conflict-driven forks has communities where there existed a tendency for heavy code contributors to be interacting with other heavy code contributors, which was manifested as a statistically significant developer source code activity effect. This can be interpreted as a unhealthy vs. healthy dynamic, whereas, in the non-conflict-driven forked projects more code contributions translated into more conversations, so, the communication was backed by solid code. Whereas, in conflict-driven forked projects, the could have been much talk and not much code. One cannot help but think of Linus Torvald's quote \textit{``Talk is cheap. Show me the code.''}
+
+In summary, we represented longitudinal dynamics in conflict-driven vs. non-conflict-driven forks. We suggested indicators of unhealthy dynamics to suggest intervention. We detected pre-fork anomalies suggestive of negative communication sentiments, and we expressed underlying properties and values of community behavior as model effects with their statistical significance. Further research is needed to be able to generalize. This is a good starting point for gaining an understanding of longitudinal changes of underlying properties of an open source projects' community.
 
 \pagebreak
 
@@ -1725,11 +1742,7 @@ Our findings also show that in conflict-driven forks, the social graph tended to
 
 Our findings also show that conflict-driven forks had communities where there existed a tendency for heavy mailing-list poster developers to be interacting with to other heavy mailing-list poster developers, which was manifested as a statistically significant out-out degree assortativity effect. In contrast, non-conflict-driven forks has communities where there existed a tendency for heavy code contributors to be interacting with other heavy code contributors, which was manifested as a statistically significant developer source code activity effect. This can be interpreted as a unhealthy vs. healthy dynamic, whereas, in the non-conflict-driven forked projects more code contributions translated into more conversations, so, the communication was backed by solid code. Whereas, in conflict-driven forked projects, the could have been much talk and not much code. One cannot help but think of Linus Torvald's quote \textit{``Talk is cheap. Show me the code.''}\\
 
-In summary, 
-
-
-
-
+In summary, we represented longitudinal dynamics in conflict-driven vs. non-conflict-driven forks. We suggested indicators of unhealthy dynamics to suggest intervention. We detected pre-fork anomalies suggestive of negative communication sentiments, and we expressed underlying properties and values of community behavior as model effects with their statistical significance. Further research is needed to be able to generalize. This is a good starting point for gaining an understanding of longitudinal changes of underlying properties of an open source projects' community.\\
 
 
 

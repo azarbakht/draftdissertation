@@ -150,7 +150,7 @@ In this research, we use time series analysis and longitudinal social network an
 
 \begin{table}[!ht]
 \centering
-\caption[The main reasons for forking]{The main reasons for forking as classified by Robles and Gonzalez-Barahona \cite{Robles}}
+\caption[The main reasons for forking]{Robles and Gonzalez-Barahona \cite{Robles} defined the following categories as the reasons for forking.}
 \label{tableReasonsForForking}
 \begin{tabular}{p{0.5\columnwidth} p{0.4\columnwidth}}
 \hline\noalign{\smallskip}
@@ -168,25 +168,25 @@ Legal issues & X.Org \& XFree\\
 \end{table}
 
 
-\begin{table}[!ht]
-\centering
-\caption[The frequency of main reasons for forking]{The frequency of main reasons for forking as classified by Robles and Gonzalez-Barahona \cite{Robles}}
-\label{tableReasonsForForkingFrequency}
-\begin{tabular}{p{0.6\columnwidth} p{0.2\columnwidth}}
-\hline\noalign{\smallskip}
-\textbf{Reason} & \textbf{Frequency} \\
-\noalign{\smallskip}\hline\noalign{\smallskip}
-Technical & 60 (27.3\%)\\ \hline
-Discontinuation of the original project & 44 (20.0\%)  \\ \hline
-More community-driven development & 29 (13.2\%) \\ \hline
-Legal issues &  24 (10.9\%) \\ \hline
-Commercial strategy forks &  20 (9.1\%)  \\ \hline
-Differences among developer team &  16 (7.3\%)  \\ \hline
-Experimental &  5  (2.3\%) \\ \hline
-Not Found &  22 (10.0\%) \\ 
-\noalign{\smallskip}\hline
-\end{tabular}
-\end{table}
+%\begin{table}[!ht]
+%\centering
+%\caption[The frequency of main reasons for forking]{The frequency of main reasons for forking as classified by Robles and Gonzalez-Barahona \cite{Robles}}
+%\label{tableReasonsForForkingFrequency}
+%\begin{tabular}{p{0.6\columnwidth} p{0.2\columnwidth}}
+%\hline\noalign{\smallskip}
+%\textbf{Reason} & \textbf{Frequency} \\
+%\noalign{\smallskip}\hline\noalign{\smallskip}
+%Technical & 60 (27.3\%)\\ \hline
+%Discontinuation of the original project & 44 (20.0\%)  \\ \hline
+%More community-driven development & 29 (13.2\%) \\ \hline
+%Legal issues &  24 (10.9\%) \\ \hline
+%Commercial strategy forks &  20 (9.1\%)  \\ \hline
+%Differences among developer team &  16 (7.3\%)  \\ \hline
+%Experimental &  5  (2.3\%) \\ \hline
+%Not Found &  22 (10.0\%) \\ 
+%\noalign{\smallskip}\hline
+%\end{tabular}
+%\end{table}
 
 %\begin{figure} [!ht]
 %\centering
@@ -200,28 +200,31 @@ Not Found &  22 (10.0\%) \\
 
 Social interactions reflect the changes the community goes through, and so, it can be used to describe the context surrounding a forking event. Social interactions in FOSS can happen, for example, in the form of mailing list email correspondence, and source code co-authoring. 
 
-We consider the following three of the seven reasons for forking \cite{Robles} to be socially related: (1) Personal differences among developer team, (2) The need for more community-driven development, and (3) Technical differences for addition of functionality. 
-
-\begin{table}[!ht]
-\centering
-\caption[The socially-related forking reasons]{The socially-related reasons for forking }
-\label{tableReasonsForForkingSociallyRelated}
-\begin{tabular}{p{0.6\columnwidth} p{0.2\columnwidth}}
-\hline\noalign{\smallskip}
-\textbf{Reason} & \textbf{Frequency} \\
-\noalign{\smallskip}\hline\noalign{\smallskip}
-Differences among developer team &  16 (7.3\%)  \\ \hline
-More community-driven development & 29 (13.2\%) \\ \hline
-Technical & 60 (27.3\%)\\ 
-\noalign{\smallskip}\hline
-\end{tabular}
-\end{table}
-
-By socially-related, we mean, the forking categories that should have left traces in the developers' interactions data. Such traces may be identified using longitudinal modeling of the interactions, without digging into the contents of the communications. These three reasons are (1) Personal differences among developer team, (2) The need for more community-driven development, and (3) Technical differences for addition of functionality. 
+%We consider the following three of the seven reasons for forking \cite{Robles} to be socially related: (1) Personal differences among developer team, (2) The need for more community-driven development, and (3) Technical differences for addition of functionality. 
+%
+%\begin{table}[!ht]
+%\centering
+%\caption[The socially-related forking reasons]{The socially-related reasons for forking }
+%\label{tableReasonsForForkingSociallyRelated}
+%\begin{tabular}{p{0.6\columnwidth} p{0.2\columnwidth}}
+%\hline\noalign{\smallskip}
+%\textbf{Reason} & \textbf{Frequency} \\
+%\noalign{\smallskip}\hline\noalign{\smallskip}
+%Differences among developer team &  16 (7.3\%)  \\ \hline
+%More community-driven development & 29 (13.2\%) \\ \hline
+%Technical & 60 (27.3\%)\\ 
+%\noalign{\smallskip}\hline
+%\end{tabular}
+%\end{table}
+%
+%By socially-related, we mean, the forking categories that should have left traces in the developers' interactions data. Such traces may be identified using longitudinal modeling of the interactions, without digging into the contents of the communications. These three reasons are (1) Personal differences among developer team, (2) The need for more community-driven development, and (3) Technical differences for addition of functionality. 
 
 %The other categories could be the focus of another research study, whose scope does not have a large overlap with the scope of this study. \\
 
 %As an example of how these traces of forking can be identified, if a fork occurred because of a desire for ``more community-driven development'', we should see interaction patterns in the collaboration data showing a strongly-connected core that is hard to penetrate for the rest of the community (i.e. the power stayed in the hands of the same people throughout, as developers joined and left.)
+
+For the rest of the discussion, we define conflict-driven forks as projects that have forked for personal differences, and non-conflict driven forks as projects that have forked for technical experimentation, and were not forked for personal differences. 
+
 
 \subsection{Research Goals}
 
@@ -327,38 +330,7 @@ To analyze the raw time series data, we decomposed the raw series into the trend
 
 To detect outliers, we used the R (Statistical Computing) \cite{R} package tsoutliers \cite{Lopez} for outlier detection by estimating outlier effects for four types of outliers. We found the outliers and fitted models to the series with the outlier effects removed. Failing to adjust for outliers can result in wrong models or biased parameter estimates, and increased forecasting error. The four models for outlier effect that we looked for were Additive outlier (AO), Level shift (LS), Temporary change (TC), and Innovational outlier (IO).
 
-Figures \ref{figureOutliers_1to4}-\ref{figureOutliers_9to12} show the detected outliers in the sentiments time series, and includes both the original and adjusted time series, as well as the outlier effects.
-
-\begin{figure}[!htbp]
-\centering
-\epsfig{file=PLOTS_PDF/O_1.pdf, width=1\columnwidth}
-\epsfig{file=PLOTS_PDF/O_2.pdf, width=1\columnwidth}
-\epsfig{file=PLOTS_PDF/O_3.pdf, width=0.5\columnwidth}
-\caption{Time series with outliers detected for projects (From top) Kamailio, ffmpeg, Amarok. Our analysis did not find any outliers for Apache CouchDB.}
-\label{figureOutliers_1to4}
-\end{figure}
-
-\begin{figure}[!htbp]
-\centering
-\epsfig{file=PLOTS_PDF/O_5.pdf, width=0.6\columnwidth}
-\epsfig{file=PLOTS_PDF/O_6.pdf, width=0.6\columnwidth}
-\epsfig{file=PLOTS_PDF/O_7.pdf, width=0.6\columnwidth}
-\epsfig{file=PLOTS_PDF/O_9.pdf, width=0.6\columnwidth}
-
-\caption{Time series with outliers detected for projects (From top) Pidgin, MPlayer, Asterisk, and freeglut. Our analysis did not succussfully analyse the rdesktop data.}
-\label{figureOutliers_5to8}
-\end{figure}
-
-
-\begin{figure}[!htbp]
-\centering
-
-\epsfig{file=PLOTS_PDF/O_10.pdf, width=0.7\columnwidth}
-\epsfig{file=PLOTS_PDF/O_11.pdf, width=0.7\columnwidth}
-\epsfig{file=PLOTS_PDF/O_12.pdf, width=0.7\columnwidth}
-\caption{Time series with outliers detected for projects (From top) Ceph, OpenStack Neutron, and GlusterFS.}
-\label{figureOutliers_9to12}
-\end{figure}
+Figures \ref{figureOutliers_1}-\ref{figureOutliers_12} show the detected outliers in the sentiments time series, and includes both the original and adjusted time series, as well as the outlier effects.
 
 \paragraph{Outlier Detection Models}
 
@@ -618,6 +590,79 @@ No anomalies were detected in the time series of sentiments for project Apache C
 %\input{R_Environment_Variables/outlier_table_project_4.tex}\\
 
 The description of these anomalies and how can they be used is discussed in section \ref{Discussion}.
+
+\begin{figure}
+\centering
+\epsfig{file=PLOTS_PDF/O_1.pdf, width=0.7\columnwidth}
+\caption{Time series with outliers detected for project Kamailio.}
+\label{figureOutliers_1}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\epsfig{file=PLOTS_PDF/O_2.pdf, width=0.7\columnwidth}
+\caption{Time series with outliers detected for project ffmpeg.}
+\label{figureOutliers_2}
+\end{figure}
+
+\begin{figure}
+\centering
+\epsfig{file=PLOTS_PDF/O_3.pdf, width=0.7\columnwidth}
+\caption{Time series with outliers detected for project Amarok. Our analysis did not find any outliers for Apache CouchDB.}
+\label{figureOutliers_3}
+\end{figure}
+
+\begin{figure}
+\centering
+\epsfig{file=PLOTS_PDF/O_5.pdf, width=0.7\columnwidth}
+\caption{Time series with outliers detected for project Pidgin.}
+\label{figureOutliers_5}
+\end{figure}
+
+\begin{figure}
+\centering
+\epsfig{file=PLOTS_PDF/O_6.pdf, width=0.7\columnwidth}
+\caption{Time series with outliers detected for project MPlayer.}
+\label{figureOutliers_6}
+\end{figure}
+
+\begin{figure}
+\centering
+\epsfig{file=PLOTS_PDF/O_7.pdf, width=0.7\columnwidth}
+\caption{Time series with outliers detected for project Asterisk.}
+\label{figureOutliers_7}
+\end{figure}
+
+\begin{figure}
+\centering
+\epsfig{file=PLOTS_PDF/O_9.pdf, width=0.7\columnwidth}
+\caption{Time series with outliers detected for project freeglut.}
+\label{figureOutliers_9}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\epsfig{file=PLOTS_PDF/O_10.pdf, width=0.7\columnwidth}
+\caption{Time series with outliers detected for project Ceph.}
+\label{figureOutliers_10}
+\end{figure}
+
+\begin{figure}
+\centering
+\epsfig{file=PLOTS_PDF/O_11.pdf, width=0.7\columnwidth}
+\caption{Time series with outliers detected for project OpenStack Neutron.}
+\label{figureOutliers_11}
+\end{figure}
+
+\begin{figure}
+\centering
+\epsfig{file=PLOTS_PDF/O_12.pdf, width=0.7\columnwidth}
+\caption{Time series with outliers detected for project GlusterFS.}
+\label{figureOutliers_12}
+\end{figure}
+
 
 \pagebreak
 

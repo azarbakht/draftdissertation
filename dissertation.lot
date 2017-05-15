@@ -1,14 +1,14 @@
 \contentsline {table}{\numberline {1}{\ignorespaces The main reasons for forking}}{15}{table.caption.4}
 \contentsline {table}{\numberline {2}{\ignorespaces The behavioral measures used by Asur et al. \cite {Asur}\relax }}{20}{table.caption.9}
-\contentsline {table}{\numberline {3}{\ignorespaces The measures of diversity used by Kunegis et al. \cite {Kunegis}\relax }}{21}{table.caption.10}
-\contentsline {table}{\numberline {4}{\ignorespaces Anomalies detected in the time series of sentiments for project Kamailio\relax }}{33}{table.caption.16}
-\contentsline {table}{\numberline {5}{\ignorespaces Anomalies detected in the time series of sentiments for project ffmpeg\relax }}{33}{table.caption.17}
-\contentsline {table}{\numberline {6}{\ignorespaces Anomalies detected in the time series of sentiments for project Amarok\relax }}{33}{table.caption.18}
-\contentsline {table}{\numberline {7}{\ignorespaces Anomalies detected in the time series of sentiments for project Pidgin\relax }}{33}{table.caption.19}
+\contentsline {table}{\numberline {3}{\ignorespaces The measures of diversity used by Kunegis et al. \cite {Kunegis}\relax }}{22}{table.caption.10}
+\contentsline {table}{\numberline {4}{\ignorespaces Anomalies detected in the time series of sentiments for project Kamailio\relax }}{28}{table.caption.16}
+\contentsline {table}{\numberline {5}{\ignorespaces Anomalies detected in the time series of sentiments for project ffmpeg\relax }}{28}{table.caption.17}
+\contentsline {table}{\numberline {6}{\ignorespaces Anomalies detected in the time series of sentiments for project Amarok\relax }}{28}{table.caption.18}
+\contentsline {table}{\numberline {7}{\ignorespaces Anomalies detected in the time series of sentiments for project Pidgin\relax }}{34}{table.caption.19}
 \contentsline {table}{\numberline {8}{\ignorespaces Anomalies detected in the time series of sentiments for project MPlayer\relax }}{34}{table.caption.20}
 \contentsline {table}{\numberline {9}{\ignorespaces Anomalies detected in the time series of sentiments for project Asterisk\relax }}{34}{table.caption.21}
 \contentsline {table}{\numberline {10}{\ignorespaces Anomalies detected in the time series of sentiments for project rdesktop\relax }}{34}{table.caption.22}
-\contentsline {table}{\numberline {11}{\ignorespaces Anomalies detected in the time series of sentiments for project freeglut\relax }}{34}{table.caption.23}
+\contentsline {table}{\numberline {11}{\ignorespaces Anomalies detected in the time series of sentiments for project freeglut\relax }}{35}{table.caption.23}
 \contentsline {table}{\numberline {12}{\ignorespaces List of projects in U.F. H.F., and No.F. categories selected based on the criteria described in section \ref {DataCollection} for our study\relax }}{45}{table.caption.36}
 \contentsline {table}{\numberline {13}{\ignorespaces Estimates parameters in the model for Project Kamailio\relax }}{68}{table.0.13}
 \contentsline {table}{\numberline {14}{\ignorespaces Estimates parameters in the model for Project ffmpeg\relax }}{69}{table.0.14}

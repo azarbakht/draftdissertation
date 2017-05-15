@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  15 MAY 2017 14:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  15 MAY 2017 15:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1024,7 +1024,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.27 ...ts and discussion}{101}{subsection.1..2.2}
+l.27 ...lts and discussion}{91}{subsection.1..2.2}
                                                    [1
 
 ])
@@ -1920,7 +1920,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2220.
 Here is how much of TeX's memory you used:
  24761 strings out of 494985
  454102 string characters out of 6180356
- 644967 words of memory out of 5000000
+ 646959 words of memory out of 5000000
  27114 multiletter control sequences out of 15000+600000
  11465 words of font info for 41 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -1941,7 +1941,7 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on dissertation.pdf (113 pages, 3327472 bytes).
+Output written on dissertation.pdf (113 pages, 3327927 bytes).
 PDF statistics:
  1537 PDF objects out of 1728 (max. 8388607)
  1288 compressed objects within 13 object streams

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  15 MAY 2017 14:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  15 MAY 2017 14:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1142,40 +1142,39 @@ Overfull \hbox (41.61346pt too wide) in paragraph at lines 402--408
 [] [] 
  []
 
-[27] <PLOTS_PDF/TS_7.pdf, id=500, 794.97pt x 542.025pt>
+<PLOTS_PDF/TS_7.pdf, id=493, 794.97pt x 542.025pt>
 File: PLOTS_PDF/TS_7.pdf Graphic file (type pdf)
-
-<use PLOTS_PDF/TS_7.pdf>
+ <use PLOTS_PDF/TS_7.pdf>
 Package pdftex.def Info: PLOTS_PDF/TS_7.pdf used on input line 414.
 (pdftex.def)             Requested size: 214.50119pt x 146.24945pt.
- <PLOTS_PDF/TS_8.pdf, id=501, 794.97pt x 542.025pt>
-File: PLOTS_PDF/TS_8.pdf Graphic file (type pdf)
 
-<use PLOTS_PDF/TS_8.pdf>
+<PLOTS_PDF/TS_8.pdf, id=494, 794.97pt x 542.025pt>
+File: PLOTS_PDF/TS_8.pdf Graphic file (type pdf)
+ <use PLOTS_PDF/TS_8.pdf>
 Package pdftex.def Info: PLOTS_PDF/TS_8.pdf used on input line 415.
 (pdftex.def)             Requested size: 214.50119pt x 146.24945pt.
- <PLOTS_PDF/TS_9.pdf, id=502, 794.97pt x 542.025pt>
-File: PLOTS_PDF/TS_9.pdf Graphic file (type pdf)
 
-<use PLOTS_PDF/TS_9.pdf>
+<PLOTS_PDF/TS_9.pdf, id=495, 794.97pt x 542.025pt>
+File: PLOTS_PDF/TS_9.pdf Graphic file (type pdf)
+ <use PLOTS_PDF/TS_9.pdf>
 Package pdftex.def Info: PLOTS_PDF/TS_9.pdf used on input line 416.
 (pdftex.def)             Requested size: 214.50119pt x 146.24945pt.
- <PLOTS_PDF/TS_10.pdf, id=503, 794.97pt x 542.025pt>
-File: PLOTS_PDF/TS_10.pdf Graphic file (type pdf)
 
-<use PLOTS_PDF/TS_10.pdf>
+<PLOTS_PDF/TS_10.pdf, id=496, 794.97pt x 542.025pt>
+File: PLOTS_PDF/TS_10.pdf Graphic file (type pdf)
+ <use PLOTS_PDF/TS_10.pdf>
 Package pdftex.def Info: PLOTS_PDF/TS_10.pdf used on input line 417.
 (pdftex.def)             Requested size: 214.50119pt x 146.24945pt.
- <PLOTS_PDF/TS_11.pdf, id=504, 794.97pt x 542.025pt>
-File: PLOTS_PDF/TS_11.pdf Graphic file (type pdf)
 
-<use PLOTS_PDF/TS_11.pdf>
+<PLOTS_PDF/TS_11.pdf, id=497, 794.97pt x 542.025pt>
+File: PLOTS_PDF/TS_11.pdf Graphic file (type pdf)
+ <use PLOTS_PDF/TS_11.pdf>
 Package pdftex.def Info: PLOTS_PDF/TS_11.pdf used on input line 418.
 (pdftex.def)             Requested size: 214.50119pt x 146.24945pt.
- <PLOTS_PDF/TS_12.pdf, id=505, 794.97pt x 542.025pt>
-File: PLOTS_PDF/TS_12.pdf Graphic file (type pdf)
 
-<use PLOTS_PDF/TS_12.pdf>
+<PLOTS_PDF/TS_12.pdf, id=498, 794.97pt x 542.025pt>
+File: PLOTS_PDF/TS_12.pdf Graphic file (type pdf)
+ <use PLOTS_PDF/TS_12.pdf>
 Package pdftex.def Info: PLOTS_PDF/TS_12.pdf used on input line 419.
 (pdftex.def)             Requested size: 214.50119pt x 146.24945pt.
 
@@ -1193,25 +1192,25 @@ Overfull \hbox (41.61346pt too wide) in paragraph at lines 414--420
 [] [] 
  []
 
-<PLOTS_PDF/D_1.pdf, id=508, 794.97pt x 939.51pt>
+<PLOTS_PDF/D_1.pdf, id=501, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_1.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_1.pdf>
 Package pdftex.def Info: PLOTS_PDF/D_1.pdf used on input line 427.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
-<PLOTS_PDF/D_2.pdf, id=509, 794.97pt x 939.51pt>
+<PLOTS_PDF/D_2.pdf, id=502, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_2.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_2.pdf>
 Package pdftex.def Info: PLOTS_PDF/D_2.pdf used on input line 428.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
-<PLOTS_PDF/D_3.pdf, id=510, 794.97pt x 939.51pt>
+<PLOTS_PDF/D_3.pdf, id=503, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_3.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_3.pdf>
 Package pdftex.def Info: PLOTS_PDF/D_3.pdf used on input line 429.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
-<PLOTS_PDF/D_4.pdf, id=511, 794.97pt x 939.51pt>
+<PLOTS_PDF/D_4.pdf, id=504, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_4.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_4.pdf>
 Package pdftex.def Info: PLOTS_PDF/D_4.pdf used on input line 430.
@@ -1229,25 +1228,25 @@ Overfull \hbox (57.2168pt too wide) in paragraph at lines 427--431
 
 LaTeX Warning: Float too large for page by 31.43388pt on input line 433.
 
-<PLOTS_PDF/D_5.pdf, id=512, 794.97pt x 939.51pt>
+<PLOTS_PDF/D_5.pdf, id=505, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_5.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_5.pdf>
 Package pdftex.def Info: PLOTS_PDF/D_5.pdf used on input line 436.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
-<PLOTS_PDF/D_6.pdf, id=513, 794.97pt x 939.51pt>
+<PLOTS_PDF/D_6.pdf, id=506, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_6.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_6.pdf>
 Package pdftex.def Info: PLOTS_PDF/D_6.pdf used on input line 437.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
-<PLOTS_PDF/D_7.pdf, id=514, 794.97pt x 939.51pt>
+<PLOTS_PDF/D_7.pdf, id=507, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_7.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_7.pdf>
 Package pdftex.def Info: PLOTS_PDF/D_7.pdf used on input line 438.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
-<PLOTS_PDF/D_8.pdf, id=515, 794.97pt x 939.51pt>
+<PLOTS_PDF/D_8.pdf, id=508, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_8.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_8.pdf>
 Package pdftex.def Info: PLOTS_PDF/D_8.pdf used on input line 439.
@@ -1265,25 +1264,25 @@ Overfull \hbox (57.2168pt too wide) in paragraph at lines 436--440
 
 LaTeX Warning: Float too large for page by 31.43388pt on input line 442.
 
-<PLOTS_PDF/D_9.pdf, id=516, 794.97pt x 939.51pt>
+<PLOTS_PDF/D_9.pdf, id=509, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_9.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_9.pdf>
 Package pdftex.def Info: PLOTS_PDF/D_9.pdf used on input line 445.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
-<PLOTS_PDF/D_10.pdf, id=517, 794.97pt x 939.51pt>
+<PLOTS_PDF/D_10.pdf, id=510, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_10.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_10.pdf>
 Package pdftex.def Info: PLOTS_PDF/D_10.pdf used on input line 446.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
-<PLOTS_PDF/D_11.pdf, id=518, 794.97pt x 939.51pt>
+<PLOTS_PDF/D_11.pdf, id=511, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_11.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_11.pdf>
 Package pdftex.def Info: PLOTS_PDF/D_11.pdf used on input line 447.
 (pdftex.def)             Requested size: 222.30286pt x 262.71695pt.
 
-<PLOTS_PDF/D_12.pdf, id=519, 794.97pt x 939.51pt>
+<PLOTS_PDF/D_12.pdf, id=512, 794.97pt x 939.51pt>
 File: PLOTS_PDF/D_12.pdf Graphic file (type pdf)
  <use PLOTS_PDF/D_12.pdf>
 Package pdftex.def Info: PLOTS_PDF/D_12.pdf used on input line 448.
@@ -1306,80 +1305,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 591--593
 
  []
 
-[28] [29 <./PLOTS_PDF/TS_1.pdf> <./PLOTS_PDF/TS_2.pdf> <./PLOTS_PDF/TS_3.pdf> <
-./PLOTS_PDF/TS_4.pdf> <./PLOTS_PDF/TS_5.pdf> <./PLOTS_PDF/TS_6.pdf>] [30 <./PLO
+[27] [28 <./PLOTS_PDF/TS_1.pdf> <./PLOTS_PDF/TS_2.pdf> <./PLOTS_PDF/TS_3.pdf> <
+./PLOTS_PDF/TS_4.pdf> <./PLOTS_PDF/TS_5.pdf> <./PLOTS_PDF/TS_6.pdf>] [29 <./PLO
 TS_PDF/TS_7.pdf> <./PLOTS_PDF/TS_8.pdf> <./PLOTS_PDF/TS_9.pdf> <./PLOTS_PDF/TS_
-10.pdf> <./PLOTS_PDF/TS_11.pdf> <./PLOTS_PDF/TS_12.pdf>] [31 <./PLOTS_PDF/D_1.p
-df> <./PLOTS_PDF/D_2.pdf> <./PLOTS_PDF/D_3.pdf> <./PLOTS_PDF/D_4.pdf>] [32 <./P
+10.pdf> <./PLOTS_PDF/TS_11.pdf> <./PLOTS_PDF/TS_12.pdf>] [30 <./PLOTS_PDF/D_1.p
+df> <./PLOTS_PDF/D_2.pdf> <./PLOTS_PDF/D_3.pdf> <./PLOTS_PDF/D_4.pdf>] [31 <./P
 LOTS_PDF/D_5.pdf> <./PLOTS_PDF/D_6.pdf> <./PLOTS_PDF/D_7.pdf> <./PLOTS_PDF/D_8.
-pdf>] [33 <./PLOTS_PDF/D_9.pdf> <./PLOTS_PDF/D_10.pdf> <./PLOTS_PDF/D_11.pdf> <
-./PLOTS_PDF/D_12.pdf>] [34] <PLOTS_PDF/O_1.pdf, id=696, 794.97pt x 542.025pt>
+pdf>] [32 <./PLOTS_PDF/D_9.pdf> <./PLOTS_PDF/D_10.pdf> <./PLOTS_PDF/D_11.pdf> <
+./PLOTS_PDF/D_12.pdf>] [33] [34]
+<PLOTS_PDF/O_1.pdf, id=696, 794.97pt x 542.025pt>
 File: PLOTS_PDF/O_1.pdf Graphic file (type pdf)
-
-<use PLOTS_PDF/O_1.pdf>
+ <use PLOTS_PDF/O_1.pdf>
 Package pdftex.def Info: PLOTS_PDF/O_1.pdf used on input line 598.
 (pdftex.def)             Requested size: 272.99881pt x 186.13867pt.
- <PLOTS_PDF/O_2.pdf, id=697, 794.97pt x 542.025pt>
-File: PLOTS_PDF/O_2.pdf Graphic file (type pdf)
 
-<use PLOTS_PDF/O_2.pdf>
+<PLOTS_PDF/O_2.pdf, id=697, 794.97pt x 542.025pt>
+File: PLOTS_PDF/O_2.pdf Graphic file (type pdf)
+ <use PLOTS_PDF/O_2.pdf>
 Package pdftex.def Info: PLOTS_PDF/O_2.pdf used on input line 606.
 (pdftex.def)             Requested size: 272.99881pt x 186.13867pt.
- <PLOTS_PDF/O_3.pdf, id=698, 794.97pt x 542.025pt>
-File: PLOTS_PDF/O_3.pdf Graphic file (type pdf)
 
-<use PLOTS_PDF/O_3.pdf>
+<PLOTS_PDF/O_3.pdf, id=698, 794.97pt x 542.025pt>
+File: PLOTS_PDF/O_3.pdf Graphic file (type pdf)
+ <use PLOTS_PDF/O_3.pdf>
 Package pdftex.def Info: PLOTS_PDF/O_3.pdf used on input line 613.
 (pdftex.def)             Requested size: 272.99881pt x 186.13867pt.
- <PLOTS_PDF/O_5.pdf, id=699, 794.97pt x 542.025pt>
-File: PLOTS_PDF/O_5.pdf Graphic file (type pdf)
 
-<use PLOTS_PDF/O_5.pdf>
+<PLOTS_PDF/O_5.pdf, id=699, 794.97pt x 542.025pt>
+File: PLOTS_PDF/O_5.pdf Graphic file (type pdf)
+ <use PLOTS_PDF/O_5.pdf>
 Package pdftex.def Info: PLOTS_PDF/O_5.pdf used on input line 620.
 (pdftex.def)             Requested size: 272.99881pt x 186.13867pt.
- <PLOTS_PDF/O_6.pdf, id=700, 794.97pt x 542.025pt>
-File: PLOTS_PDF/O_6.pdf Graphic file (type pdf)
 
-<use PLOTS_PDF/O_6.pdf>
+<PLOTS_PDF/O_6.pdf, id=700, 794.97pt x 542.025pt>
+File: PLOTS_PDF/O_6.pdf Graphic file (type pdf)
+ <use PLOTS_PDF/O_6.pdf>
 Package pdftex.def Info: PLOTS_PDF/O_6.pdf used on input line 627.
 (pdftex.def)             Requested size: 272.99881pt x 186.13867pt.
- <PLOTS_PDF/O_7.pdf, id=701, 794.97pt x 542.025pt>
-File: PLOTS_PDF/O_7.pdf Graphic file (type pdf)
 
-<use PLOTS_PDF/O_7.pdf>
+<PLOTS_PDF/O_7.pdf, id=701, 794.97pt x 542.025pt>
+File: PLOTS_PDF/O_7.pdf Graphic file (type pdf)
+ <use PLOTS_PDF/O_7.pdf>
 Package pdftex.def Info: PLOTS_PDF/O_7.pdf used on input line 634.
 (pdftex.def)             Requested size: 272.99881pt x 186.13867pt.
- <PLOTS_PDF/O_9.pdf, id=702, 794.97pt x 542.025pt>
-File: PLOTS_PDF/O_9.pdf Graphic file (type pdf)
 
-<use PLOTS_PDF/O_9.pdf>
+<PLOTS_PDF/O_9.pdf, id=702, 794.97pt x 542.025pt>
+File: PLOTS_PDF/O_9.pdf Graphic file (type pdf)
+ <use PLOTS_PDF/O_9.pdf>
 Package pdftex.def Info: PLOTS_PDF/O_9.pdf used on input line 641.
 (pdftex.def)             Requested size: 272.99881pt x 186.13867pt.
- <PLOTS_PDF/O_10.pdf, id=703, 794.97pt x 542.025pt>
-File: PLOTS_PDF/O_10.pdf Graphic file (type pdf)
 
-<use PLOTS_PDF/O_10.pdf>
+<PLOTS_PDF/O_10.pdf, id=703, 794.97pt x 542.025pt>
+File: PLOTS_PDF/O_10.pdf Graphic file (type pdf)
+ <use PLOTS_PDF/O_10.pdf>
 Package pdftex.def Info: PLOTS_PDF/O_10.pdf used on input line 649.
 (pdftex.def)             Requested size: 272.99881pt x 186.13867pt.
- <PLOTS_PDF/O_11.pdf, id=704, 794.97pt x 542.025pt>
-File: PLOTS_PDF/O_11.pdf Graphic file (type pdf)
 
-<use PLOTS_PDF/O_11.pdf>
+<PLOTS_PDF/O_11.pdf, id=704, 794.97pt x 542.025pt>
+File: PLOTS_PDF/O_11.pdf Graphic file (type pdf)
+ <use PLOTS_PDF/O_11.pdf>
 Package pdftex.def Info: PLOTS_PDF/O_11.pdf used on input line 656.
 (pdftex.def)             Requested size: 272.99881pt x 186.13867pt.
- <PLOTS_PDF/O_12.pdf, id=705, 794.97pt x 542.025pt>
-File: PLOTS_PDF/O_12.pdf Graphic file (type pdf)
 
-<use PLOTS_PDF/O_12.pdf>
+<PLOTS_PDF/O_12.pdf, id=705, 794.97pt x 542.025pt>
+File: PLOTS_PDF/O_12.pdf Graphic file (type pdf)
+ <use PLOTS_PDF/O_12.pdf>
 Package pdftex.def Info: PLOTS_PDF/O_12.pdf used on input line 663.
 (pdftex.def)             Requested size: 272.99881pt x 186.13867pt.
- [35 <./PLOTS_PDF/O_1.pdf>] [36 <./PLOTS_PDF/O_2.pdf> <./PLOTS_PDF/O_3.pdf>] [3
-7 <./PLOTS_PDF/O_5.pdf> <./PLOTS_PDF/O_6.pdf>] [38 <./PLOTS_PDF/O_7.pdf> <./PLO
-TS_PDF/O_9.pdf>] [39 <./PLOTS_PDF/O_10.pdf> <./PLOTS_PDF/O_11.pdf>]
+
+[35 <./PLOTS_PDF/O_1.pdf>] [36 <./PLOTS_PDF/O_2.pdf> <./PLOTS_PDF/O_3.pdf>]
+[37 <./PLOTS_PDF/O_5.pdf> <./PLOTS_PDF/O_6.pdf>] [38 <./PLOTS_PDF/O_7.pdf> <./P
+LOTS_PDF/O_9.pdf>] [39 <./PLOTS_PDF/O_10.pdf> <./PLOTS_PDF/O_11.pdf>]
 Missing character: There is no â in font cmbx12!
 Missing character: There is no € in font cmbx12!
 Missing character: There is no ™ in font cmbx12!
- <epc-flow-charts.pdf, id=784, 557.01099pt x 478.91924pt>
+
+<epc-flow-charts.pdf, id=784, 557.01099pt x 478.91924pt>
 File: epc-flow-charts.pdf Graphic file (type pdf)
 
 <use epc-flow-charts.pdf>
@@ -1956,7 +1957,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2207.
 Here is how much of TeX's memory you used:
  24286 strings out of 494985
  448551 string characters out of 6180356
- 545653 words of memory out of 5000000
+ 547653 words of memory out of 5000000
  26647 multiletter control sequences out of 15000+600000
  11465 words of font info for 41 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -1977,7 +1978,7 @@ are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on dissertation.pdf (113 pages, 3326859 bytes).
+Output written on dissertation.pdf (113 pages, 3326844 bytes).
 PDF statistics:
  1534 PDF objects out of 1728 (max. 8388607)
  1285 compressed objects within 13 object streams

@@ -1,25 +1,25 @@
 \contentsline {table}{\numberline {1}{\ignorespaces The main reasons for forking}}{15}{table.caption.4}
 \contentsline {table}{\numberline {2}{\ignorespaces The behavioral measures used by Asur et al. \cite {Asur}\relax }}{20}{table.caption.9}
 \contentsline {table}{\numberline {3}{\ignorespaces The measures of diversity used by Kunegis et al. \cite {Kunegis}\relax }}{22}{table.caption.10}
-\contentsline {table}{\numberline {4}{\ignorespaces Projects in conflict-driven forks and non-conflict driven forks categories selected and analyzed based on the criteria described in section \ref {DataCollection}\relax }}{23}{table.caption.11}
-\contentsline {table}{\numberline {5}{\ignorespaces Anomalies detected in the time series of sentiments for project Kamailio\relax }}{28}{table.caption.17}
-\contentsline {table}{\numberline {6}{\ignorespaces Anomalies detected in the time series of sentiments for project ffmpeg\relax }}{34}{table.caption.18}
-\contentsline {table}{\numberline {7}{\ignorespaces Anomalies detected in the time series of sentiments for project Amarok\relax }}{34}{table.caption.19}
-\contentsline {table}{\numberline {8}{\ignorespaces Anomalies detected in the time series of sentiments for project Pidgin\relax }}{34}{table.caption.20}
-\contentsline {table}{\numberline {9}{\ignorespaces Anomalies detected in the time series of sentiments for project MPlayer\relax }}{34}{table.caption.21}
-\contentsline {table}{\numberline {10}{\ignorespaces Anomalies detected in the time series of sentiments for project Asterisk\relax }}{35}{table.caption.22}
-\contentsline {table}{\numberline {11}{\ignorespaces Anomalies detected in the time series of sentiments for project rdesktop\relax }}{35}{table.caption.23}
-\contentsline {table}{\numberline {12}{\ignorespaces Anomalies detected in the time series of sentiments for project freeglut\relax }}{35}{table.caption.24}
-\contentsline {table}{\numberline {13}{\ignorespaces Estimates parameters in the model for Project Kamailio\relax }}{68}{table.0.13}
-\contentsline {table}{\numberline {14}{\ignorespaces Estimates parameters in the model for Project ffmpeg\relax }}{69}{table.0.14}
-\contentsline {table}{\numberline {15}{\ignorespaces Estimates parameters in the model for Project Amarok\relax }}{70}{table.0.15}
-\contentsline {table}{\numberline {16}{\ignorespaces Estimates parameters in the model for Project Apache CouchDB\relax }}{71}{table.0.16}
-\contentsline {table}{\numberline {17}{\ignorespaces Estimates parameters in the model for Project Pidgin\relax }}{72}{table.0.17}
-\contentsline {table}{\numberline {18}{\ignorespaces Estimates parameters in the model for Project MPlayer\relax }}{73}{table.0.18}
-\contentsline {table}{\numberline {19}{\ignorespaces Estimates parameters in the model for Project rdesktop\relax }}{74}{table.0.19}
-\contentsline {table}{\numberline {20}{\ignorespaces Estimates parameters in the model for Project freeglut\relax }}{75}{table.0.20}
-\contentsline {table}{\numberline {21}{\ignorespaces Estimates parameters in the model for Project Ceph\relax }}{76}{table.0.21}
-\contentsline {table}{\numberline {22}{\ignorespaces Estimates parameters in the model for Project OpenStack Neutron\relax }}{77}{table.0.22}
-\contentsline {table}{\numberline {23}{\ignorespaces Estimates parameters in the model for Project GlusterFS\relax }}{78}{table.0.23}
+\contentsline {table}{\numberline {4}{\ignorespaces Projects in conflict-driven forks and non-conflict driven forks categories selected and analyzed based on the criteria described in section \ref {DataCollection}\relax }}{24}{table.caption.11}
+\contentsline {table}{\numberline {5}{\ignorespaces Anomalies detected in the time series of sentiments for project Kamailio\relax }}{29}{table.caption.17}
+\contentsline {table}{\numberline {6}{\ignorespaces Anomalies detected in the time series of sentiments for project ffmpeg\relax }}{35}{table.caption.18}
+\contentsline {table}{\numberline {7}{\ignorespaces Anomalies detected in the time series of sentiments for project Amarok\relax }}{35}{table.caption.19}
+\contentsline {table}{\numberline {8}{\ignorespaces Anomalies detected in the time series of sentiments for project Pidgin\relax }}{35}{table.caption.20}
+\contentsline {table}{\numberline {9}{\ignorespaces Anomalies detected in the time series of sentiments for project MPlayer\relax }}{35}{table.caption.21}
+\contentsline {table}{\numberline {10}{\ignorespaces Anomalies detected in the time series of sentiments for project Asterisk\relax }}{36}{table.caption.22}
+\contentsline {table}{\numberline {11}{\ignorespaces Anomalies detected in the time series of sentiments for project rdesktop\relax }}{36}{table.caption.23}
+\contentsline {table}{\numberline {12}{\ignorespaces Anomalies detected in the time series of sentiments for project freeglut\relax }}{36}{table.caption.24}
+\contentsline {table}{\numberline {13}{\ignorespaces Estimates parameters in the model for Project Kamailio\relax }}{69}{table.0.13}
+\contentsline {table}{\numberline {14}{\ignorespaces Estimates parameters in the model for Project ffmpeg\relax }}{70}{table.0.14}
+\contentsline {table}{\numberline {15}{\ignorespaces Estimates parameters in the model for Project Amarok\relax }}{71}{table.0.15}
+\contentsline {table}{\numberline {16}{\ignorespaces Estimates parameters in the model for Project Apache CouchDB\relax }}{72}{table.0.16}
+\contentsline {table}{\numberline {17}{\ignorespaces Estimates parameters in the model for Project Pidgin\relax }}{73}{table.0.17}
+\contentsline {table}{\numberline {18}{\ignorespaces Estimates parameters in the model for Project MPlayer\relax }}{74}{table.0.18}
+\contentsline {table}{\numberline {19}{\ignorespaces Estimates parameters in the model for Project rdesktop\relax }}{75}{table.0.19}
+\contentsline {table}{\numberline {20}{\ignorespaces Estimates parameters in the model for Project freeglut\relax }}{76}{table.0.20}
+\contentsline {table}{\numberline {21}{\ignorespaces Estimates parameters in the model for Project Ceph\relax }}{77}{table.0.21}
+\contentsline {table}{\numberline {22}{\ignorespaces Estimates parameters in the model for Project OpenStack Neutron\relax }}{78}{table.0.22}
+\contentsline {table}{\numberline {23}{\ignorespaces Estimates parameters in the model for Project GlusterFS\relax }}{79}{table.0.23}
 \contentsline {table}{\numberline {24}{\ignorespaces List of all projects forked because of ``\textit {personal differences among the developer team}'' (U.F.)}}{86}{table.caption.61}
 \contentsline {table}{\numberline {25}{\ignorespaces List of all projects forked because of the need for ``\textit {more community-driven development}'' (U.F.)}}{87}{table.caption.62}

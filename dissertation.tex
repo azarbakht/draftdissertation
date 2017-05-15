@@ -63,6 +63,14 @@
 
 \pagestyle{myheadings}
 
+
+\usepackage{amsmath}
+\usepackage{setspace}
+\usepackage{etoolbox}
+\usepackage{lipsum}
+
+\AtBeginEnvironment{tabular}{\onehalfspacing}
+
 %\usepackage{fancyhdr}
 %\pagestyle{fancy}
 %\fancyhf{}
@@ -310,7 +318,10 @@ We did the following two types of analysis:
 \end{itemize}
 In the following, the details of each method as well as the results of each method are described.
 
-\doublespacing
+
+One of the challenges of studying this that you face is finding projects that have gone through a variety of different types of forking. We also need for those projects to have survived, and additionally for the records to have survived. Unfortunately, that leaves us with a small sample, which is typical of studies in this domain, even  though our study features more projects that is typical of related work as discussed in section \ref{relatedwork}, which typically feature only 1-3 projects. Table \ref{forkedProjectsDataCollected} lists all the attainable projects that meet the criteria. 
+
+
 \begin{table}
 \centering
 \caption{Projects in conflict-driven forks and non-conflict driven forks categories selected and analyzed based on the criteria described in section \ref{DataCollection}}
@@ -485,7 +496,7 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 \label{TableDiversityMeasuresKunegisEtAl}
 \begin{tabular}{rlrrrr}
   \hline
- & type & ind & time & coefhat & tstat \\ 
+ & type & ind & coefhat & tstat \\ 
   \hline
 1 & AO &  83 & 0.14 & 4.40 \\ 
   2 & TC & 170 & -0.09 & -4.12 \\ 

@@ -131,7 +131,7 @@ Our findings show that the conflict-driven forks experienced a period of pre-for
 
 Our findings also show that in conflict-driven forks, the social graph tended to have local hierarchies \cite{Snijders2010}, which was manifested as statistically significant negative three-cycles effects combined with statistically significant positive transitive triplets effects. This indicated several local hierarchies within the project community, which depending on the context, can be an indicator of several factions.
 
-Our findings also show that conflict-driven forks had communities where there existed a tendency for heavy mailing-list poster developers to be interacting with to other heavy mailing-list poster developers, which was manifested as a statistically significant out-out degree assortativity effect. In contrast, non-conflict-driven forks has communities where there existed a tendency for heavy code contributors to be interacting with other heavy code contributors, which was manifested as a statistically significant developer source code activity effect. This can be interpreted as a unhealthy vs. healthy dynamic, whereas, in the non-conflict-driven forked projects more code contributions translated into more conversations, so, the communication was backed by solid code. Whereas, in conflict-driven forked projects, the could have been much talk and not much code. One cannot help but think of Linus Torvald's quote \textit{``Talk is cheap. Show me the code.''}
+Our findings also show that conflict-driven forks had communities where there exists a tendency for heavy mailing-list poster developers to be interacting with to other heavy mailing-list poster developers, which was manifested as a statistically significant out-out degree assortativity effect. In contrast, non-conflict-driven forks has communities where there exists a tendency for heavy code contributors to be interacting with other heavy code contributors, which was manifested as a statistically significant developer source code activity effect. This can be interpreted as a unhealthy vs. healthy dynamic, whereas, in the non-conflict-driven forked projects more code contributions translated into more conversations, so, the communication was backed by solid code. Whereas, in conflict-driven forked projects, the could have been much talk and not much code. One cannot help but think of Linus Torvald's quote \textit{``Talk is cheap. Show me the code.''}
 
 In summary, we represented longitudinal dynamics in conflict-driven vs. non-conflict-driven forks. We suggested indicators of unhealthy dynamics to suggest intervention. We detected pre-fork anomalies suggestive of negative communication sentiments, and we expressed underlying properties and values of community behavior as model effects with their statistical significance. Further research is needed to be able to generalize. This is a good starting point for gaining an understanding of longitudinal changes of underlying properties of an open source projects' community.
 
@@ -240,7 +240,7 @@ Conflict-driven forks are especially important, as they are destructive, lead to
 
 In this study, we analyze, quantify and visualize how the community is structured, how it evolves, and the degree to which community involvement changes over time. 
 
-Specifically, our overall research objective is to identify these traces/social patterns associated with different types of undesirable forking. 
+Specifically, our overall research objective is to identify these traces/social patterns associated with different types of conflict-driven forking. 
 
 \paragraph*{\hspace{4 mm} Do forks leave traces in the collaboration artifacts of open source projects in the period leading up to the fork?\\}
 
@@ -321,6 +321,7 @@ In the following, the details of each method as well as the results of each meth
 
 One of the challenges of studying this that you face is finding projects that have gone through a variety of different types of forking. We also need for those projects to have survived, and additionally for the records to have survived. Unfortunately, that leaves us with a small sample, which is typical of studies in this domain, even  though our study features more projects that is typical of related work as discussed in section \ref{relatedwork}, which typically feature only 1-3 projects. Table \ref{forkedProjectsDataCollected} lists all the attainable projects that meet the criteria. 
 
+We defined conflict-driven (undesirable) as the projects forked because of ``Personal differences among developers team'', or because of the need for ``more community-driven development''. These situations are undesirable because they imply an increase in cost of maintenance, redundant or wasted efforts, and a lost shared value. One-fifth (20.5\%) of the 220 forked projects fall into this category\cite{Robles}. We defined non-conflict-driven as projects forked because of ``technical differences (Addition of functionality)''. More than a quarter (27.3\%) of the 220 forked projects fall into this category\cite{Robles}.
 
 \begin{table}
 \centering
@@ -897,30 +898,23 @@ The process is described in detail in the following. Figures \ref{FlowChart} and
 \subsubsection{Data}
 \label{DataCollection}
 
-To find patterns uniquely associated with undesirable forks, we gathered data on projects from both conflict-driven and non-conflict-driven forking categories. The data consisted of developer interaction logs on the project's developers mailing lists, where developers' interact by sending and receiving emails and source-code repository contribution logs, where developers interact by modifying the code, and/or working on the same source files. The sociograms was formed based on interactions among developers and the contribution history was used as a covariate in the model. (Note that the content of the messages send and received by the top contributors of the project in the months leading to the forking events was sentiment-analyzed.) The time period for which data was collected is 10-months leading to when the fork happened. This should supposedly capture the social context prior, and at the time of the fork.
+To find patterns uniquely associated with conflict-driven forks, we gathered data on projects from both conflict-driven and non-conflict-driven forking categories. The data consisted of developer interaction logs on the project's developers mailing lists, where developers' interact by sending and receiving emails and source-code repository contribution logs, where developers interact by modifying the code, and/or working on the same source files. The sociograms was formed based on interactions among developers and the contribution history was used as a covariate in the model. (Note that the content of the messages send and received by the top contributors of the project in the months leading to the forking events was sentiment-analyzed.) The time period for which data was collected is 10-months leading to when the fork happened. This should supposedly capture the social context prior, and at the time of the fork.
 
-%
 %\begin{table} [H]
-%\caption[Undesirable forking vs. Other categories]{The three types of projects for which data is collected in this study}
+%\caption[conflict-driven forking vs. Other categories]{The three types of projects for which data is collected in this study}
 %\label{tableUndesirableForkingDataCollect} 
 %\begin{tabular}{p{0.7\columnwidth} p{0.2\columnwidth}}
 %\hline\noalign{\smallskip}
 %\textbf{Type of forking} & \textbf{Abbreviation} \\
 %\noalign{\smallskip}\hline\noalign{\smallskip}
-%Undesirable \& socially-related forking & U.F. \\ \hline
-%Other socially-related forking & H.F. \\\hline
+%conflict-driven \& socially-related forking & conflict-driven \\ \hline
+%Other socially-related forking & non-conflict-driven \\\hline
 %No forking at all (as the control group) & No.F. \\
 %\noalign{\smallskip}\hline
 %\end{tabular}
 %\end{table}
 
-We defined conflict-driven (undesirable) and socially-related Forking (U.F.) as the projects forked because of \textit{Personal differences among developers team}, or because of the need for \textit{more community-driven development}. These situations are undesirable because they imply an increase in cost of maintenance, redundant or wasted efforts, and a lost shared value. One-fifth (20.5\%) of the 220 forked projects fall into this category \cite{Robles}.
-
-We defined non-conflict-driven and socially-related forking (H.F.) as projects forked because of \textit{technical differences (Addition of functionality)}. More than a quarter (27.3\%) of the 220 forked projects fall into this category.
-
-These three categories are the socially-related categories, because for forks driven by personal conflicts, the need more community-driven development, and technical differences, we expect to see the social context during the run-up to forking captured by the projects' social artifacts.
-
-To find projects in U.F. and H.F. categories, we looked at the list of all significant open source software forks in the past three decades as compiled by Robles and Gonzalez-Barahona \cite{Robles}. Their study found the reasons behind each fork, listed in Table \ref{tableReasonsForForking}. We applied three selection criteria to the 220 forked projects on that list to find projects in U.F. and H.F. categories. A project was short-listed as either a U.F. or H.F. if \textbf{a)} the forking was relatively recent, i.e., happened after the year 2000, \textbf{b)} its data was existent and available to access and download online, or was made accessible to us after our requests; and \textbf{c)} the project had a sizable developer community, i.e., more than a dozen developers, which means it would be large enough to make a sociogram for a meaningful statistical analysis. For the No.F. category, we chose well-known, stable projects that had been around for a while (two years), and had large communities; and had not forked; and were similar in size of the development team. Similarity in size is a constrain that our statistical method imposes for the results to be meaningful, as described in detail in section \ref{statisticalModel}.  The preceding criteria resulted in the projects listed in Table \ref{forkedProjectsDataCollected}. The rest of the 220 forked projects were discarded, because they did not meet the described filtering criteria.
+To find projects in conflict-driven and non-conflict-driven categories, we looked at the list of all significant open source software forks in the past three decades as compiled by Robles and Gonzalez-Barahona \cite{Robles}. Their study found the reasons behind each fork, listed in Table \ref{tableReasonsForForking}. We applied three selection criteria to the 220 forked projects on that list to find projects in conflict-driven and non-conflict-driven categories. A project was short-listed as either a conflict-driven or non-conflict-driven if \textbf{a)} the forking was relatively recent, i.e., happened after the year 2000, \textbf{b)} its data was existent and available to access and download online, or was made accessible to us after our requests; and \textbf{c)} the project had a sizable developer community, i.e., more than a dozen developers, which means it would be large enough to make a sociogram for a meaningful statistical analysis. For the No.F. category, we chose well-known, stable projects that had been around for a while (two years), and had large communities; and had not forked; and were similar in size of the development team. Similarity in size is a constrain that our statistical method imposes for the results to be meaningful, as described in detail in section \ref{statisticalModel}.  The preceding criteria resulted in the projects listed in Table \ref{forkedProjectsDataCollected}. The rest of the 220 forked projects were discarded, because they did not meet the described filtering criteria.
 
 
 \subsubsection{Analysis}
@@ -938,9 +932,9 @@ A longitudinal study can look at the sociograms in the following two distinct ap
 
 \end{enumerate}
 
-Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR} are good examples of the expressiveness and limitations of a network-specific approach. Figure \ref{figureNodesEdgesTimeR} shows the normalized change in the number of active nodes (developers) and edges (interaction between developers) for eight FOSS projects from U.F. and H.F. categories. 
+Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR} are good examples of the expressiveness and limitations of a network-specific approach. Figure \ref{figureNodesEdgesTimeR} shows the normalized change in the number of active nodes (developers) and edges (interaction between developers) for eight FOSS projects from conflict-driven and non-conflict-driven categories. 
 
-The normalized number of nodes and edges for the U.F. forks (i.e., second and third row) show a sudden sharp decrease around the month of fork. This can be because of dissolution of the development team, who either left the project, or stopped being active contributors as much as before. Figure  \ref{figureDiameterTimeR} shows normalized change of diameter over time for the same projects. It is hard to make sense of normalized diameter changes across projects, and this demonstrates the limitations of network-specific approaches, as they may, or may not (often the case), help us understand the network dynamics.
+The normalized number of nodes and edges for the conflict-driven forks (i.e., second and third row) show a sudden sharp decrease around the month of fork. This can be because of dissolution of the development team, who either left the project, or stopped being active contributors as much as before. Figure  \ref{figureDiameterTimeR} shows normalized change of diameter over time for the same projects. It is hard to make sense of normalized diameter changes across projects, and this demonstrates the limitations of network-specific approaches, as they may, or may not (often the case), help us understand the network dynamics.
 
 As an example of expressiveness, figure \ref{figureNodesEdgesTimeR} shows that a measurements-only approach shows us the trends of change or no-change in the measured metrics. It also shows one limitation of such an approach: even though we can see trend changes, it is hard to make sense of such trends given the short scope of the measurements. Additionally, it is hard to constitutes a reference point and back it up mathematically or statistically.
 
@@ -970,7 +964,7 @@ In summary, a measurement-only approach is not capable of explaining the longitu
 
 %\textbf{2)} \textbf{Signaling theory}, from evolutionary biology, and economics \cite{Spence}, tries to explain communication between individuals, in terms of signals. As an example, a person in a community will help others who are in need, if helping signals the helper's desirable personality. This signal helps in attracting mates and results in higher reproduction of that person. In this scenario, the cost of helping another person is less than the benefit gained by the person because of signaling their conditions. 
 %
-%We may explain the increase of decrease in preferential attachment in U.F. projects, as a result of software developers signaling others in the community of their status, by helping others in need (i.e., peripheral community members), which in turn brings them social prestige.
+%We may explain the increase of decrease in preferential attachment in conflict-driven projects, as a result of software developers signaling others in the community of their status, by helping others in need (i.e., peripheral community members), which in turn brings them social prestige.
 
 \paragraph*{The Statistical Model}
 \label{statisticalModel}
@@ -1121,8 +1115,8 @@ We use the following developer attributes as covariates:
 %\label{tabelSummaryExpectationModelParameters}       
 %\begin{tabular}{m{0.6\columnwidth} m{0.12\columnwidth} m{0.1\columnwidth} m{0.1\columnwidth} m{0.01\columnwidth}}
 %\hline\noalign{\smallskip}
-%%\textbf{Model parameter} & \textbf{U.F. Pers. Dif.} & \textbf{U.F. More Comm.} & \textbf{H.F. Tech. Dif.} & \textbf{No.F.}\\
-%\textbf{Model parameter} & \textbf{U.F. Pers. Dif.} & \textbf{U.F. More Comm.} & \textbf{H.F. Tech. Dif.} & \\
+%%\textbf{Model parameter} & \textbf{conflict-driven Pers. Dif.} & \textbf{conflict-driven More Comm.} & \textbf{non-conflict-driven Tech. Dif.} & \textbf{No.F.}\\
+%\textbf{Model parameter} & \textbf{conflict-driven Pers. Dif.} & \textbf{conflict-driven More Comm.} & \textbf{non-conflict-driven Tech. Dif.} & \\
 %
 %\noalign{\smallskip}\hline\noalign{\smallskip}
 %Reciprocity  & * &  & * &  \\ \hline
@@ -1262,11 +1256,11 @@ Software development is a collective effort, so, theories about human behavior f
 
 \paragraph{} \textbf{Balance theory} \cite{Heider} talks about a motivation of individuals to move toward psychological balance. Balance theory considers cognitive consistency as a motive that drives sentiment or liking relationships, as well as liking of things created by or associated with the alter in the relationship.
 
-We may explain U.F. forked projects because of ``personal differences'' as a results of cognitive inconsistency between the liking relationship of other developer(s) and the software and community created by or associated with them. 
+We may explain conflict-driven forked projects because of ``personal differences'' as a results of cognitive inconsistency between the liking relationship of other developer(s) and the software and community created by or associated with them. 
 
 \paragraph{} \textbf{Assortativity theories}, tries to explain collaboration, and people's preference for interacting with others who are similar to them in some way. This is related to reciprocity, in forms of contingent, direct, and indirect reciprocity. Homophily and Heterophily, which affect diversity of networks, are also closely related to assortative selection.
 
-We may explain U.F. forked projects because of ``more community-driven development'' as a by-result of developers' homophile collaborator selection.
+We may explain conflict-driven forked projects because of ``more community-driven development'' as a by-result of developers' homophile collaborator selection.
 
 
 \paragraph*{Research Questions and Hypotheses}
@@ -1274,13 +1268,13 @@ We may explain U.F. forked projects because of ``more community-driven developme
 In section \ref{ResearchObjective}, we described the research objectives in general terms. Now that we have described how to model the longitudinal changes in an open source community's collaboration networks, we can be more specific about the research questions, and the hypotheses for our statistical tests. Our assumption is that patterns exist in the data, and those patterns will show statistically significant differences between different categories of forks. Statistically speaking, we'll be able to reject the following null hypotheses:
 
 \paragraph*{Null Hypothesis \# 1:} 
-\hspace{10 mm} There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in U.F. category and No.F. category.
+\hspace{10 mm} There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in conflict-driven category and No.F. category.
 
 \paragraph*{Null Hypothesis \# 2:} 
-\hspace{10 mm} There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in H.F. category and No.F. category.
+\hspace{10 mm} There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in non-conflict-driven category and No.F. category.
 
 \paragraph*{Null Hypothesis \# 3:} 
-\hspace{10 mm} There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in U.F. category and H.F. category.\\
+\hspace{10 mm} There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in conflict-driven category and non-conflict-driven category.\\
 
 If the data does not exhibit statistically significant differences, then our study will not reject the null hypotheses, and our assumptions cannot be verified. We argue that based on the guiding theories and the collaboration data we gathered, if the forking reasons were socially-related, they should be reflected in the data, and so, should be reflected in the longitudinal model of their collaboration network evolution. This is a conjecture, and our study will try to show that this conjecture is true, using sound statistical modeling.
 
@@ -1333,11 +1327,11 @@ If the data does not exhibit statistically significant differences, then our stu
 %What covariates to include depends on the context, and the data available for developers.
 %Table \ref{tableCovariates} lists several explanatory variables that can be included for modeling the community evolution. Table \ref{tabelSummaryExpectationModelParameters} lists what we expect to see associated with different types of forking. Specifically, for each of the following forking categories, we expect the following model parameters:
 %
-%For ``personal differences'' forks (U.F.), we expect to see a decrease in reciprocity, a decrease in 3-cycles indicating an increase in hierarchy, an increase in betweenness, which highlights the brokerage position of emergent fork leaders, and an increase in diameter, when broker positions are emptied, and hence, the distance between pairs of developers in the network increases. 
+%For ``personal differences'' forks conflict-driven, we expect to see a decrease in reciprocity, a decrease in 3-cycles indicating an increase in hierarchy, an increase in betweenness, which highlights the brokerage position of emergent fork leaders, and an increase in diameter, when broker positions are emptied, and hence, the distance between pairs of developers in the network increases. 
 %
-%For ``more community-driven development'' forks (U.F.), we expect to see a decrease in 3-cycles, which indicates a stronger hierarchical structure,in addition to increase in positive assortativity, which highlights preference for homophile interactions.
+%For ``more community-driven development'' forks conflict-driven, we expect to see a decrease in 3-cycles, which indicates a stronger hierarchical structure,in addition to increase in positive assortativity, which highlights preference for homophile interactions.
 %
-%For  ``technical differences'' forks (H.F.), we expect to see a decrease in betweenness, as developers temporarily leave the main project to work on new features, and this, we suppose, is done by some central figures, whose absence at the center, will distance pairs of developers in the network.
+%For  ``technical differences'' forks non-conflict-driven, we expect to see a decrease in betweenness, as developers temporarily leave the main project to work on new features, and this, we suppose, is done by some central figures, whose absence at the center, will distance pairs of developers in the network.
 %
 %For ``no forks at all'' projects (No.F.), we expect to see a steady progression, in contrast to all other projects that have forked.
 % %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1809,13 +1803,13 @@ I would like to thank my academic adviser, Prof. Carlos Jensen, and my committee
 
 \begin{appendices}
 
-\section{Appendix A: List of all projects forked in socially-related Undesirable Forking (U.F.) Category}
+\section{Appendix A: List of projects forked in socially-related Undesirable Forking  Category}
 \label{tablesOfListsOfAllProjects}
 
 
 \begin{table} [H]
 \centering
-\caption[List of all projects forked because of ``\textit{personal differences among the developer team}'' (U.F.)]{List of all projects forked because of ``\textit{personal differences among the developer team}'' (U.F.) \cite{Robles} in chronological order. N/A means Not Applicable}
+\caption[List of all projects forked because of ``\textit{personal differences among the developer team}'' conflict-driven]{List of all projects forked because of ``\textit{personal differences among the developer team}'' conflict-driven \cite{Robles} in chronological order. N/A means Not Applicable}
 \label{tabelProjectsForkedCat1PersonalDiffereces}       
 \begin{tabular}{m{0.2\columnwidth} m{0.15\columnwidth} m{0.15\columnwidth} m{0.3\columnwidth} m{0.1\columnwidth}}
 \hline\noalign{\smallskip}
@@ -1845,7 +1839,7 @@ Ffmpeg & libav & 2011, Mar & Yes & Yes\\
 
 \begin{table} [H]
 \centering
-\caption[List of all projects forked because of the need for ``\textit{more community-driven development}'' (U.F.)]{List of all projects forked because of the need for ``\textit{more community-driven development}'' (U.F.) \cite{Robles} in chronological order. N/A means Not Applicable}
+\caption[List of all projects forked because of the need for ``\textit{more community-driven development}'' conflict-driven]{List of all projects forked because of the need for ``\textit{more community-driven development}'' conflict-driven \cite{Robles} in chronological order. N/A means Not Applicable}
 \label{tableProjectsForkedCat2CommunityDriven}
 \begin{tabular}{m{0.2\textwidth} m{0.2\textwidth} m{0.15\textwidth} m{0.3\textwidth} m{0.2\textwidth}}
 \hline\noalign{\smallskip}
@@ -2166,7 +2160,7 @@ sim_{ij}^z = (1 - \abs{z_i - z_j}/max_{ij}\abs{z_i-z_j})
 %\balancecolumns
 %\appendix
 %%Appendix A
-%\section*{Appendix A: Table of all U.F. projects}
+%\section*{Appendix A: Table of all conflict-driven projects}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -235,8 +235,8 @@ Social interactions reflect the changes the community goes through, and so, it c
 
 For the rest of the discussion, we define conflict-driven forks as projects that have forked for personal differences, and non-conflict driven forks as projects that have forked for technical experimentation, and were not forked for personal differences. 
 
-Conflict-driven forks are especially important, as they are destructive, lead to resentment, and the dilution of the community workforce. In contrast, the non-conflict driven forks are friendly and often temporary splits, where developers experimentally modify the code and/or add new features, often with the intention of returning back to the original project and merging the new features back into the original project. In summary, conflict-driven forks are like violent exits with no intention of coming back, whereas non-conflict-driven forks are temporary trips.
-
+We defined conflict-driven (undesirable) as the projects forked because of ``Personal differences among developers team'', or because of the need for ``more community-driven development''. These situations are undesirable because they imply an increase in cost of maintenance, redundant or wasted efforts, and a lost shared value. One-fifth (20.5\%) of the 220 forked projects fall into this category\cite{Robles}. Examples include Kamailio and OpenSIPS projects. We defined non-conflict-driven as projects forked for ``technical differences (Addition of functionality)'', and were not forked for personal differences. More than a quarter (27.3\%) of the 220 forked projects fall into this category\cite{Robles}. Examples include Amarok and Clementine Player projects.
+Conflict-driven forks are especially important, as they are destructive, lead to resentment, and the dilution of the community workforce. In contrast, the non-conflict driven forks are friendly and often temporary splits, where developers experimentally modify the code and/or add new features, often with the intention of returning back to the original project and merging the new features back into the original project. In summary, conflict-driven forks are like violent exits with no intention of coming back, whereas non-conflict-driven forks are temporary trips. 
 
 \subsection{Research Goals}
 
@@ -320,14 +320,11 @@ We did the following two types of analysis:
 \end{itemize}
 In the following, the details of each method as well as the results of each method are described.
 
-
 One of the challenges of studying this that you face is finding projects that have gone through a variety of different types of forking. We also need for those projects to have survived, and additionally for the records to have survived. Unfortunately, that leaves us with a small sample, which is typical of studies in this domain, even  though our study features more projects that is typical of related work as discussed in section \ref{relatedwork}, which typically feature only 1-3 projects. Table \ref{forkedProjectsDataCollected} lists all the attainable projects that meet the criteria. 
-
-We defined conflict-driven (undesirable) as the projects forked because of ``Personal differences among developers team'', or because of the need for ``more community-driven development''. These situations are undesirable because they imply an increase in cost of maintenance, redundant or wasted efforts, and a lost shared value. One-fifth (20.5\%) of the 220 forked projects fall into this category\cite{Robles}. We defined non-conflict-driven as projects forked because of ``technical differences (Addition of functionality)''. More than a quarter (27.3\%) of the 220 forked projects fall into this category\cite{Robles}.
 
 \begin{table}
 \centering
-\caption{Projects in conflict-driven forks and non-conflict driven forks categories selected and analyzed based on the criteria described in section \ref{DataCollection}}
+\caption{Projects in conflict-driven forks and non-conflict driven forks categories selected and analyzed based on the criteria described in section \ref{DataCollection} taken from \cite{Robles}}
 \label{forkedProjectsDataCollected}
 \begin{tabular}{p{0.45\textwidth} p{0.40\textwidth} p{0.135\textwidth}}
 \hline\noalign{\smallskip}
@@ -335,15 +332,15 @@ We defined conflict-driven (undesirable) as the projects forked because of ``Per
 \noalign{\smallskip}\hline\noalign{\smallskip}
 Kamailio \& OpenSIPS & Conflict-driven & 2008 \\ \hline
 ffmpeg \& libav & Conflict-driven & 2011 \\ \hline
-Asterisk \& Callweaver & Conflict-driven & 2007 \\ \hline
-rdesktop \& FreeRDP  & Conflict-driven & 2010 \\ \hline
-freeglut \& OpenGLUT & Conflict-driven & 2004 \\ \hline
+Asterisk \& Callweaver & Non-conflict-driven & 2007 \\ \hline
+%rdesktop \& FreeRDP  & Non-conflict-driven & 2010 \\ \hline
+freeglut \& OpenGLUT & Non-conflict-driven & 2004 \\ \hline
 Amarok \& Clementine Player & Non-conflict-driven & 2010 \\ \hline
 Apache CouchDB \& BigCouch & Non-conflict-driven & 2010 \\ \hline
 Pidgin \& Carrier & Non-conflict-driven & 2008 \\ \hline
 MPlayer \& MPlayerXP & Non-conflict-driven & 2005 \\ \hline
 Ceph  & Not forked & NA \\ \hline
-Python & Not forked & NA \\ \hline
+%Python & Not forked & NA \\ \hline
 OpenStack Neutron & Not forked & NA \\ \hline
 GlusterFS & Not forked & NA \\ 
 \noalign{\smallskip}\hline
@@ -364,9 +361,37 @@ Sentiment Analysis on the other hand, is a technique to determine the overall co
 Sentiment analysis has applications in many fields. It is used for bias identification in news sources, identifying (in)appropriate content for ad placement, ``Flame'' detection, analyzing trends, targeting advertising/messages and gauging reactions, and identifying ideological bias.
 
 \subsubsection{Data}
-A statistical time series analysis of the sentiments for the contents of the messages sent and received by the developers in the 10-month run-up to the fork was completed. The messages were collected from the projects' mailing list messages, and contained all messages by all developers for that time period.
+A statistical time series analysis of the sentiments for the contents of the messages sent and received by the developers in the 10-month run-up to the fork was completed. The messages were collected from the projects' mailing list messages, and contained all messages by all developers for that time period. These projects had on average 9,166 messages in this time period. Table \ref{TS_NumberOfMessages} lists the number of messages for each project in this time period.
+
+\begin{table}
+\centering
+\caption{The number of messages sentiment-analyzed for each project.}
+\label{TS_NumberOfMessages}
+\begin{tabular}{p{0.45\textwidth} p{0.40\textwidth} p{0.135\textwidth}}
+\hline\noalign{\smallskip}
+\textbf{Projects} & \textbf{Number of messages} & \textbf{Year forked}\\
+\noalign{\smallskip}\hline\noalign{\smallskip}
+Kamailio \& OpenSIPS & 5450  & 2008 \\ \hline
+ffmpeg \& libav &  20690 & 2011 \\ \hline
+Amarok \& Clementine Player & 1642  & 2010 \\ \hline
+Apache CouchDB \& BigCouch &  3746  & 2010 \\ \hline
+Pidgin \& Carrier &  4095  & 2008 \\ \hline
+MPlayer \& MPlayerXP &   6305  & 2005 \\ \hline
+Asterisk \& Callweaver & 28012  & 2007 \\ \hline
+%rdesktop \& FreeRDP  & 266 & 2010 \\ \hline
+freeglut \& OpenGLUT & 2267  & 2004 \\ \hline
+Ceph  &  7232  & NA \\ \hline
+OpenStack Neutron &  20153   & NA \\ \hline
+GlusterFS &   1245  & NA \\ 
+\noalign{\smallskip}\hline
+\end{tabular}
+\end{table}
+
 
 \subsubsection{Analysis}
+
+Our goal was to find out possible pre-fork negative anomalies happened, that could be an early indicator of problems in the community. 
+
 We used the R (Statistical Computing) \cite{R} package SentimentAnalysis \cite{Feuer}\cite{Proel} to analyze the sentiments of the cleaned data, and each message was assigned a sentiment score between [-1, +1], with negative values indicating negative sentiments, 0 for neutral, and positive value representing positive sentiments. 
 
 To analyze the raw time series data, we decomposed the raw series into the trend, seasonality, and residual components. The trend (a non-periodic systematic change in the time series) and residual series is the component we are interested in, especially the residual. The residual series is the part that can give us insights into the longitudinal interdependency between the observations. The trend and seasonality are the long-time non-stationary process that needs to be removed before doing the time series analysis.
@@ -453,12 +478,12 @@ The time series shown in Figures \ref{figureTS_1to6} and \ref{figureTS_7to12} sh
 
 \begin{figure}[!htbp]
 \epsfig{file=PLOTS_PDF/TS_7.pdf, width=0.55\columnwidth}
-\epsfig{file=PLOTS_PDF/TS_8.pdf, width=0.55\columnwidth}
+%\epsfig{file=PLOTS_PDF/TS_8.pdf, width=0.55\columnwidth}
 \epsfig{file=PLOTS_PDF/TS_9.pdf, width=0.55\columnwidth}
 \epsfig{file=PLOTS_PDF/TS_10.pdf, width=0.55\columnwidth}
 \epsfig{file=PLOTS_PDF/TS_11.pdf, width=0.55\columnwidth}
 \epsfig{file=PLOTS_PDF/TS_12.pdf, width=0.55\columnwidth}
-\caption{Time Series of sentiments in developers' messages for projects (From top to bottom, left to right) Asterisk, rdesktop, freeglut, Ceph, OpenStack Neutron, and GlusterFS}
+\caption{Time Series of sentiments in developers' messages for projects (From top to bottom, left to right) Asterisk, freeglut, Ceph, OpenStack Neutron, and GlusterFS}
 \label{figureTS_7to12}
 \end{figure}
 
@@ -477,35 +502,34 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 \epsfig{file=PLOTS_PDF/D_5.pdf, width=0.57\columnwidth}
 \epsfig{file=PLOTS_PDF/D_6.pdf, width=0.57\columnwidth}
 \epsfig{file=PLOTS_PDF/D_7.pdf, width=0.57\columnwidth}
-\epsfig{file=PLOTS_PDF/D_8.pdf, width=0.57\columnwidth}
-\caption{Time series decomposed into trend, seasonality and residual time Series for projects (From top to bottom, left to right) Pidgin, MPlayer, Asterisk, rdesktop.}
+%\epsfig{file=PLOTS_PDF/D_8.pdf, width=0.57\columnwidth}
+\epsfig{file=PLOTS_PDF/D_9.pdf, width=0.57\columnwidth}
+\caption{Time series decomposed into trend, seasonality and residual time Series for projects (From top to bottom, left to right) Pidgin, MPlayer, Asterisk, and freeglut.}
 \label{figureDecpmposed_5to8}
 \end{figure}
 
 \begin{figure}[!htbp]
-\epsfig{file=PLOTS_PDF/D_9.pdf, width=0.57\columnwidth}
 \epsfig{file=PLOTS_PDF/D_10.pdf, width=0.57\columnwidth}
 \epsfig{file=PLOTS_PDF/D_11.pdf, width=0.57\columnwidth}
 \epsfig{file=PLOTS_PDF/D_12.pdf, width=0.57\columnwidth}
-\caption{Time series decomposed into trend, seasonality and residual time Series for projects (From top to bottom, left to right) freeglut, Ceph, OpenStack Neutron, and GlusterFS}
+\caption{Time series decomposed into trend, seasonality and residual time Series for projects (From top to bottom, left to right) Ceph, OpenStack Neutron, and GlusterFS}
 \label{figureDecpmposed_9to12}
 \end{figure}
 
 
-
 \begin{table}
 \centering
-\caption{Anomalies detected in the time series of sentiments for project Kamailio}
+\caption{Anomalies detected in the time series of sentiments for project Kamailio. Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value. ($sigma^2$ estimated as 128.8:  log likelihood = -1170.2,  aic = 2356.41)}
 \label{TableDiversityMeasuresKunegisEtAl}
 \begin{tabular}{rlrrrr}
   \hline
- & type & ind & coefhat & tstat & statistical significance \\ 
+ & type & ind & coefhat & tstat & statistical significance (*) \\ 
   \hline
-  1 & AO &  83 & 0.14 & 4.40 & Statistically significant (*) \\ 
-  2 & TC & 170 & -0.09 & -4.12 & Statistically significant (*)\\ 
-  3 & TC & 253 & 0.10 & 4.28  & Statistically significant (*)\\ 
-  4 & AO & 261 & 0.14 & 4.44  & Statistically significant (*)\\ 
-  5 & TC & 282 & -0.10 & -4.38 &  Statistically significant (*) \\ 
+  1 & AO &  83 & 0.14 & 4.40 & * \\ 
+  2 & TC & 170 & -0.09 & -4.12 & *\\ 
+  3 & TC & 253 & 0.10 & 4.28  & *\\ 
+  4 & AO & 261 & 0.14 & 4.44  & *\\ 
+  5 & TC & 282 & -0.10 & -4.38 &  * \\ 
    \hline
 \end{tabular}
 \end{table}
@@ -513,13 +537,13 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 
 \begin{table}
 \centering
-\caption{Anomalies detected in the time series of sentiments for project ffmpeg}
+\caption{Anomalies detected in the time series of sentiments for project ffmpeg. Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value. ($sigma^2$ estimated as 57.33:  log likelihood = -1043.78,  aic = 2101.57)}
 \begin{tabular}{rlrrrr}
   \hline
- & type & ind & coefhat & tstat & statistical significance\\ 
+ & type & ind & coefhat & tstat & statistical significance (*)\\ 
   \hline
-1 & AO &  62 & 0.07 & 5.80 & Statistically significant (*) \\ 
-  2 & AO & 258 & -0.05 & -4.25 & Statistically significant (*) \\ 
+1 & AO &  62 & 0.07 & 5.80 & * \\ 
+  2 & AO & 258 & -0.05 & -4.25 & * \\ 
    \hline
 \end{tabular}
 \end{table}
@@ -527,16 +551,16 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 
 \begin{table}
 \centering
-\caption{Anomalies detected in the time series of sentiments for project Amarok}
+\caption{Anomalies detected in the time series of sentiments for project Amarok. Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 375.6:  log likelihood = -1326.61,  aic = 2661.22)}
 \begin{tabular}{rlrrrr}
   \hline
- & type & ind & coefhat & tstat & statistical significance\\ 
+ & type & ind & coefhat & tstat & statistical significance (*)\\ 
   \hline
-1 & AO &  10 & 0.19 & 3.87 & Statistically significant (*) \\ 
-  2 & AO & 146 & 0.20 & 4.12  & Statistically significant (*)\\ 
-  3 & AO & 235 & 0.18 & 3.79 & Statistically significant (*) \\ 
-  4 & AO & 244 & 0.19 & 3.87  & Statistically significant (*)\\ 
-  5 & IO & 274 & 0.20 & 4.62  & Statistically significant (*)\\ 
+1 & AO &  10 & 0.19 & 3.87 & * \\ 
+  2 & AO & 146 & 0.20 & 4.12  & *\\ 
+  3 & AO & 235 & 0.18 & 3.79 & * \\ 
+  4 & AO & 244 & 0.19 & 3.87  & *\\ 
+  5 & IO & 274 & 0.20 & 4.62  & *\\ 
    \hline
 \end{tabular}
 \end{table}
@@ -544,12 +568,12 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 
 \begin{table}
 \centering
-\caption{Anomalies detected in the time series of sentiments for project Pidgin}
+\caption{Anomalies detected in the time series of sentiments for project Pidgin. Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 312.3:  log likelihood = -1307.25,  aic = 2622.49)}
 \begin{tabular}{rlrrrr}
   \hline
- & type & ind & coefhat & tstat & statistical significance\\ 
+ & type & ind & coefhat & tstat & statistical significance (*)\\ 
   \hline
-1 & IO & 217 & 0.17 & 4.13 & Statistically significant (*) \\ 
+1 & IO & 217 & 0.17 & 4.13 & * \\ 
    \hline
 \end{tabular}
 \end{table}
@@ -558,16 +582,16 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 
 \begin{table}
 \centering
-\caption{Anomalies detected in the time series of sentiments for project MPlayer}
+\caption{Anomalies detected in the time series of sentiments for project MPlayer. Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 225.5:  log likelihood = -1251.94,  aic = 2517.88)}
 \begin{tabular}{rlrrrr}
   \hline
- & type & ind & coefhat & tstat & statistical significance\\ 
+ & type & ind & coefhat & tstat & statistical significance (*)\\ 
   \hline
-1 & IO &  22 & 0.11 & 4.75 & Statistically significant (*) \\ 
-  2 & AO &  42 & -0.11 & -4.43 & Statistically significant (*) \\ 
-  3 & TC &  93 & -0.08 & -3.91  & Statistically significant (*)\\ 
-  4 & AO & 100 & -0.11 & -4.29 & Statistically significant (*) \\ 
-  5 & TC & 115 & -0.08 & -3.81  & Statistically significant (*)\\ 
+1 & IO &  22 & 0.11 & 4.75 & * \\ 
+  2 & AO &  42 & -0.11 & -4.43 & * \\ 
+  3 & TC &  93 & -0.08 & -3.91  & *\\ 
+  4 & AO & 100 & -0.11 & -4.29 & * \\ 
+  5 & TC & 115 & -0.08 & -3.81  & *\\ 
    \hline
 \end{tabular}
 \end{table}
@@ -575,46 +599,47 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 
 \begin{table}
 \centering
-\caption{Anomalies detected in the time series of sentiments for project Asterisk}
+\caption{Anomalies detected in the time series of sentiments for project Asterisk. Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 358.2:  log likelihood = -1227.85,  aic = 2463.7
+  )}
 \begin{tabular}{rlrrrr}
   \hline
- & type & ind & coefhat & tstat & statistical significance\\ 
+ & type & ind & coefhat & tstat & statistical significance (*)\\ 
   \hline
-1 & AO &  95 & -0.11 & -3.84 & Statistically significant (*) \\ 
-  2 & AO & 104 & 0.12 & 4.20  & Statistically significant (*)\\ 
-  3 & AO & 166 & -0.12 & -4.23 & Statistically significant (*) \\ 
-  4 & TC & 185 & 0.10 & 5.06  & Statistically significant (*)\\ 
-  5 & AO & 202 & 0.14 & 5.07  & Statistically significant (*)\\ 
-  6 & TC & 210 & 0.08 & 4.07  & Statistically significant (*)\\ 
-  7 & AO & 229 & 0.10 & 3.59  & Statistically significant (*)\\ 
+1 & AO &  95 & -0.11 & -3.84 & * \\ 
+  2 & AO & 104 & 0.12 & 4.20  & *\\ 
+  3 & AO & 166 & -0.12 & -4.23 & * \\ 
+  4 & TC & 185 & 0.10 & 5.06  & *\\ 
+  5 & AO & 202 & 0.14 & 5.07  & *\\ 
+  6 & TC & 210 & 0.08 & 4.07  & *\\ 
+  7 & AO & 229 & 0.10 & 3.59  & *\\ 
    \hline
 \end{tabular}
 \end{table}
 
+%
+%\begin{table}
+%\centering
+%\caption{Anomalies detected in the time series of sentiments for project rdesktop}
+%\begin{tabular}{rlrrrr}
+%  \hline
+% & type & ind & coefhat & tstat & statistical significance (*)\\ 
+%  \hline
+%1 & AO &  66 & 0.22 & 5.67  & *\\ 
+%   \hline
+%\end{tabular}
+%\end{table}
+
 
 \begin{table}
 \centering
-\caption{Anomalies detected in the time series of sentiments for project rdesktop}
+\caption{Anomalies detected in the time series of sentiments for project freeglut. Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 348.6:  log likelihood = -1307.6,  aic = 2619.2)}
 \begin{tabular}{rlrrrr}
   \hline
- & type & ind & coefhat & tstat & statistical significance\\ 
+ & type & ind & coefhat & tstat & statistical significance (*)\\ 
   \hline
-1 & AO &  66 & 0.22 & 5.67  & Statistically significant (*)\\ 
-   \hline
-\end{tabular}
-\end{table}
-
-
-\begin{table}
-\centering
-\caption{Anomalies detected in the time series of sentiments for project freeglut}
-\begin{tabular}{rlrrrr}
-  \hline
- & type & ind & coefhat & tstat & statistical significance\\ 
-  \hline
-1 & AO & 176 & 0.13 & 3.80  & Statistically significant (*)\\ 
-  2 & AO & 283 & 0.20 & 5.62  & Statistically significant (*)\\ 
-  3 & AO & 294 & 0.19 & 5.46  & Statistically significant (*)\\ 
+1 & AO & 176 & 0.13 & 3.80  & *\\ 
+  2 & AO & 283 & 0.20 & 5.62  & *\\ 
+  3 & AO & 294 & 0.19 & 5.46  & *\\ 
    \hline
 \end{tabular}
 \end{table}
@@ -629,15 +654,13 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 %Anomalies detected in the time series of sentiments for project GlusterFS: \\
 %\input{R_Environment_Variables/outlier_table_project_12.tex}\\
 
-No anomalies were detected in the time series of sentiments for project Apache CouchDB: \\
+No anomalies were found in the time series of sentiments for project Apache CouchDB. \\
 %\input{R_Environment_Variables/outlier_table_project_4.tex}\\
-
-The description of these anomalies and how can they be used is discussed in section \ref{Discussion}.
 
 \begin{figure}
 \centering
 \epsfig{file=PLOTS_PDF/O_1.pdf, width=0.7\columnwidth}
-\caption{Time series with outliers detected for project Kamailio.}
+\caption{Time series with outliers detected for project Kamailio (conflict-driven).}
 \label{figureOutliers_1}
 \end{figure}
 
@@ -645,42 +668,44 @@ The description of these anomalies and how can they be used is discussed in sect
 \begin{figure}
 \centering
 \epsfig{file=PLOTS_PDF/O_2.pdf, width=0.7\columnwidth}
-\caption{Time series with outliers detected for project ffmpeg.}
+\caption{Time series with outliers detected for project ffmpeg (conflict-driven).}
 \label{figureOutliers_2}
 \end{figure}
 
 \begin{figure}
 \centering
 \epsfig{file=PLOTS_PDF/O_3.pdf, width=0.7\columnwidth}
-\caption{Time series with outliers detected for project Amarok. Our analysis did not find any outliers for Apache CouchDB.}
+\caption{Time series with outliers detected for project Amarok (non-conflict-driven).}
 \label{figureOutliers_3}
 \end{figure}
 
 \begin{figure}
 \centering
 \epsfig{file=PLOTS_PDF/O_5.pdf, width=0.7\columnwidth}
-\caption{Time series with outliers detected for project Pidgin.}
+\caption{Time series with outliers detected for project Pidgin (non-conflict-driven).}
 \label{figureOutliers_5}
 \end{figure}
 
 \begin{figure}
 \centering
 \epsfig{file=PLOTS_PDF/O_6.pdf, width=0.7\columnwidth}
-\caption{Time series with outliers detected for project MPlayer.}
+\caption{Time series with outliers detected for project MPlayer (non-conflict-driven).}
 \label{figureOutliers_6}
 \end{figure}
 
 \begin{figure}
 \centering
 \epsfig{file=PLOTS_PDF/O_7.pdf, width=0.7\columnwidth}
-\caption{Time series with outliers detected for project Asterisk.}
+\caption{Time series with outliers detected for project Asterisk (non-conflict-driven).}
 \label{figureOutliers_7}
 \end{figure}
+
+\clearpage
 
 \begin{figure}
 \centering
 \epsfig{file=PLOTS_PDF/O_9.pdf, width=0.7\columnwidth}
-\caption{Time series with outliers detected for project freeglut.}
+\caption{Time series with outliers detected for project freeglut (non-conflict-driven).}
 \label{figureOutliers_9}
 \end{figure}
 
@@ -688,32 +713,38 @@ The description of these anomalies and how can they be used is discussed in sect
 \begin{figure}
 \centering
 \epsfig{file=PLOTS_PDF/O_10.pdf, width=0.7\columnwidth}
-\caption{Time series with outliers detected for project Ceph.}
+\caption{Time series with outliers detected for project Ceph (Not forked).}
 \label{figureOutliers_10}
 \end{figure}
 
 \begin{figure}
 \centering
 \epsfig{file=PLOTS_PDF/O_11.pdf, width=0.7\columnwidth}
-\caption{Time series with outliers detected for project OpenStack Neutron.}
+\caption{Time series with outliers detected for project OpenStack Neutron (Not forked).}
 \label{figureOutliers_11}
 \end{figure}
 
 \begin{figure}
 \centering
 \epsfig{file=PLOTS_PDF/O_12.pdf, width=0.7\columnwidth}
-\caption{Time series with outliers detected for project GlusterFS.}
+\caption{Time series with outliers detected for project GlusterFS (Not forked).}
 \label{figureOutliers_12}
 \end{figure}
 
-
 \pagebreak
 
-\subsection{Social network analysis of open source developers’ interaction graphs}
+The description of these anomalies and how can they be used is discussed in section \ref{Discussion}.
 
+\subsubsection{Summary}
+Time series analysis of open source developers’ communication sentiments shows that in conflict-driven forks, we see negative dip anomalies pre-fork near the fork date, in contrast to the non-conflict-driven forks, where we see either no anomalies, or positive spikes anomalies pre-fork. 
+We got close to determining when one vs. other has occurred, however, given the false positives and the scarcity of projects, we cannot be conclusive. So we turn to social network analysis \ref{socialNetworkAnalysisMethodology}, to figure out whether a detected anomaly is ``a storm in a teacup'', or a situation needing intervention. What do these networks look like, who is involved, and what are the forces are shaping the community. This is discussed in the next section (\ref{socialNetworkAnalysisMethodology}).
+
+
+\subsection{Social network analysis of open source developers’ interaction graphs}
+\label{socialNetworkAnalysisMethodology}
 We used a social network analysis developer-oriented approach to statistically model the changes a community goes through in the run-up to a fork. The model represented tie formation, tie breakage, and tie maintenance between developers. It uses stochastic estimation methods to estimate several model parameters that capture the variance in the changes the community goes through. The model leads us to estimates of the significance of several parameters on this longitudinal change.
 
-The process is described in detail in the following. Figures \ref{FlowChart} and \ref{FlowChartOverview} show the overview of the methodology.
+The process is described in detail in the following. Figure \ref{FlowChart} show the overview of the methodology.
 
 \begin{figure}[!ht]
 \centering
@@ -722,12 +753,13 @@ The process is described in detail in the following. Figures \ref{FlowChart} and
 \label{FlowChart}
 \end{figure}
 
-\begin{figure}[!ht]
-\centering
-\epsfig{file=flowchart.eps, width=0.9\columnwidth}
-\caption{The methodology overview}
-\label{FlowChartOverview}
-\end{figure}
+%
+%\begin{figure}[!ht]
+%\centering
+%\epsfig{file=flowchart.eps, width=0.9\columnwidth}
+%\caption{The methodology overview}
+%\label{FlowChartOverview}
+%\end{figure}
 
 %\blindtext
 %\begin{figure}[h]
@@ -741,7 +773,7 @@ The process is described in detail in the following. Figures \ref{FlowChart} and
 % \label{flowChart}
 %\end{figure}
 %\blindtext
-%
+
 %
 %\begin{tikzpicture}[scale=1.0, align=center, on grid, auto, ->,>=stealth']
 %
@@ -756,7 +788,6 @@ The process is described in detail in the following. Figures \ref{FlowChart} and
 %  \parbox{4cm}{
 %  \begin{itemize}
 %   \item Mailing Lists
-%   \item Bug Tracking Repositories
 %   \item Codebase
 %  \end{itemize}
 %  }
@@ -896,6 +927,7 @@ The process is described in detail in the following. Figures \ref{FlowChart} and
 %%                  } (Data Collection)
 % ;
 %\end{tikzpicture}
+
 
 \subsubsection{Data}
 \label{DataCollection}
@@ -1574,39 +1606,39 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 \label{ans6}
 \end{tabular}
 
-\pagebreak
-\captionof{table}{Estimates parameters in the model for Project rdesktop}   % Table based on sienaFit object ans
-\begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
-\hline
-\rule{0pt}{2ex}\relax
-Effect &\multicolumn{2}{c}{par.}&\multicolumn{2}{c | }{(s.e.)} &\multicolumn{2}{c}{$t$ stat.} \\[0.5ex]
-\hline
-\rule{0pt}{2ex}\relax
-Rate 1 & 1 & 77 & (1 & 02) & \omit & -\\
-Rate 2 & 0 & 86 & (0 & 43) & \omit & -\\
-Rate 3 & 1 & 47 & (0 & 70) & \omit & -\\
-Rate 4 & 1 & 43 & (0 & 54) & \omit & -\\
-Rate 5 & 1 & 52 & (0 & 83) & \omit & -\\
-Rate 6 & 1 & 26 & (0 & 66) & \omit & -\\
-Rate 7 & 1 & 54 & (0 & 85) & \omit & -\\
-Rate 8 & 1 & 33 & (0 & 68) & \omit & -\\
-Rate 9 & 0 & 37 & (0 & 39) & \omit & -\\
-\hline
-\rule{0pt}{2ex}\relax
-outdegree (density)                        & --2 & 78$^{\ast\ast\ast}$ & (0 & 77) & --3 & 61\\
-reciprocity                                & --1 & 35                  & (1 & 30) & --1 & 04\\
-transitive triplets                        & --0 & 27                  & (1 & 03) & --0 & 26\\
-3-cycles                                   & --3 & 30                  & (4 & 64) & --0 & 71\\
-out-out degree\^(1/2) assortativity         &   1 & 27$^\dagger$        & (0 & 65) &   1 & 95\\
-devSeniority ego                           &   N & A. & (N & A.) & \omit & -\\
-devScActivity ego                          &   N & A. & (N & A.) & \omit & -\\
-int.  devScActivity ego x devSeniority ego &   N & A. & (N & A.) & \omit & -\\
-\hline
-\multicolumn{5}{l}{\footnotesize{$^\dagger$ $p$ $<$ 0.1;
-$^\ast$ $p$ $<$ 0.05; $^{\ast\ast}$ $p$ $<$ 0.01;
-$^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
-\label{ans8}
-\end{tabular}
+%\pagebreak
+%\captionof{table}{Estimates parameters in the model for Project rdesktop}   % Table based on sienaFit object ans
+%\begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
+%\hline
+%\rule{0pt}{2ex}\relax
+%Effect &\multicolumn{2}{c}{par.}&\multicolumn{2}{c | }{(s.e.)} &\multicolumn{2}{c}{$t$ stat.} \\[0.5ex]
+%\hline
+%\rule{0pt}{2ex}\relax
+%Rate 1 & 1 & 77 & (1 & 02) & \omit & -\\
+%Rate 2 & 0 & 86 & (0 & 43) & \omit & -\\
+%Rate 3 & 1 & 47 & (0 & 70) & \omit & -\\
+%Rate 4 & 1 & 43 & (0 & 54) & \omit & -\\
+%Rate 5 & 1 & 52 & (0 & 83) & \omit & -\\
+%Rate 6 & 1 & 26 & (0 & 66) & \omit & -\\
+%Rate 7 & 1 & 54 & (0 & 85) & \omit & -\\
+%Rate 8 & 1 & 33 & (0 & 68) & \omit & -\\
+%Rate 9 & 0 & 37 & (0 & 39) & \omit & -\\
+%\hline
+%\rule{0pt}{2ex}\relax
+%outdegree (density)                        & --2 & 78$^{\ast\ast\ast}$ & (0 & 77) & --3 & 61\\
+%reciprocity                                & --1 & 35                  & (1 & 30) & --1 & 04\\
+%transitive triplets                        & --0 & 27                  & (1 & 03) & --0 & 26\\
+%3-cycles                                   & --3 & 30                  & (4 & 64) & --0 & 71\\
+%out-out degree\^(1/2) assortativity         &   1 & 27$^\dagger$        & (0 & 65) &   1 & 95\\
+%devSeniority ego                           &   N & A. & (N & A.) & \omit & -\\
+%devScActivity ego                          &   N & A. & (N & A.) & \omit & -\\
+%int.  devScActivity ego x devSeniority ego &   N & A. & (N & A.) & \omit & -\\
+%\hline
+%\multicolumn{5}{l}{\footnotesize{$^\dagger$ $p$ $<$ 0.1;
+%$^\ast$ $p$ $<$ 0.05; $^{\ast\ast}$ $p$ $<$ 0.01;
+%$^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
+%\label{ans8}
+%\end{tabular}
 
 \pagebreak
 \captionof{table}{Estimates parameters in the model for Project freeglut}   % Table based on sienaFit object ans

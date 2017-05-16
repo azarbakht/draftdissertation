@@ -21,7 +21,7 @@
 \contentsline {section}{\numberline {5}Conclusion}{80}{section.0.5}
 \contentsline {section}{\numberline {6}Threats to Validity}{83}{section.0.6}
 \contentsline {chapter}{Appendices}{85}{section*.60}
-\contentsline {section}{\numberline {1}Appendix A: List of projects forked in socially-related Undesirable Forking Category}{86}{section.1..1}
+\contentsline {section}{\numberline {1}Appendix A: List of projects forked for undesirable reasons}{86}{section.1..1}
 \contentsline {section}{\numberline {2}Appendix B: Initial study: Temporal analysis using the network-specific measurement approach}{88}{section.1..2}
 \contentsline {subsection}{\numberline {2.1}Visualization}{91}{subsection.1..2.1}
 \contentsline {subsection}{\numberline {2.2}Initial study results and discussion}{91}{subsection.1..2.2}

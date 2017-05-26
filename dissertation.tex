@@ -954,7 +954,7 @@ To find projects in conflict-driven and non-conflict-driven categories, we looke
 \subsubsection{Analysis}
 \paragraph*{Sociogram Formation and Statistical Study}
 
-Social connections and non-connections can be represented as graphs, in which the nodes represent actors (developers) and the edges represent the interaction(s) between actors or lack thereof. Such graphs can be a snapshot of a network -- a static sociogram -- or a changing network, also called a dynamic sociogram. In this phase, we process interactions data to form a communication sociogram of the community. 
+Social connections and non-connections can be represented as graphs, in which the nodes represent actors (developers) and the edges represent the interaction(s) between actors or lack thereof. Such graphs can be a snapshot of a network -- a static sociogram -- or a changing network, also called a dynamic sociogram. In this phase, we process interactions data to form a communication sociogram of the community.
 
 Two types of analysis can be done on sociograms: Either a \textit{cross-sectional} study, in which only one snapshot of the network is looked at and analyzed; or a \textit{longitudinal} study, in which several consecutive snapshots of the network are looked at and studied.  We are interested in patterns in the run-up to forks, therefore, unlike most existing research on forking, we do a longitudinal study.
 
@@ -1249,8 +1249,10 @@ S_k = \sum_{m = 1}^{M-1}\sum_{i=1}^{g}s_{ik}(X_m(R_m))
 \end{equation}
 \end{enumerate}
 
-The simulation output will be the random variables $(S,R) = (S_1,...,S_L,R_1,...,R_{M-1})$. The desirable outcome for the estimation is the vector parameter $\hat{\beta}$ for which the expected and the observed vectors are the same. 
+The simulation output will be the random variables $(S,R) = (S_1,...,S_L,R_1,...,R_{M-1})$. The desirable outcome for the estimation is the vector parameter $\hat{\beta}$ for which the expected and the observed vectors are the same. \\
 % $\mathcal{E}_{\hat{\beta}}S = s^{obs}$.
+
+So far, we discussed a number of metrics for social networks. We will investigate their statistical significance and effects to describe the different social networks that we encounter, to see if there is any systematic differences between conflict-driven and non-conflict-driven forks. 
 
 \paragraph*{Hypothesis Testing}
 So far, we have described what we can model, how to fit a model that explains the longitudinal changes in an open source community (or any similar network). Now, we test several hypothesis about these models. For example, we test whether a particular effect's (for example, reciprocity's) statistical significance on the model, and make meaningful statements about whether the network dynamics depends on this parameter with a p-value, indicating the significance level. Such test is explained in section \ref{singleParameterTest}.
@@ -1281,34 +1283,35 @@ Given the parameter estimates $\hat{\beta_a}$ and $\hat{\beta_b}$, and their sta
 
 \paragraph*{Multivariate Analysis of Variance Between Multiple Groups}
 \label{MANOVA}
-To test the statistical significance of the mean differences between groups (in our case, the different categories of forking), we may use Multivariate Analysis of Variance (MANOVA) method. In contrast to ANOVA, MANOVA method tests for the difference in two or more vectors of means. 
+To test the statistical significance of the mean differences between groups (in our case, the different categories of forking), we may use Multivariate Analysis of Variance (MANOVA) method. In contrast to ANOVA, MANOVA method tests for the difference in two or more vectors of means.\\
 
-\paragraph*{Research Questions and Hypotheses}
+%\paragraph*{Research Questions and Hypotheses}
+%
+%\paragraph*{Behavior Models}
+%Software development is a collective effort, so, theories about human behavior from sociology and psychology could help explain how software developers interact and collectively develop software. In particular, the following theories about human behavior are the guiding theories for our hypotheses.  
+%
+%\paragraph{} \textbf{Balance theory} \cite{Heider} talks about a motivation of individuals to move toward psychological balance. Balance theory considers cognitive consistency as a motive that drives sentiment or liking relationships, as well as liking of things created by or associated with the alter in the relationship.
+%
+%We may explain conflict-driven forked projects because of ``personal differences'' as a results of cognitive inconsistency between the liking relationship of other developer(s) and the software and community created by or associated with them. 
+%
+%\paragraph{} \textbf{Assortativity theories}, tries to explain collaboration, and people's preference for interacting with others who are similar to them in some way. This is related to reciprocity, in forms of contingent, direct, and indirect reciprocity. Homophily and Heterophily, which affect diversity of networks, are also closely related to assortative selection.
+%
+%We may explain conflict-driven forked projects because of ``more community-driven development'' as a by-result of developers' homophile collaborator selection.
 
-\paragraph*{Behavior Models}
-Software development is a collective effort, so, theories about human behavior from sociology and psychology could help explain how software developers interact and collectively develop software. In particular, the following theories about human behavior are the guiding theories for our hypotheses.  
+%
+%\paragraph{Research Questions and Hypotheses}
+%\label{RQs}
+%In section \ref{ResearchObjective}, we described the research objectives in general terms. Now that we have described how to model the longitudinal changes in an open source community's collaboration networks, we can be more specific about the research questions, and the hypotheses for our statistical tests. Our assumption is that patterns exist in the data, and those patterns will show statistically significant differences between different categories of forks. Statistically speaking, we'll be able to reject the following null hypotheses:
+%
+%\paragraph*{Null Hypothesis \# 1:} 
+%\hspace{10 mm} There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in conflict-driven category and No.F. category.
+%
+%\paragraph*{Null Hypothesis \# 2:} 
+%\hspace{10 mm} There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in non-conflict-driven category and No.F. category.
+%
+%\paragraph*{Null Hypothesis \# 3:} 
+%\hspace{10 mm} There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in conflict-driven category and non-conflict-driven category.\\
 
-\paragraph{} \textbf{Balance theory} \cite{Heider} talks about a motivation of individuals to move toward psychological balance. Balance theory considers cognitive consistency as a motive that drives sentiment or liking relationships, as well as liking of things created by or associated with the alter in the relationship.
-
-We may explain conflict-driven forked projects because of ``personal differences'' as a results of cognitive inconsistency between the liking relationship of other developer(s) and the software and community created by or associated with them. 
-
-\paragraph{} \textbf{Assortativity theories}, tries to explain collaboration, and people's preference for interacting with others who are similar to them in some way. This is related to reciprocity, in forms of contingent, direct, and indirect reciprocity. Homophily and Heterophily, which affect diversity of networks, are also closely related to assortative selection.
-
-We may explain conflict-driven forked projects because of ``more community-driven development'' as a by-result of developers' homophile collaborator selection.
-
-
-\paragraph*{Research Questions and Hypotheses}
-\label{RQs}
-In section \ref{ResearchObjective}, we described the research objectives in general terms. Now that we have described how to model the longitudinal changes in an open source community's collaboration networks, we can be more specific about the research questions, and the hypotheses for our statistical tests. Our assumption is that patterns exist in the data, and those patterns will show statistically significant differences between different categories of forks. Statistically speaking, we'll be able to reject the following null hypotheses:
-
-\paragraph*{Null Hypothesis \# 1:} 
-\hspace{10 mm} There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in conflict-driven category and No.F. category.
-
-\paragraph*{Null Hypothesis \# 2:} 
-\hspace{10 mm} There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in non-conflict-driven category and No.F. category.
-
-\paragraph*{Null Hypothesis \# 3:} 
-\hspace{10 mm} There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in conflict-driven category and non-conflict-driven category.\\
 
 If the data does not exhibit statistically significant differences, then our study will not reject the null hypotheses, and our assumptions cannot be verified. We argue that based on the guiding theories and the collaboration data we gathered, if the forking reasons were socially-related, they should be reflected in the data, and so, should be reflected in the longitudinal model of their collaboration network evolution. This is a conjecture, and our study will try to show that this conjecture is true, using sound statistical modeling.
 
@@ -1382,7 +1385,7 @@ We describe what the findings mean and how to interpret the findings in section 
 
 \onehalfspacing
 
-\captionof{table}{Estimates parameters in the model for Project Kamailio}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project Kamailio (Conflict-Driven)}   % Table based on sienaFit object ans
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -1421,7 +1424,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 
 
 \pagebreak
-\captionof{table}{Estimates parameters in the model for Project ffmpeg}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project ffmpeg (Conflict-Driven)}   % Table based on sienaFit object ans
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -1455,7 +1458,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 \end{tabular}
 
 \pagebreak
-\captionof{table}{Estimates parameters in the model for Project Amarok}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project Amarok (Non-Conflict-Driven)}   % Table based on sienaFit object ans
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -1493,7 +1496,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 \end{tabular}
 
 \pagebreak
-\captionof{table}{Estimates parameters in the model for Project Apache CouchDB}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project Apache CouchDB (Non-Conflict-Driven)}   % Table based on sienaFit object ans
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -1531,7 +1534,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 \end{tabular}
 
 \pagebreak
-\captionof{table}{Estimates parameters in the model for Project Pidgin}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project Pidgin (Non-Conflict-Driven)}   % Table based on sienaFit object ans
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -1569,7 +1572,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 \end{tabular}
 
 \pagebreak
-\captionof{table}{Estimates parameters in the model for Project MPlayer}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project MPlayer (Non-Conflict-Driven)}   % Table based on sienaFit object ans
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -1641,7 +1644,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 %\end{tabular}
 
 \pagebreak
-\captionof{table}{Estimates parameters in the model for Project freeglut}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project freeglut (Non-Conflict-Driven)}   % Table based on sienaFit object ans
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -1672,7 +1675,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 \end{tabular}
 
 \pagebreak
-\captionof{table}{Estimates parameters in the model for Project Ceph}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project Ceph (Not forked)}   % Table based on sienaFit object ans
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -1710,7 +1713,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 \end{tabular}
 
 \pagebreak
-\captionof{table}{Estimates parameters in the model for Project OpenStack Neutron}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project OpenStack Neutron (Not forked)}   % Table based on sienaFit object ans
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -1748,7 +1751,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 \end{tabular}
 
 \pagebreak
-\captionof{table}{Estimates parameters in the model for Project GlusterFS}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project GlusterFS (Not forked)}   % Table based on sienaFit object ans
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -1788,14 +1791,16 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 \doublespacing
 
 \pagebreak
-\section{Conclusion}
+\section{Discussion}
 \label{Discussion}
 
 In this research, we investigated the pre-fork time periods for open source projects that had forked. Our aim was to investigate whether there are patterns left in the projects records that could be used to identify the pre-fork dynamics, and use them as key indicators to identify problems, and design an intervention, if needed, before the project disintegrates and the irreversible damage is done. \\
 
 Several stakeholders benefit from such important research findings, as involvement in open source software development, either as an individual developer, or a business/government sponsor, is an investment of time, energy and resources. The findings of our research helps decision-makers make better informed decisions both when choosing to be affiliated with or involved in certain open source projects, and when there have been involved in the projects.\\
 
-We analyzed both the contents and the interaction patterns of the developers in forked open source software projects, that had gone through various types of forking. Contents of the developer communication messages were analyzed using time series analysis and sentiment analysis, and the interaction patterns were analyzed using social network analysis methods for longitudinal change. \\
+We analyzed both the contents and the relationship representations of the developers in forked open source software projects, that had gone through various types of forking. Contents of the developer communication messages were analyzed using time series analysis and sentiment analysis, and the interaction patterns were analyzed using social network analysis methods for longitudinal change. \\
+
+Our research goals were whether we can identify if there is a problem; whether we can do this early enough that we can actually do something about it, and whether we can do this using objectively automate-able processes without having to be intimately familiar with the projects. Our results show that monitoring the communication patterns, both with regard to message contents, and relationship representations address all three research questions. \\
 
 Our findings show that the conflict-driven forks experienced a period of pre-fork negativity, manifested in the developers' communication sentiments. Our anomaly detection algorithms detected these anomalies. In contrast, the non-conflict-driven forks did not exhibit any anomalies, or showed periods of positive spikes, which is indicative of positive communication sentiments. \\
 

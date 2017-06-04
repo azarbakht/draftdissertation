@@ -88,7 +88,7 @@ Oregon State University\\
 \vspace{5mm} %5mm vertical space
 azarbaka@oregonstate.edu\\
 \vspace{5mm} %5mm vertical space
-Dissertation\\
+Dissertation Draft\\
 Major Advisor: Prof. Carlos Jensen\\
 Ph.D. Committee Members:\\
 Prof. Drew Gerkey\\
@@ -145,15 +145,15 @@ Social networks are a ubiquitous part of our social lives, and the creation of o
 
 Community splits in free and open source software development are referred to as forks, and are relatively common. Robles et al. \cite{Robles} define forking as ``when a part of a development community (or a third party not related to the project) starts a completely independent line of development based on the source code basis of the project.'' 
 
-Although the bulk of collaboration and communication in FOSS communities occurs online and is publicly accessible for researchers, there are still many open questions about the social dynamics in FOSS communities. Projects may go through a metamorphosis when faced with an influx of new developers or the involvement of an outside organization. Conflicts between developers' divergent visions about the future of the project may lead to forking of the project and dilution of the community. Forking, either as an acrimonious split when there is a conflict, or as a friendly divide when new features are experimentally added, affect the community \cite{Bezrukova}.
+Although the bulk of collaboration and communication in FOSS communities occurs online and is publicly accessible by researchers, there are still many open questions about the social dynamics in FOSS communities. Projects may go through a metamorphosis when faced with an influx of new developers or the involvement of an outside organization. Conflicts between developers' divergent visions about the future of the project may lead to forking of the project and dilution of the community. Forking, either as an acrimonious split when there is a conflict, or as a friendly divide when new features are experimentally added, affect the community \cite{Bezrukova}.
 
 Previous research on forking ranges from the study by Robles et al. \cite{Robles} that identified 220 significant FOSS projects that have forked over the past 30 years, and compiled a comprehensive list of the dates and reasons for forking (listed in Table \ref{tableReasonsForForking}, and depicted by frequency in Figure \ref{tableReasonsForForking}), to the study by Baishakhi et al. \cite{Baishakhi} on post-forking porting of new features or bug fixes from peer projects. It encompasses works of Nyman on developers' opinions about forking \cite{NymanHackersForking}, developers motivations for performing forks \cite{NymanToForkOrNotToFork}, the necessity of code forking as tool for sustainability \cite{NymanForkingSustainability}, and Syeed's work on sociotechnical dependencies in the BSD projects family \cite{Syeed}.
 
-Most existing research on forking, however, is post-hoc. It looks at the forking events in retrospect and tries to find the outcome of the fork; what happened after the fork happened; what was the cause of forking, and such. The run-up to the forking events are seldom studied. This leaves several questions unanswered: Was it a long-term trend? Was the community polarized, before forking happened? Was there a shift of influence? Did the center of gravity of the community change? What was the tipping point? Was it predictable? Is it ever predictable? We are missing that context. 
+Most existing research on forking, however, is post-hoc. It looks at the forking events in retrospect and tries to find the outcome of the fork; what happened after the fork occurred; what was the cause of forking, and such. The run-up to the forking events are seldom studied. This leaves several questions unanswered: Was it a long-term trend? Was the community polarized before the forking happened? Was there a shift in influence? Did the center of gravity of the community change? What was the tipping point? Was it predictable? Is it ever predictable? We are missing that context. 
 
-Additionally, studies of FOSS communities tend to suffer from an important limitation. They treat community as a static structure rather than a dynamic process. Longitudinal studies on open source forking are rare. To better understand and measure the evolution, social dynamics of forked FOSS projects, and integral components to understanding their evolution and direction, we need new and better tools. Before making such new tools, we need to gain a better understanding of the context. With this knowledge and these tools, we could help projects reflect on their actions, and help community leaders make informed decisions about possible changes or interventions. It will also help potential sponsors make informed decisions when investing in a project, and throughout their involvement to ensure a sustainable engagement. 
+Additionally, studies of FOSS communities tend to suffer from an important limitation. They treat community as a static structure rather than a dynamic process. Longitudinal studies on open source forking are rare. To better understand and measure the evolution, social dynamics of forked FOSS projects, and integral components to understanding their evolution and direction, we need new and better tools. Before making such new tools, we need to gain a better understanding of the context. With this knowledge and these tools, we could help projects reflect on their actions, and help community leaders make informed decisions about possible changes or interventions. This could also help potential sponsors make informed decisions when investing in a project, and throughout their involvement to ensure a sustainable engagement. 
 
-Identification is the first step to rectify an undesirable dynamic before the damage is done. A community that does not manage growing pains may end up stagnating or dissolving. Managing growing pains is especially important in the case of FOSS projects, where near half the project contributors are volunteers \cite{Forrest}. Oh et al. \cite{Oh} have argued that openness in FOSS is ``[...] generally perceived as having a positive connotation, however, the term can also be interpreted as referring to some nonconstructive characteristics, such as unobstructed exit, susceptible, vulnerable, fragile, lacking effective regulation, and so on. The unobstructed exit and lack of regulatory force inherent in the FOSS community can result in a community's susceptibility and vulnerability to herded exits by its participants. Commercial vendor intervention, an alternative project becoming available, and licensing issues can result in some original core members ceasing to provide their loyal service for the community, which can prompt their coworkers to leave as well'' \cite{Oh}. Identification of recipes for success or stagnation, sustainability or fragmentation may lead to a set of best practices and pitfalls.
+Identification is the first step to rectify an undesirable dynamic before the damage is done. A community that does not manage growing pains may end up stagnating or dissolving. Managing growing pains is especially important in the case of FOSS projects, where near half the project contributors are volunteers \cite{Forrest}. Oh et al. \cite{Oh} have argued that openness in FOSS is \textit{``[...] generally perceived as having a positive connotation, however, the term can also be interpreted as referring to some nonconstructive characteristics, such as unobstructed exit, susceptible, vulnerable, fragile, lacking effective regulation, and so on. The unobstructed exit and lack of regulatory force inherent in the FOSS community can result in a community's susceptibility and vulnerability to herded exits by its participants. Commercial vendor intervention, an alternative project becoming available, and licensing issues can result in some original core members ceasing to provide their loyal service for the community, which can prompt their coworkers to leave as well''} \cite{Oh}. Identification of recipes for success or stagnation, sustainability or fragmentation may lead to a set of best practices and pitfalls.
 
 In this research, we use time series analysis and longitudinal social network analysis to study the evolution and social dynamics of FOSS communities. Specifically, we use anomaly detection algorithms to analyze the time series of sentiments in communications of open source developers, in the run up to the fork, and we also use longitudinal social network analysis to investigate the driving forces in formation and dissolution of communities. With these techniques we aim to identify measures associated with unhealthy group dynamics, for example a simmering conflict, in addition to early indicators of major events in the lifespan of a community. One set of dynamics we were especially interested in, are those that are associated with FOSS projects that have forked.
 
@@ -235,7 +235,7 @@ Social interactions reflect the changes the community goes through, and so, it c
 
 For the rest of the discussion, we define conflict-driven forks as projects that have forked for personal differences, and non-conflict driven forks as projects that have forked for technical experimentation, and were not forked for personal differences. 
 
-We defined conflict-driven (undesirable) as the projects forked because of ``Personal differences among developers team'', or because of the need for ``more community-driven development''. These situations are undesirable because they imply an increase in cost of maintenance, redundant or wasted efforts, and a lost shared value. One-fifth (20.5\%) of the 220 forked projects fall into this category\cite{Robles}. Examples include Kamailio and OpenSIPS projects. We defined non-conflict-driven as projects forked for ``technical differences (Addition of functionality)'', and were not forked for personal differences. More than a quarter (27.3\%) of the 220 forked projects fall into this category\cite{Robles}. Examples include Amarok and Clementine Player projects.
+We defined conflict-driven (undesirable) as the projects forked because of ``Personal differences among developers team'', or because of the need for ``more community-driven development''. These situations are undesirable because they imply an increase in cost of maintenance, redundant or wasted efforts, and the loss of shared values. One-fifth (20.5\%) of the 220 forked projects fall into this category\cite{Robles}. Examples include Kamailio and OpenSIPS projects. We defined non-conflict-driven as projects forked for ``technical differences (Addition of functionality)'', and were not forked for personal differences. More than a quarter (27.3\%) of the 220 forked projects studied by \cite{Robles} fall into this category. Examples include Amarok and Clementine Player projects.
 Conflict-driven forks are especially important, as they are destructive, lead to resentment, and the dilution of the community workforce. In contrast, the non-conflict driven forks are friendly and often temporary splits, where developers experimentally modify the code and/or add new features, often with the intention of returning back to the original project and merging the new features back into the original project. In summary, conflict-driven forks are like violent exits with no intention of coming back, whereas non-conflict-driven forks are temporary trips. 
 
 \subsection{Research Goals}
@@ -265,11 +265,11 @@ The free and open source software development communities have been studied exte
 
 Post-forking porting of new features or bug fixes from peer projects happens among forked projects \cite{Baishakhi}. A case study of the BSD family (i.e., FreeBSD, OpenBSD, and NetBSD, which evolved from the same code base) found that 10-15\% of lines in BSD release patches consist of ported edits, and on average 26-58\% of active developers take part in porting per release. Additionally, They found that over 50\% of ported changes propagate to other projects within three releases \cite{Baishakhi}. This shows the amount of redundant work developers need to do to synchronize and keep up with development in parallel projects. 
 
-Visual exploration of the collaboration networks in FOSS communities was the focus of a study that aimed to observe how key events in the mobile-device industry affected the WebKit collaboration network over its lifetime. \cite{JoseWebKit} They found that \textit{coopetition} (both competition and collaboration) exists in the open source community; moreover, they observed that the ``firms that played a more central role in the WebKit project such as Google, Apple and Samsung were by 2013 the leaders of the mobile-devices industry. Whereas more peripheral firms such as RIM and Nokia lost market-share'' \cite{JoseWebKit}. 
+Visual exploration of the collaboration networks in FOSS communities was the focus of a study that aimed to observe how key events in the mobile-device industry affected the WebKit collaboration network over its lifetime \cite{JoseWebKit}. They found that \textit{coopetition} (both competition and collaboration) exists in the open source community; moreover, they observed that the ``firms that played a more central role in the WebKit project such as Google, Apple and Samsung were by 2013 the leaders of the mobile-devices industry. Whereas more peripheral firms such as RIM and Nokia lost market-share'' \cite{JoseWebKit}. 
 
-The study of communities has grown in popularity in part thanks to advances in social network analysis.  From the earliest works by Zachary \cite{Zachary} to the more recent works of Leskovec et al. \cite{LeskovecGraphsOverTime}\cite{LeskovecStatisticalPropertiesOfCommunityStructure}, there is a growing body of quantitative research on online communities. The earliest works on communities was done with a focus on information diffusion in a community \cite{Zachary}. The study by Zachary investigated the fission of a community; the process of communities splitting into two or more parts. They found that fission could be predicted by applying the Ford-Fulkerson min-cut algorithm \cite{Ford} on the group's communication graph; ``the unequal flow of sentiments across the ties'' and discriminatory sharing of information lead to subcommunities with more internal stability than the community as a whole.\cite{Zachary}
+The study of communities has grown in popularity in part thanks to advances in social network analysis.  From the earliest works by Zachary \cite{Zachary} to the more recent works of Leskovec et al. \cite{LeskovecGraphsOverTime}\cite{LeskovecStatisticalPropertiesOfCommunityStructure}, there is a growing body of quantitative research on online communities. The earliest works on communities was done with a focus on information diffusion in a community \cite{Zachary}. The study by Zachary investigated the fission of a community; the process of communities splitting into two or more parts. They found that fission could be predicted by applying the Ford-Fulkerson min-cut algorithm \cite{Ford} on the group's communication graph; ``the unequal flow of sentiments across the ties'' and discriminatory sharing of information lead to subcommunities with more internal stability than the community as a whole \cite{Zachary}.
 
-The dynamic behavior of a network and identifying key events was the aim of a study by Asur et al \cite{Asur}. They studied three DBLP co-authorship networks and defined the evolution of these networks as following one of these paths: a) Continue, b) k-Merge, c) k-Split, d) Form, or e) Dissolve. They defined four possible transformation events for individual members: 1) Appear, 2) Disappear, 3) Join, and 4) Leave. They compared groups extracted from consecutive snapshots, based on the size and overlap of every pair of groups. Then, they labeled groups with events, and used these identified events \cite{Asur}.
+The dynamic behavior of a network and identifying key events was the aim of a study by Asur et al \cite{Asur}. They studied three DBLP co-authorship networks and defined the evolution of these networks as following one of these paths: a) Continue, b) k-Merge, c) k-Split, d) Form, or e) Dissolve. They used the metrics listed in Table \ref{tableDiversityMeasuresAsurEtAl} and defined four possible transformation events for individual members: 1) Appear, 2) Disappear, 3) Join, and 4) Leave. They compared groups extracted from consecutive snapshots, based on the size and overlap of every pair of groups. Then, they labeled groups with events, and used these identified events \cite{Asur}.
 
 \begin{table}[!htbp]
 \caption{The behavioral measures used by Asur et al. \cite{Asur}}
@@ -308,7 +308,7 @@ Control of nodes  & Nodes are hard to control & Number of driver nodes \\
 \end{tabular}
 \end{table}
 
-Community dynamics was the focus of a more recent study by Hannemann and Klamma \cite{Hannemann} on three open source bioinformatics communities. They measured "age" of users, as starting from their first activity and found survival rates and two indicators for significant changes in the core of the community. They identified a survival rate pattern of 20-40-90\%, meaning that only 20\% of the newcomers survived after their first year, 40\% of the survivors survived through the second year, and 90\% of the remaining ones, survived over the next years. As for the change in the core, they suggested that a falling maximum betweenness in combination with an increasing network diameter as an indicator for a significant change in the core, e.g., retirement of a central person in the community. Our initial network-specific study built on their findings, and the evolution of betweenness centralities and network diameters for the projects in our study are explained in the following sections. 
+Community dynamics was the focus of a more recent study by Hannemann and Klamma \cite{Hannemann} on three open source bioinformatics communities. They measured "age" of users, as starting from their first activity and found survival rates and two indicators for significant changes in the core of the community. They identified a survival rate pattern of 20-40-90\%, meaning that only 20\% of the newcomers survived after their first year, 40\% of these survivors made it through the second year, and 90\% of the remaining ones, survived over the next years. As for the change in the core, they suggested that a falling maximum betweenness in combination with an increasing network diameter as an indicator for a significant change in the core, e.g., retirement of a central person in the community. Our initial network-specific study built on their findings, and the evolution of betweenness centralities and network diameters for the projects in our study are explained in the following sections. 
 
 \section{Methodology and Results}
 \label{methodology}
@@ -316,11 +316,11 @@ Community dynamics was the focus of a more recent study by Hannemann and Klamma 
 We did the following two types of analysis: 
 \begin{itemize}
 \item Time series analysis of open source developers’ collaboration communication sentiments
-\item Social network analysis of open source developers’ interaction graphs 
+\item Social network analysis of open source developers’ interaction graphs
 \end{itemize}
-In the following, the details of each method as well as the results of each method are described.
+In the following sections, the details of each method as well as the results of each method are described.
 
-One of the challenges of studying this that you face is finding projects that have gone through a variety of different types of forking. We also need for those projects to have survived, and additionally for the records to have survived. Unfortunately, that leaves us with a small sample, which is typical of studies in this domain, even though our study features more projects that is typical of related work as discussed in section \ref{relatedwork}, which typically feature only 1-3 projects. Table \ref{forkedProjectsDataCollected} lists all the attainable projects that meet the criteria. 
+One of the challenges of studying that you face is finding projects that have gone through a variety of different types of forking. We also need for those projects to have survived, and additionally for the records to have survived. Unfortunately, that leaves us with a small sample, which is typical of studies in this domain, even though our study features more projects that is typical of related work as discussed in section \ref{relatedwork}, which typically feature only 1-3 projects \cite{Baishakhi}\cite{JoseWebKit}\cite{Hannemann}. Table \ref{forkedProjectsDataCollected} lists all the attainable projects that meet the criteria. 
 
 \begin{table}
 \centering
@@ -367,25 +367,26 @@ A statistical time series analysis of the sentiments for the contents of the mes
 \centering
 \caption{The number of messages sentiment-analyzed for each project.}
 \label{TS_NumberOfMessages}
-\begin{tabular}{p{0.45\textwidth} p{0.40\textwidth} p{0.135\textwidth}}
+\begin{tabular}{p{0.45\textwidth} r r}
 \hline\noalign{\smallskip}
 \textbf{Projects} & \textbf{Number of messages} & \textbf{Year forked}\\
 \noalign{\smallskip}\hline\noalign{\smallskip}
-Kamailio \& OpenSIPS & 5450  & 2008 \\ \hline
-ffmpeg \& libav &  20690 & 2011 \\ \hline
-Amarok \& Clementine Player & 1642  & 2010 \\ \hline
-Apache CouchDB \& BigCouch &  3746  & 2010 \\ \hline
-Pidgin \& Carrier &  4095  & 2008 \\ \hline
-MPlayer \& MPlayerXP &   6305  & 2005 \\ \hline
-Asterisk \& Callweaver & 28012  & 2007 \\ \hline
+Kamailio \& OpenSIPS & 5,450  & 2008 \\ \hline
+ffmpeg \& libav &  20,690 & 2011 \\ \hline
+Amarok \& Clementine Player & 1,642  & 2010 \\ \hline
+Apache CouchDB \& BigCouch &  3,746  & 2010 \\ \hline
+Pidgin \& Carrier &  4,095  & 2008 \\ \hline
+MPlayer \& MPlayerXP &   6,305  & 2005 \\ \hline
+Asterisk \& Callweaver & 28,012  & 2007 \\ \hline
 %rdesktop \& FreeRDP  & 266 & 2010 \\ \hline
-freeglut \& OpenGLUT & 2267  & 2004 \\ \hline
-Ceph  &  7232  & NA \\ \hline
-OpenStack Neutron &  20153   & NA \\ \hline
-GlusterFS &   1245  & NA \\ 
+freeglut \& OpenGLUT & 2,267  & 2004 \\ \hline
+Ceph  &  7,232  & NA \\ \hline
+OpenStack Neutron &  20,153   & NA \\ \hline
+GlusterFS &   1,245  & NA \\ 
 \noalign{\smallskip}\hline
 \end{tabular}
 \end{table}
+
 
 
 \subsubsection{Analysis}
@@ -401,7 +402,7 @@ To detect outliers, we used the R (Statistical Computing) \cite{R} package tsout
 Figures \ref{figureOutliers_1}-\ref{figureOutliers_12} show the detected outliers in the sentiments time series, and includes both the original and adjusted time series, as well as the outlier effects.
 
 \paragraph{Outlier Detection Models}
-
+\label{OutlierDetectionModels}
 We were interested in detecting anomalies that might have happened before the forking event, that could be used as indicators associated with forking. For this purpose, we used the following anomaly detection approach. All the following description from \cite{Chen} describes outlier models. 
 
 For an ARIMA($p, d, q$) process, we have 
@@ -471,7 +472,7 @@ The time series shown in Figures \ref{figureTS_1to6} and \ref{figureTS_7to12} sh
 \epsfig{file=PLOTS_PDF/TS_4.pdf, width=0.55\columnwidth}
 \epsfig{file=PLOTS_PDF/TS_5.pdf, width=0.55\columnwidth}
 \epsfig{file=PLOTS_PDF/TS_6.pdf, width=0.55\columnwidth}
-\caption{Time Series of sentiments in developers' messages for projects (From top to bottom, left to right) Kamailio, ffmpeg, Amarok, Apache CouchDB, Pidgin, MPlayer.}
+\caption{Time Series of sentiments in developers' messages for projects (From top to bottom, left to right) Kamailio (Conflict-Driven), ffmpeg (Conflict-Driven), Amarok (Non-Conflict-Driven), Apache CouchDB (Non-Conflict-Driven), Pidgin (Non-Conflict-Driven), MPlayer (Non-Conflict-Driven). It is not easy to visually analyse these raw time series.}
 \label{figureTS_1to6}
 \end{figure}
 
@@ -483,7 +484,7 @@ The time series shown in Figures \ref{figureTS_1to6} and \ref{figureTS_7to12} sh
 \epsfig{file=PLOTS_PDF/TS_10.pdf, width=0.55\columnwidth}
 \epsfig{file=PLOTS_PDF/TS_11.pdf, width=0.55\columnwidth}
 \epsfig{file=PLOTS_PDF/TS_12.pdf, width=0.55\columnwidth}
-\caption{Time Series of sentiments in developers' messages for projects (From top to bottom, left to right) Asterisk, freeglut, Ceph, OpenStack Neutron, and GlusterFS}
+\caption{Time Series of sentiments in developers' messages for projects (From top to bottom, left to right) Asterisk (Non-Conflict-Driven), freeglut (Non-Conflict-Driven), Ceph (Not Forked), OpenStack Neutron (Not Forked), and GlusterFS (Not Forked). It is not easy to visually analyse these raw time series.}
 \label{figureTS_7to12}
 \end{figure}
 
@@ -498,7 +499,7 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 \epsfig{file=PLOTS_PDF/D_3.pdf, width=0.5\columnwidth}
 \hspace{6ex}
 \epsfig{file=PLOTS_PDF/D_4.pdf, width=0.5\columnwidth}
-\caption{Time series decomposed into trend, seasonality and residual time Series for projects (From top to bottom, left to right) Kamailio, ffmpeg, Amarok, Apache CouchDB.}
+\caption{Time series decomposed into trend, seasonality and residual time Series for projects (From top to bottom, left to right) Kamailio (Conflict-Driven), ffmpeg (Conflict-Driven), Amarok (Non-Conflict-Driven), Apache CouchDB (Non-Conflict-Driven).}
 \label{figureDecpmposed_1to4}
 \end{figure}
 
@@ -513,7 +514,7 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 %\epsfig{file=PLOTS_PDF/D_8.pdf, width=0.57\columnwidth}
 \epsfig{file=PLOTS_PDF/D_9.pdf, width=0.5\columnwidth}
 \vspace{4ex}
-\caption{Time series decomposed into trend, seasonality and residual time Series for projects (From top to bottom, left to right) Pidgin, MPlayer, Asterisk, and freeglut.}
+\caption{Time series decomposed into trend, seasonality and residual time Series for projects (From top to bottom, left to right) Pidgin (Non-Conflict-Driven), MPlayer (Non-Conflict-Driven), Asterisk (Non-Conflict-Driven), and freeglut (Non-Conflict-Driven).}
 \label{figureDecpmposed_5to8}
 \end{figure}
 
@@ -525,15 +526,15 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 \vspace{6ex}
 \epsfig{file=PLOTS_PDF/D_12.pdf, width=0.5\columnwidth}
 \hspace{6ex}
-\caption{Time series decomposed into trend, seasonality and residual time Series for projects (From top to bottom, left to right) Ceph, OpenStack Neutron, and GlusterFS}
+\caption{Time series decomposed into trend, seasonality and residual time Series for projects (From top to bottom, left to right) Ceph (Not Forked), OpenStack Neutron (Not Forked), and GlusterFS (Not Forked).}
 \label{figureDecpmposed_9to12}
 \end{figure}
 
 
 \begin{table}
 \centering
-\caption{Anomalies detected in the time series of sentiments for project Kamailio. Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value. ($sigma^2$ estimated as 128.8:  log likelihood = -1170.2,  aic = 2356.41)}
-\label{TableDiversityMeasuresKunegisEtAl}
+\caption{Anomalies detected in the time series of sentiments for project Kamailio (Conflict-Driven). Type column refers to the different anomalies as described in section \ref{OutlierDetectionModels}. Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value. ($sigma^2$ estimated as 128.8:  log likelihood = -1170.2,  aic = 2356.41)}
+\label{AnomaliesKamailio}
 \begin{tabular}{rlrrrr}
   \hline
  & type & ind & coefhat & tstat & statistical significance (*) \\ 
@@ -550,7 +551,7 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 
 \begin{table}
 \centering
-\caption{Anomalies detected in the time series of sentiments for project ffmpeg. Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value. ($sigma^2$ estimated as 57.33:  log likelihood = -1043.78,  aic = 2101.57)}
+\caption{Anomalies detected in the time series of sentiments for project ffmpeg (Conflict-Driven). Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value. ($sigma^2$ estimated as 57.33:  log likelihood = -1043.78,  aic = 2101.57)}
 \begin{tabular}{rlrrrr}
   \hline
  & type & ind & coefhat & tstat & statistical significance (*)\\ 
@@ -564,7 +565,7 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 
 \begin{table}
 \centering
-\caption{Anomalies detected in the time series of sentiments for project Amarok. Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 375.6:  log likelihood = -1326.61,  aic = 2661.22)}
+\caption{Anomalies detected in the time series of sentiments for project Amarok (Non-Conflict-Driven). Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 375.6:  log likelihood = -1326.61,  aic = 2661.22)}
 \begin{tabular}{rlrrrr}
   \hline
  & type & ind & coefhat & tstat & statistical significance (*)\\ 
@@ -581,7 +582,7 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 
 \begin{table}
 \centering
-\caption{Anomalies detected in the time series of sentiments for project Pidgin. Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 312.3:  log likelihood = -1307.25,  aic = 2622.49)}
+\caption{Anomalies detected in the time series of sentiments for project Pidgin (Non-Conflict-Driven). Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 312.3:  log likelihood = -1307.25,  aic = 2622.49)}
 \begin{tabular}{rlrrrr}
   \hline
  & type & ind & coefhat & tstat & statistical significance (*)\\ 
@@ -595,7 +596,7 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 
 \begin{table}
 \centering
-\caption{Anomalies detected in the time series of sentiments for project MPlayer. Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 225.5:  log likelihood = -1251.94,  aic = 2517.88)}
+\caption{Anomalies detected in the time series of sentiments for project MPlayer (Non-Conflict-Driven). Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 225.5:  log likelihood = -1251.94,  aic = 2517.88)}
 \begin{tabular}{rlrrrr}
   \hline
  & type & ind & coefhat & tstat & statistical significance (*)\\ 
@@ -612,7 +613,7 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 
 \begin{table}
 \centering
-\caption{Anomalies detected in the time series of sentiments for project Asterisk. Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 358.2:  log likelihood = -1227.85,  aic = 2463.7
+\caption{Anomalies detected in the time series of sentiments for project Asterisk (Non-Conflict-Driven). Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 358.2:  log likelihood = -1227.85,  aic = 2463.7
   )}
 \begin{tabular}{rlrrrr}
   \hline
@@ -645,7 +646,7 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 
 \begin{table}
 \centering
-\caption{Anomalies detected in the time series of sentiments for project freeglut. Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 348.6:  log likelihood = -1307.6,  aic = 2619.2)}
+\caption{Anomalies detected in the time series of sentiments for project freeglut (Non-Conflict-Driven). Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 348.6:  log likelihood = -1307.6,  aic = 2619.2)}
 \begin{tabular}{rlrrrr}
   \hline
  & type & ind & coefhat & tstat & statistical significance (*)\\ 
@@ -667,7 +668,7 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 %Anomalies detected in the time series of sentiments for project GlusterFS: \\
 %\input{R_Environment_Variables/outlier_table_project_12.tex}\\
 
-No anomalies were found in the time series of sentiments for project Apache CouchDB. \\
+No anomalies were found in the time series of sentiments for project Apache CouchDB (Non-Conflict-Driven). \\
 %\input{R_Environment_Variables/outlier_table_project_4.tex}\\
 
 \begin{figure}
@@ -755,7 +756,7 @@ We got close to determining when one vs. other has occurred, however, given the 
 
 \subsection{Social network analysis of open source developers’ interaction graphs}
 \label{socialNetworkAnalysisMethodology}
-We used a social network analysis developer-oriented approach to statistically model the changes a community goes through in the run-up to a fork.\cite{AzarbakhtOSS2017} The model represented tie formation, tie breakage, and tie maintenance between developers. It uses stochastic estimation methods to estimate several model parameters that capture the variance in the changes the community goes through. The model leads us to estimates of the significance of several parameters on this longitudinal change.
+We used a social network analysis developer-oriented approach to statistically model the changes a community goes through in the run-up to a fork \cite{AzarbakhtOSS2017}. The model represented tie formation, tie breakage, and tie maintenance between developers. It uses stochastic estimation methods to estimate several model parameters that capture the variance in the changes the community goes through. The model leads us to estimates of the significance of several parameters on this longitudinal change.
 
 The process is described in detail in the following. Figure \ref{FlowChart} show the overview of the methodology.
 
@@ -973,17 +974,18 @@ Two types of analysis can be done on sociograms: Either a \textit{cross-sectiona
 
 A longitudinal study can look at the sociograms in the following two distinct approaches: 
 \begin{enumerate}
-\item A \textit{network-specific} approach, which can be called a skin-deep \textit{measurement-specific} look, in which, we focus on the observed networks, measure their properties, to describe the structure of the \textit{observed networks} with numeric summaries/descriptors, e.g., in Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR}. Many studies measuring centralities as their only metrics, fall into this category. 
+\item A \textit{network-specific} approach, which can be called a skin-deep \textit{measurement-specific} look, in which, we focus on the observed networks, measure their properties, to describe the structure of the \textit{observed networks} with numeric summaries/descriptors, e.g. see Appendix B \ref{sectionInitialStudy}
+Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR}. Many studies measuring centralities as their only metrics, fall into this category. 
 
 \item A \textit{population-processes} approach, in which we treat an observed network as one instance from a set of all possible networks with the same number of nodes, and with similar characteristics. In a population-processes approach, the observed network is only good to help us understand the social forces/processes that generated it, because we are interested in the forces/processes that underlie the structure and changes of the network; these reflect the values shared or not shared by the community members, and represent the group behavior, and behavior change trends that lead to a forking event. 
 
 \end{enumerate}
 
-Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR} are good examples of the expressiveness and limitations of a network-specific approach. Figure \ref{figureNodesEdgesTimeR} shows the normalized change in the number of active nodes (developers) and edges (interaction between developers) for eight FOSS projects from conflict-driven and non-conflict-driven categories. 
+Appendix B \ref{sectionInitialStudy} Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR} are good examples of the expressiveness and limitations of a network-specific approach. Appendix B \ref{sectionInitialStudy} Figure \ref{figureNodesEdgesTimeR} shows the normalized change in the number of active nodes (developers) and edges (interaction between developers) for eight FOSS projects from conflict-driven and non-conflict-driven categories. 
 
-The normalized number of nodes and edges for the conflict-driven forks (i.e., second and third row) show a sudden sharp decrease around the month of fork. This can be because of dissolution of the development team, who either left the project, or stopped being active contributors as much as before. Figure  \ref{figureDiameterTimeR} shows normalized change of diameter over time for the same projects. It is hard to make sense of normalized diameter changes across projects, and this demonstrates the limitations of network-specific approaches, as they may, or may not (often the case), help us understand the network dynamics.
+The normalized number of nodes and edges for the conflict-driven forks (i.e., second and third row) show a sudden sharp decrease around the month of fork. This can be because of dissolution of the development team, who either left the project, or stopped being active contributors as much as before. Appendix B \ref{sectionInitialStudy} Figure \ref{figureDiameterTimeR} shows normalized change of diameter over time for the same projects. It is hard to make sense of normalized diameter changes across projects, and this demonstrates the limitations of network-specific approaches, as they may, or may not (often the case), help us understand the network dynamics.
 
-As an example of expressiveness, figure \ref{figureNodesEdgesTimeR} shows that a measurements-only approach shows us the trends of change or no-change in the measured metrics. It also shows one limitation of such an approach: even though we can see trend changes, it is hard to make sense of such trends given the short scope of the measurements. Additionally, it is hard to constitutes a reference point and back it up mathematically or statistically.
+As an example of expressiveness, Appendix B \ref{sectionInitialStudy} Figure \ref{figureNodesEdgesTimeR} shows that a measurements-only approach shows us the trends of change or no-change in the measured metrics. It also shows one limitation of such an approach: even though we can see trend changes, it is hard to make sense of such trends given the short scope of the measurements. Additionally, it is hard to constitutes a reference point and back it up mathematically or statistically.
 
 The following subsection lists the reasons why we need to use a statistical model, used in the \textit{population-processes} approach.
 
@@ -997,7 +999,7 @@ There is another way of looking at these networks, in a less-superficial way; na
 
 \item The traditional \textit{network-specific} approach assumes edges in sociograms are statistically independent, (and/or identically distributed). This can be misleading, as, social network data are relational. For example, in real-life human communication, the likelihood of forming ties with friends of a friend is higher than a stranger, as Balance Theory suggests \cite{Heider}. 
 
-\item In population-specific approach, we try to identify the social forces that have formed the observed network, by simulation a population of similar networks of the same characteristics. After finding the statistical distribution of network population, then we can compare the observed network to the population distribution of possible networks of that size, and see how significant and likely it is to observe such a graph, as compared to observing a randomly-generated graph. This is useful, because it gives us a reference point to compare our observed graph with, and to weed out the properties generated by random processes, and to find the statistically significant network statistics. In short, with a statistical model, we can draw inferences about whether certain network structures and substructures are more commonly observed in the observed network than might be expected by chance \cite{Robins}. 
+\item In the population-specific approach, we try to identify the social forces that have formed the observed network, by simulation a population of similar networks of the same characteristics. After finding the statistical distribution of network population, then we can compare the observed network to the population distribution of possible networks of that size, and see how significant and likely it is to observe such a graph, as compared to observing a randomly-generated graph. This is useful, because it gives us a reference point to compare our observed graph with, and to weed out the properties generated by random processes, and to find the statistically significant network statistics. In short, with a statistical model, we can draw inferences about whether certain network structures and substructures are more commonly observed in the observed network than might be expected by chance \cite{Robins}. 
 
 \item Stochastic models capture the regularities in the processes that caused the network ties form, as well as variability that are hard to model otherwise. A model that considers stochasticity allows us to understand the uncertainty associated with an observed network. It makes it possible to learn about the distribution of possible networks for a given specification of a model \cite{Robins}.
 
@@ -1018,7 +1020,7 @@ In summary, a measurement-only approach is not capable of explaining the longitu
 
 Longitudinal evolution of a network data is the result of many small atomic changes occurring between the consecutively observed networks. In our case, software developers are the actors in the networks, and they can form a connection with another developer, break off an existing connection, or maintain their status quo. These are the four possibilities of atomic change within our evolving networks: (1) forming a new tie; (2) breaking off an existing tie; (3) maintaining a non-connection; and (4) maintaining a connection. We assume a continuous-time network evolution, even though our observations are made at two or more discrete time points. 
 
-The state-of-the-art in studying longitudinal social networks, is the idea of \textit{actor-oriented models} \cite{Snijders2010}, based on a model of developers changing their outgoing ties as a consequence of a stochastic optimization of an \textit{objective function}. This framework assumes that the observed networks at discrete times, are outcomes of a continuous-time Markov process. In the case of open source developers, the actor-oriented model, can be informally described as OpenSourceDeveloper-oriented model, in which, it is assumed that developers are in charge of their communication and collaboration choices. They choose to have interactions with certain other developers and/or they choose to stop having interactions with another developer. In short, they have autonomy in choosing their connections.
+The state-of-the-art in studying longitudinal social networks, is the idea of \textit{actor-oriented models} \cite{Snijders2010}, based on a model of developers changing their outgoing ties as a consequence of a stochastic optimization of an \textit{objective function}. This framework assumes that the observed networks at discrete times, are outcomes of a continuous-time Markov process. In the case of open source developers, the actor-oriented model, can be informally described as open-source-developer-oriented model, in which, it is assumed that developers are in charge of their communication and collaboration choices. They choose to have interactions with certain other developers and/or they choose to stop having interactions with another developer. In short, they have autonomy in choosing their connections.
 
 Let the data for our statistical developer-oriented model be $M$ repeated observations on a network with \textit{g} developers. The $M$ observed networks (at least two) are represented as directed graphs with adjacency matrices $X(t_m) = (X_{ij}(t_m))$ for $m = 1,...,M$, where $i$ and $j$ range from a to $g$. The variable $X_{ij}$ shows whether at time $t$ there exists a tie from $i$ to $j$ (value 1) or not (value 0). Be definition, $\forall i, X_{ii}=0$ (i.e. the diagonal of the adjacency matrices).
 
@@ -1129,17 +1131,17 @@ For example,
 \begin{enumerate}
 \item Transitive triplets effect, which models the tendency toward network closure. It reflects the preference of developers to be connected to developers with similar outgoing ties.  
 \item Transitive ties, which reflects network embeddedness. It is similar to transitive triplets effect, however, it only count for the existence of at least one two-path  $i \rightarrow h \rightarrow j$, rather than counting how many such two-paths exists.  
-\item Balance effect, which reflects how similar the outgoing ties of developer i are to the outgoing ties of the other developers to whom i is connected. 
+\item Balance effect, which reflects how similar the outgoing ties of developer i are to the outgoing ties of the other developers to whom $i$ is connected. 
 \item Number of developers at distance two, which reflects and is an inverse measure of, network closure. 
 \end{enumerate}
 \item{Three-cycles, may be interpreted as the tendency toward local hierarchy. It is similar to reciprocity defined for three developers, and is the opposite of hierarchy.}
-\item{Density effect which reflects tendency to have connections at all (i.e. the out-degree of a developer i).}
+\item{Density effect which reflects tendency to have connections at all (i.e. the out-degree of a developer $i$).}
 \item{Activity, which reflects the tendency of developers with high in-degree/out-degrees to send out more outgoing connections because of their current high in-degree/out-degree.}
 \item Covariate effects: Developers' covariates may influence the formation or termination of ties. For example:
 \begin{enumerate}
-\item{Covariate V-related popularity, which reflects the sum of covariate V for all developers to whom developer i is connected}
-\item{Covariate V-related activity, which reflects the developer i's out-degree multiplied by his covariate V value.}
-\item{Covariate V-related dissimilarity, which reflects the sum of differences in covariate V values' between developer i and all developers to whom developer i is connected.}
+\item{Covariate V-related popularity, which reflects the sum of covariate V for all developers to whom developer $i$ is connected}
+\item{Covariate V-related activity, which reflects the developer $i$'s out-degree multiplied by his covariate V value.}
+\item{Covariate V-related dissimilarity, which reflects the sum of differences in covariate V values' between developer $i$ and all developers to whom developer $i$ is connected.}
 \end{enumerate}
 
 We use the following developer attributes as covariates:
@@ -1197,13 +1199,13 @@ Properties of developers can be called their behavior. For a behavior-related va
 
 Let's denote a dependent behavior variable as $Z$.
 \begin{enumerate}
-\item{Shape, which reflects the drive toward high values on the variable Z.}
+\item{Shape, which reflects the drive toward high values on the variable $Z$.}
 \item{Similarity:}
 \begin{enumerate}
-\item{Average similarity, which reflects the preference of the developer i to be similar to his alters, with regard to the behavior variable Z}
-\item{Total similarity, which reflects the preference of the developer i to be similar to his alters. The total influence of the alters depends on the number of the alters}
+\item{Average similarity, which reflects the preference of the developer i to be similar to his alters, with regard to the behavior variable $Z$}
+\item{Total similarity, which reflects the preference of the developer $i$ to be similar to his alters. The total influence of the alters depends on the number of the alters}
 \end{enumerate}
-\item{Average alter, which reflects that the developers who have alters with higher average values of Z, have a stronger tendency to having high values of Z.}
+\item{Average alter, which reflects that the developers who have alters with higher average values of $Z$, have a stronger tendency to having high values of $Z$.}
 \end{enumerate}
 
 \paragraph*{Gratification Function}

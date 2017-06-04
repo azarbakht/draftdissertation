@@ -1,4 +1,135 @@
-\documentclass[12pt]{report}
+%\documentclass[12pt]{report}
+
+\documentclass[12pt,letterpaper]{gthesis2}  %[gthesis2.cls] used here, with [gsize11.clo].
+%
+
+\usepackage{thesis2}            %[thesis2.sty] used here.
+\usepackage[letterpaper]{geometry}
+\usepackage{float}
+\usepackage{alltt} 
+\usepackage{graphicx}
+\usepackage{latexsym}
+%\usepackage{hyperref}
+\usepackage{amsmath,amssymb,amsfonts,amscd,amsthm}%-----amscd for "Commutative %Diagrams"
+\usepackage[mathscr]{eucal}%------call-in: \mathscr{ } (only upper-case)
+%\usepackage{eufrak}%--------------call-in: \mathfrak{ }(upper & lower case)
+\usepackage{makeidx}
+\usepackage{array}
+%\usepackage{pxfonts}
+\usepackage{MnSymbol}
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{statement}{Statement}[section]
+\newtheorem{comment}{Comment}[section]
+\newtheorem{convention}{Convention}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{remark}{Remark}[section]
+\newtheorem{notation}{Notation}[section]
+\newtheorem{assumption}{Assumption}[section]
+\allowdisplaybreaks
+%
+\makeindex
+%
+% Below is a catalog list of new (user-defined) commands (samples).
+% The new commands (as, for example,  \nat , just below ) can be typed within
+% text-mode, with or without using the $...$ commands. They also work in the
+% usual way in math mode, within formulas, etc. Copy, use, edit and/or delete
+% them as you wish.
+%
+\newcommand{\mx}{\ensuremath{\mathbf{x}}}
+\newcommand{\mX}{\ensuremath{\mathbf{X}}}
+\newcommand{\my}{\ensuremath{\mathbf{y}}}
+\newcommand{\mau}{\ensuremath{\mathbf{u}}}
+\newcommand{\mauh}{\ensuremath{\mathbf{u}_h}}
+\newcommand{\mav}{\ensuremath{\mathbf{v}}}
+\newcommand{\mavh}{\ensuremath{\mathbf{v}_h}}
+\newcommand{\mn}{\ensuremath{\mathbf{n}}}
+\newcommand{\mam}{\ensuremath{\mathbf{m}}}
+\newcommand{\mM}{\ensuremath{\mathbf{M}}}
+\newcommand{\mI}{\ensuremath{\mathbf{I}}}
+\newcommand{\rone}{\ensuremath{\mathbb{R}}}
+\newcommand{\rtwo}{\ensuremath{\mathbb{R}^2}}
+\newcommand{\rthree}{\ensuremath{\mathbb{R}^{3}}}
+\newcommand{\rd}{\ensuremath{\mathbb{R}^d}}
+\newcommand{\Var}{\ensuremath{\mathrm{Var}}}
+\newcommand{\Cov}{\ensuremath{\mathrm{Cov}}}
+\newcommand{\Clambda}{\ensuremath{\tilde{\lambda}}}
+\newcommand{\CZ}{\ensuremath{\tilde{Z}}}
+\newcommand{\Cmu}{\ensuremath{\tilde{\mu}}}
+\newcommand{\Cxi}{\ensuremath{\tilde{\xi}}}
+\newcommand{\CC}{\ensuremath{\tilde{C}}}
+\newcommand{\ProbSpace}{\ensuremath{(\Omega,\mathcal{F},P)}}
+\newcommand{\Ltwo}{\ensuremath{L^2}}
+\newcommand{\LtwoD}{\ensuremath{L^2(D)}}
+\newcommand{\Lp}{\ensuremath{L^p}}
+\newcommand{\Lloc}{\ensuremath{L^1_{\mathrm{loc}}}}
+\newcommand{\Lploc}{\ensuremath{L^p_{\mathrm{loc}}}}
+\newcommand{\Cinf}{\ensuremath{C_0^\infty}}
+\newcommand{\Wkp}{\ensuremath{W^{k,p}(D)}}
+\newcommand{\Hk}{\ensuremath{H^k(D)}}
+\newcommand{\Hko}{\ensuremath{H_0^k(D)}}
+\newcommand{\Hone}{\ensuremath{H^1(D)}}
+\newcommand{\Htwo}{\ensuremath{H^2(D)}}
+\newcommand{\Hdiv}{\ensuremath{H_{\mathrm{div}}(D)}}
+\newcommand{\dD}{\ensuremath{\partial D}}
+\newcommand{\Diff}{\ensuremath{\mathbf{D}}}
+\newcommand{\Lrho}{\ensuremath{L_{\rho,d}^2(\Gamma)}}
+\newcommand{\Lrhoone}{\ensuremath{L_{\rho,1}^2(\Gamma)}}
+\newcommand{\Lrhotwo}{\ensuremath{L_{\rho,2}^2(\Gamma)}}
+\newcommand{\Vst}{\ensuremath{\mathbb{V}}}
+\newcommand{\Wst}{\ensuremath{\mathbb{W}}}
+\newcommand{\K}{\ensuremath{\mathbf{K}}}
+\newcommand{\zinf}{\ensuremath{[0,\infty)}}
+\newcommand{\N}{\ensuremath{N_t}}
+%\newcommand{\Nm}{\ensuremath{N_{\mathrm{coll}}}}
+\newcommand{\Nm}{\ensuremath{M_{\mam}}}
+%-------Pre-set information about yourself, your committee and thesis-title:
+%
+\setmyname{Amirhosein ``Emerson'' Azarbakht} % CANDIDATE'S NAME         %###########
+\setmyday{May 18, 2017}            % DATE OF DEFENSE          %###########
+\setmycomyear{2017}                   % COMMENCEMENT YEAR        %###########
+\setmyadvisor{Carlos Jensen}       % MAJOR PROFESSOR'S NAME   %###########
+%
+%                                     % YOUR THESIS TITLE:       %###########:
+\setmytitle{Longitudinal Analysis of Collaboration in Forked Open Source Software Development Projects}
+%
+\setmymajor{Computer Science}                 % MAJOR
+\setmydept{School of Electrical Engineering and Computer Science}                  % DEPARTMENT
+\setmyschool{Oregon State University}    % SCHOOL
+\setmydegree{Doctor of Philosophy}       % DEGREE TYPE--% Change if Master's
+\setmythesis{Dissertation}                     % DISSERTATION, OR THESIS
+%
+\pagestyle{empty}
+%
+%@@@@@@@@@@@@@@@@ END PREAMBLE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%
+%++++++++++++++ Ph.D. THESIS DOCUMENT +++++++++++++++++++++++++++++
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%
+%
+\addtolength{\topmargin}{0.125in}
+\addtolength{\textheight}{0.25in}
+%\topmargin 2.5 in %1\@ptsize pt       
+%\oddsidemargin 1.5 in   
+%\evensidemargin 1.5in
+\addtolength{\oddsidemargin}{0.45in}
+\addtolength{\evensidemargin}{0.45in}
+\addtolength{\textwidth}{-0.325in}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \usepackage{setspace}
 \usepackage{url}
@@ -76,71 +207,254 @@
 %\fancyhf{}
 %\fancyhead[R]{\thepage}
 
+
 %%%%%%%%%%%%%%%%%
 
 \begin{document}
+\part*{}
 
-\title{Longitudinal Analysis of Collaboration in Forked Open Source Software Development Projects}
+\pagenumbering{gobble}
 
-\author{Amirhosein ``Emerson'' Azarbakht\\
-School of Electrical Engineering and Computer Science\\
-Oregon State University\\
-\vspace{5mm} %5mm vertical space
-azarbaka@oregonstate.edu\\
-\vspace{5mm} %5mm vertical space
-Dissertation Draft\\
-Major Advisor: Prof. Carlos Jensen\\
-Ph.D. Committee Members:\\
-Prof. Drew Gerkey\\
-Prof. Ron Metoyer\\
-Prof. Cindy Grimm\\
-Prof. Yelda Turkan\\
-% Prof. Alex Groce\\
-% Prof. A. Morrie Craig\\
-}
 
-\maketitle
+%\title{Longitudinal Analysis of Collaboration in Forked Open Source Software Development Projects}
+%
+%\author{Amirhosein ``Emerson'' Azarbakht\\
+%School of Electrical Engineering and Computer Science\\
+%Oregon State University\\
+%\vspace{5mm} %5mm vertical space
+%azarbaka@oregonstate.edu\\
+%\vspace{5mm} %5mm vertical space
+%Dissertation Draft\\
+%Major Advisor: Prof. Carlos Jensen\\
+%Ph.D. Committee Members:\\
+%Prof. Drew Gerkey\\
+%Prof. Ron Metoyer\\
+%Prof. Cindy Grimm\\
+%Prof. Yelda Turkan\\
+%% Prof. Alex Groce\\
+%% Prof. A. Morrie Craig\\
+%}
+%
+%\maketitle
+%
+%\doublespacing
+%
+%\tableofcontents
+%
+%\thispagestyle{empty}
+%
+%\listoffigures
+%
+%\listoftables
+%
+%\pagebreak
+%
+%\section{Abstract}
+%
+%\doublespacing
+%
+%Social interactions are a ubiquitous part of our lives, and the creation of online social communities has been a natural extension of this phenomena. Free and Open Source Software (FOSS) development efforts are prime examples of how communities can be leveraged in software development, where groups are formed around communities of interest, and depend on continued interest and involvement.
+%
+%Not everything works smoothly all the time in open source projects. Problems arise for a variety of reasons, including collaboration and communication problems, which results in uncertainty about the operational health and survivability of the projects. Many stake-holders are affected by this uncertainty, including industry sponsors, individual contributors, corporate developers, and users, who all have decided to invest time and effort in the project, and will be affected if a project suffers from troubles.
+%
+%Forking in FOSS, either as an non-friendly split or a friendly divide, affects the community. Such effects have been studied, shedding light on how forking happens. However, most existing research on forking is post-hoc. In this study, we focus on the seldom-studied run-up to forking events. 
+%
+%In this research, we investigated the pre-fork time periods for open source projects that had forked. Our aim was to investigate whether there are patterns left in the projects records that could be used to identify the pre-fork dynamics, and use them as key indicators to identify problems, and design an intervention, if needed, before the project disintegrates and the irreversible damage is done. 
+%
+%Several stakeholders benefit from such important research findings, as involvement in open source software development, either as an individual developer, or a business/government sponsor, is an investment of time, energy and resources. The findings of our research helps decision-makers make better informed decisions both when choosing to be affiliated with or involved in certain open source projects, and when there have been involved in the projects.
+%
+%We analyzed both the contents and the interaction patterns of the developers in forked open source software projects, that had gone through various types of forking. Contents of the developer communication messages were analyzed using time series analysis and sentiment analysis, and the interaction patterns were analyzed using social network analysis methods for longitudinal change. 
+%
+%Our findings show that the conflict-driven forks experienced a period of pre-fork negativity, manifested in the developers' communication sentiments. Our anomaly detection algorithms detected these anomalies. In contrast, the non-conflict-driven forks did not exhibit any anomalies, or showed periods of positive spikes, which is indicative of positive communication sentiments. 
+%
+%Our findings also show that in conflict-driven forks, the social graph tended to have local hierarchies \cite{Snijders2010}, which was manifested as statistically significant negative three-cycles effects combined with statistically significant positive transitive triplets effects. This indicated several local hierarchies within the project community, which depending on the context, can be an indicator of several factions.
+%
+%Our findings also show that conflict-driven forks had communities where there exists a tendency for heavy mailing-list poster developers to be interacting with to other heavy mailing-list poster developers, which was manifested as a statistically significant out-out degree assortativity effect. In contrast, non-conflict-driven forks has communities where there exists a tendency for heavy code contributors to be interacting with other heavy code contributors, which was manifested as a statistically significant developer source code activity effect. This can be interpreted as a unhealthy vs. healthy dynamic, whereas, in the non-conflict-driven forked projects more code contributions translated into more conversations, so, the communication was backed by solid code. Whereas, in conflict-driven forked projects, the could have been much talk and not much code. One cannot help but think of Linus Torvald's quote \textit{``Talk is cheap. Show me the code.''}
+%
+%In summary, we represented longitudinal dynamics in conflict-driven vs. non-conflict-driven forks. We suggested indicators of unhealthy dynamics to suggest intervention. We detected pre-fork anomalies suggestive of negative communication sentiments, and we expressed underlying properties and values of community behavior as model effects with their statistical significance. Further research is needed to be able to generalize. This is a good starting point for gaining an understanding of longitudinal changes of underlying properties of an open source projects' community.
+%
+%\pagebreak
 
-\doublespacing
 
-\tableofcontents
 
-\thispagestyle{empty}
 
-\listoffigures
 
-\listoftables
 
-\pagebreak
 
-\section{Abstract}
 
-\doublespacing
 
-Social interactions are a ubiquitous part of our lives, and the creation of online social communities has been a natural extension of this phenomena. Free and Open Source Software (FOSS) development efforts are prime examples of how communities can be leveraged in software development, where groups are formed around communities of interest, and depend on continued interest and involvement.
+
+
+
+
+
+%
+%
+%&&&&&&&&&&& BEGIN PRETEXT PAGES &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+%
+%
+\clearpage %------INPUTS FRONT FLYLEAF PAGE (Obligatory Empty Page)
+%
+%
+%----------------------------------------------BEGIN ABSTRACT PAGE:
+%
+\begin{center}
+AN ABSTRACT OF THE DISSERTATION OF
+\end{center}
+\vspace{\baselineskip}
+%
+\underline{\myname} for the degree of
+\underline{\mydegree} in\\ \underline{\mymajor} presented on
+\underline{\myday}. \\
+%
+\newline
+%
+Title: \underline{Longitudinal Analysis of Collaboration in Forked Open Source Software}\\ \underline{Development Projects}
+\vspace*{\baselineskip}
+\hfil\strut\\
+\noindent Abstract approved: \hrulefill\\
+\phantom{Abstract approved:\ }\hfil\myadvisor\hfil\break
+
+%********************************************************************
+%
+%-----------------------(begin your abstract---Start after \indent):
+%########### :
+%
+\indent Social interactions are a ubiquitous part of our lives, and the creation of online social communities has been a natural extension of this phenomena. Free and Open Source Software (FOSS) development efforts are prime examples of how communities can be leveraged in software development, where groups are formed around communities of interest, and depend on continued interest and involvement. 
 
 Not everything works smoothly all the time in open source projects. Problems arise for a variety of reasons, including collaboration and communication problems, which results in uncertainty about the operational health and survivability of the projects. Many stake-holders are affected by this uncertainty, including industry sponsors, individual contributors, corporate developers, and users, who all have decided to invest time and effort in the project, and will be affected if a project suffers from troubles.
 
-Forking in FOSS, either as an non-friendly split or a friendly divide, affects the community. Such effects have been studied, shedding light on how forking happens. However, most existing research on forking is post-hoc. In this study, we focus on the seldom-studied run-up to forking events. 
+Forking in FOSS, either as a non-friendly split or a friendly divide, affects the community. Such effects have been studied, shedding light on how forking happens. However, most existing research on forking is post-hoc. In this study, we focus on the seldom-studied run-up to forking events.
 
-In this research, we investigated the pre-fork time periods for open source projects that had forked. Our aim was to investigate whether there are patterns left in the projects records that could be used to identify the pre-fork dynamics, and use them as key indicators to identify problems, and design an intervention, if needed, before the project disintegrates and the irreversible damage is done. 
+We used the following two approaches to study the evolution and social dynamics of FOSS communities; 1) Time series analysis of the contents of the messages sent and received on the projects developers mailing list, for the time period of 10-month run-up to the fork was analyzed for anomalies, indicative of simmering conflicts. 2) Social network analysis using a developer-oriented approach to statistically model the changes a community goes through in the run-up to a fork, in which the model represents tie formation, tie breakage, and tie maintenance between developers. We estimated several model parameters that capture the variance in the changes the community goes through. We found that conflict-driven forks exhibited anomalies; time series analysis of sentiments showed the anomalies occurred before and close to the fork event. Whereas non-conflict-driven forks did not suffer from such pre-fork anomalies. The objective was to be able to evaluate the operational health of the project community, and intervene if need be. We suggest anomaly detection of the time series analysis may be used by the project stakeholders/investors as key indicators left in the record, that can be used to identify problems among developers, and intervene if need be.
 
-Several stakeholders benefit from such important research findings, as involvement in open source software development, either as an individual developer, or a business/government sponsor, is an investment of time, energy and resources. The findings of our research helps decision-makers make better informed decisions both when choosing to be affiliated with or involved in certain open source projects, and when there have been involved in the projects.
+We also found that in conflict-driven forks, (1) the developers maintained a preference for interacting with developers who had similar out-degrees, in contrast to the non-conflict-driven forks, where the developers did not require similar out-degrees. The interpretation may be that a project with non-conflict-driven forks had a more inclusive and classless core developer team. (2) The interactions were reciprocal, in contrast to the non-conflict-driven forks, where the interactions did not need to be reciprocal to happen. The interpretation may be that the projects with non-conflict-driven forks were more open to interactions whether or not they would get something back in return from the other developer. (3) In conflict-driven forks, the more senior developers preferred to interact with other more senior developers, in contrast to the non-conflict-driven forks. The interpretation may be that the senior developers in projects with conflict-driven forks were less involved with junior developers than in projects with non-conflict-driven forks. (4) In non-conflict-driven forks, the developers with high source code contribution levels interacted more with other high source code contributors. (5) In non-conflict-driven forks, high levels of contribution to the source code brings you connections more rapidly, while high levels of contributions to the mailing list is not suggestive of this. This can be interpreted as a sign of meritocracy based on code, rather than talk, which captures a healthy dynamic in these projects.
 
-We analyzed both the contents and the interaction patterns of the developers in forked open source software projects, that had gone through various types of forking. Contents of the developer communication messages were analyzed using time series analysis and sentiment analysis, and the interaction patterns were analyzed using social network analysis methods for longitudinal change. 
+% ...
+%-------------------------(end your abstract)
+%
+%-------------------------------------------------END ABSTRACT PAGE.
+\clearpage
+%
+\DisplayCopyright %--------------------------INPUTS YOUR COPYRIGHT PAGE.
+%
+%
+\DisplayTitlePage %--------------------------INPUTS YOUR TITLE PAGE.
+%
+%
+%-------------------------------------------------BEGIN APPROVAL PAGE:
+%
+\thispagestyle{empty} {\baselineskip=14.5pt
+\def\ruleline{\hbox to \hsize{\hrulefill}\\[-2ex]}
+\noindent \underline{\mydegree} dissertation of \underline{\myname}
+presented on \underline{\myday}
+\strut\\
+\strut\\
+APPROVED:\\
+\strut\\
+\strut
+\ruleline
+Major Professor, representing \mymajor\\
+\strut\\
+\strut
+\ruleline
+Director of the School of Electrical Engineering and Computer Science \\
+\strut\\
+\strut
+\ruleline
+Dean of the Graduate School\\
+\strut\\
+\strut\\
+\strut\\
+\strut\\\\*[\baselineskip]
+\noindent I understand that my dissertation will become part of the permanent
+collection of Oregon State University libraries.  My signature
+below authorizes release of my dissertation to any reader upon request.\\
+\strut\\
+\strut
+\ruleline \hbox to \textwidth{\hfil \myname, Author \hfil} }
+%
+%
+%---------------------------------------------END APPROVAL PAGE
+%
+%
+%---------------------------------------------BEGIN ACKNOWLEDGEMENT PAGE:
+%
+\clearpage
+\thispagestyle{empty}
+\begin{center}
+ACKNOWLEDGMENTS
+\end{center}
+%\vspace{\baselineskip}
+%
+%----------------------------------(begin your gratitude & appreciation:)
+%
 
-Our findings show that the conflict-driven forks experienced a period of pre-fork negativity, manifested in the developers' communication sentiments. Our anomaly detection algorithms detected these anomalies. In contrast, the non-conflict-driven forks did not exhibit any anomalies, or showed periods of positive spikes, which is indicative of positive communication sentiments. 
+\indent I would like to express sincere appreciation to family, friends, colleagues, and committee members.
+% ...
+% ...
+%-----------------------------------(end your gratitude & appreciation)
+%
+%
+%------------------------------------END ACKNOWLEDGEMENT PAGE.
+%
+%
+\clearpage
+%
+%
+\tableofcontents %--------------------------TABLE OF CONTENTS
+%
+%
+\clearpage
+%
+%
+\listoffigures %---------LIST OF FIGURES (Only If You Have Two Or More)
+\clearpage
+%
+%
+\listoftables %----------LIST OF TABLES (Only If You Have Two Or More)
+\clearpage
+%
+%
+\listofappendices
+\clearpage
+%
+%
+%\thispagestyle{empty}
+%  \vspace*{8\baselineskip}
+%  \begin{center}
+%    {\it To the memory of my Papa, and to my Mama for your support and encouragement;\\
+% to my husband Ivan and my son Mikhail for your love and care.}
+%  \end{center}
+%\clearpage
+%
+%-----------LIST OF APPENDICES (Create This Only If You Have More Than Five)
+%
+%-----------LIST OF APPENDIX FIGURES (Only If You Have Two Or More)
+%
+%-----------LIST OF APPENDIX TABLES (Only If You Have Two Or More)
+%
+%
+%-----------LIST OF SYMBOLS, ABBREVIATIONS AND/OR NOMENCLATURE (OPTIONAL)
+%
+%
+%---------------------------------------------------DEDICATION (OPTIONAL)
+%
+%
+%---------------------------------------------------PREFACE (OPTIONAL)
+%
+%
+%&&&&&&&&&&&&&&&&& END PRETEXT PAGES &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+\DisplayTitle \vspace*{2em} \pagestyle{myheadings}
+\pagenumbering{arabic}
+\setcounter{page}{1} \thispagestyle{empty}
+%
 
-Our findings also show that in conflict-driven forks, the social graph tended to have local hierarchies \cite{Snijders2010}, which was manifested as statistically significant negative three-cycles effects combined with statistically significant positive transitive triplets effects. This indicated several local hierarchies within the project community, which depending on the context, can be an indicator of several factions.
-
-Our findings also show that conflict-driven forks had communities where there exists a tendency for heavy mailing-list poster developers to be interacting with to other heavy mailing-list poster developers, which was manifested as a statistically significant out-out degree assortativity effect. In contrast, non-conflict-driven forks has communities where there exists a tendency for heavy code contributors to be interacting with other heavy code contributors, which was manifested as a statistically significant developer source code activity effect. This can be interpreted as a unhealthy vs. healthy dynamic, whereas, in the non-conflict-driven forked projects more code contributions translated into more conversations, so, the communication was backed by solid code. Whereas, in conflict-driven forked projects, the could have been much talk and not much code. One cannot help but think of Linus Torvald's quote \textit{``Talk is cheap. Show me the code.''}
-
-In summary, we represented longitudinal dynamics in conflict-driven vs. non-conflict-driven forks. We suggested indicators of unhealthy dynamics to suggest intervention. We detected pre-fork anomalies suggestive of negative communication sentiments, and we expressed underlying properties and values of community behavior as model effects with their statistical significance. Further research is needed to be able to generalize. This is a good starting point for gaining an understanding of longitudinal changes of underlying properties of an open source projects' community.
-
-\pagebreak
-
+\chapter{}
 \section{Introduction}
 \label{introduction}
+
 Social networks are a ubiquitous part of our social lives, and the creation of online social communities has been a natural extension of this phenomena. Social media plays an important role in software engineering, as software developers use them to communicate, learn, collaborate and coordinate with others \cite{Storey}. Free and Open Source Software (FOSS) development efforts are prime examples of how community can be leveraged in software development, where groups are formed around communities of interest, and depend on continued interest and involvement to stay alive \cite{NymanCodeForking}.
 
 Community splits in free and open source software development are referred to as forks, and are relatively common. Robles et al. \cite{Robles} define forking as ``when a part of a development community (or a third party not related to the project) starts a completely independent line of development based on the source code basis of the project.'' 
@@ -204,7 +518,8 @@ Legal issues & X.Org \& XFree\\
 %\label{figureReasonsForForkingPieChart}
 %\epsfig{file=ForkingReasonsPieChart.png, width=\columnwidth}
 %\end{figure}
-\paragraph*{Research Goals}
+
+\subsection*{Research Goals}
 \label{ResearchGoals}
 \label{ResearchObjective}
 
@@ -244,15 +559,15 @@ In this study, we analyze, quantify and visualize how the community is structure
 
 Specifically, our overall research objective is to identify these traces/social patterns associated with different types of conflict-driven forking. 
 
-\paragraph*{\hspace{4 mm} Do forks leave traces in the collaboration artifacts of open source projects in the period leading up to the fork?\\}
+\subsection*{\hspace{4 mm} Do forks leave traces in the collaboration artifacts of open source projects in the period leading up to the fork?\\}
 
 To study the properties of possible social patterns, we need to verify their existence. More specifically, we need to check whether the possible social patterns are manifested in the the collaboration artifacts of open source projects, e.g., mailing list communications data, source code data. This is going to be accomplished as explained in section \ref{methodology}.
 
-\paragraph*{\hspace{4 mm} Do conflict-driven forks and non-conflict-driven forks leave different types of traces?\\}
+\subsection*{\hspace{4 mm} Do conflict-driven forks and non-conflict-driven forks leave different types of traces?\\}
 
 If forks leave traces in the collaboration artifacts, do forks exhibit different social patterns? Are there patterns that exemplify these categories? For example, is there a distinct ``conflict-driven'' fork collaboration pattern? If so, do different forking reasons have distinctly different social patterns associated with them? We are going to investigate this by statistical modeling of the interaction graphs, as explained in detail in section \ref{statisticalModel}.
 
-\paragraph*{\hspace{4 mm} What are the key indicators that let us distinguish between conflict-driven and non-conflict-driven forks?\\}
+\subsection*{\hspace{4 mm} What are the key indicators that let us distinguish between conflict-driven and non-conflict-driven forks?\\}
 
 What quantitative measure(s) can be used as an early warning sign of an inflection point (fork)? Are there metrics that can be used to monitor the odds of change, (e.g. forking-related patterns), ahead of time? This will be accomplished by time series analysis and statistical modeling of developer interactions as explained in more detail in section \ref{methodology}.\\
 
@@ -401,7 +716,7 @@ To detect outliers, we used the R (Statistical Computing) \cite{R} package tsout
 
 Figures \ref{figureOutliers_1}-\ref{figureOutliers_12} show the detected outliers in the sentiments time series, and includes both the original and adjusted time series, as well as the outlier effects.
 
-\paragraph{Outlier Detection Models}
+\subsection{Outlier Detection Models}
 \label{OutlierDetectionModels}
 We were interested in detecting anomalies that might have happened before the forking event, that could be used as indicators associated with forking. For this purpose, we used the following anomaly detection approach. All the following description from \cite{Chen} describes outlier models. 
 
@@ -429,7 +744,7 @@ X^*_t = X_t + \text{ outlier effect}
 \text{IO:}\hspace{1cm}X^*_t &= X_t + \frac{\theta(B)}{\alpha(B) \phi(B)} \omega I_t(t_1) = \frac{\theta(B)}{\alpha(B) \phi(B)}\left[Z_t + \omega I_t(t_1)\right]
 \end{align}
 
-\paragraph{Outlier Estimation} 
+\subsection{Outlier Estimation} 
 
 The following Iterative procedure for detecting outliers, adjusting series,
 and fitting (seasonal) ARIMA model from \cite{Chen} describes how the outliers are detected by estimation. 
@@ -457,7 +772,7 @@ Divide by standard error:
 
 Approximately $\sim$ Normal(0, 1)
 
-\paragraph{Outlier Detection}
+\subsection{Outlier Detection}
 
 At each $t = 1, \dots, n$, for each outlier type (AO, LS, TC, IO), Estimate outlier effect $\hat{\omega}$ and calculate $\hat{\tau}$. Large $|\hat{\tau}|$ ($> C$) indicates an outlier. Once outlier is detected, estimated effect can be subtracted to obtain adjusted series.\cite{Chen}
 
@@ -966,7 +1281,7 @@ To find projects in conflict-driven and non-conflict-driven categories, we looke
 
 
 \subsubsection{Analysis}
-\paragraph*{Sociogram Formation and Statistical Study}
+\subsection*{Sociogram Formation and Statistical Study}
 
 Social connections and non-connections can be represented as graphs, in which the nodes represent actors (developers) and the edges represent the interaction(s) between actors or lack thereof. Such graphs can be a snapshot of a network -- a static sociogram -- or a changing network, also called a dynamic sociogram. In this phase, we process interactions data to form a communication sociogram of the community.
 
@@ -989,7 +1304,7 @@ As an example of expressiveness, Appendix B \ref{sectionInitialStudy} Figure \re
 
 The following subsection lists the reasons why we need to use a statistical model, used in the \textit{population-processes} approach.
 
-\paragraph*{Why a statistical model is needed?}
+\subsection*{Why a statistical model is needed?}
 One may wonder why we should look beyond the observed network. We can do measurements on the observed networks data, and get some descriptive statistics. This would be a superficial look at the data, and even though necessary, is not good enough and has several shortcomings. 
 There is another way of looking at these networks, in a less-superficial way; namely, finding a model that fits the data and its longitudinal change. So, instead of a superficial look at the data, we can find a well-fitting statistical model of our observed interactions network. The following lists the reasons why we need to go beyond a superficial measurement-only approach. 
 
@@ -1015,7 +1330,7 @@ In summary, a measurement-only approach is not capable of explaining the longitu
 %
 %We may explain the increase of decrease in preferential attachment in conflict-driven projects, as a result of software developers signaling others in the community of their status, by helping others in need (i.e., peripheral community members), which in turn brings them social prestige.
 
-\paragraph*{The Statistical Model}
+\subsection*{The Statistical Model}
 \label{statisticalModel}
 
 Longitudinal evolution of a network data is the result of many small atomic changes occurring between the consecutively observed networks. In our case, software developers are the actors in the networks, and they can form a connection with another developer, break off an existing connection, or maintain their status quo. These are the four possibilities of atomic change within our evolving networks: (1) forming a new tie; (2) breaking off an existing tie; (3) maintaining a non-connection; and (4) maintaining a connection. We assume a continuous-time network evolution, even though our observations are made at two or more discrete time points. 
@@ -1030,7 +1345,7 @@ For each change, the model focuses on the developer whose tie is changing. We as
 
 These above three functions and their definitions taken from \cite{Snijders2004} are explained in detail the following subsections.
 
-\paragraph*{Rate Function}
+\subsection*{Rate Function}
 
 The \textit{rate function} $\lambda_i(x)$ for developer $i$ is the rate at which developer $i$'s outgoing connections changes occur. It models how frequently the developers make ministeps.\\
 The rate function is formally defined \cite{Snijders2004} by
@@ -1040,7 +1355,7 @@ The rate function is formally defined \cite{Snijders2004} by
 
 The simplest specification of the rate of change is that all developers have the same rate of change of their ties. 
 
-\paragraph*{Objective Function}
+\subsection*{Objective Function}
 
 The \textit{objective function} $f_i(s)$ for developer $i$ is the value attached to the network configuration $x$. 
 
@@ -1062,7 +1377,7 @@ $U(j)$ is chosen to have Gumbel distribution with mean 0 and scale parameter 1. 
 p_{ij}(x) = \frac{exp(f_i(i \mapsto j) - f_i(x))}{\sum_{h=1, h \neq i}^{g} exp(f_i(i \mapsto h) - f_i(x))}
 \end{equation}
 
-\paragraph*{Gratification Function}
+\subsection*{Gratification Function}
 Sometimes the order in which changes occur makes a difference for the desirability of the network. Such differences cannot be represented by the objective function. So, we need another function, called gratification function. \\
 
 The \textit{gratification function} $g_i(x,j)$ for developer $i$ is the value attached to this developer (in addition to what follows from the objective function) to the act of changing the tie variable $x_{ij}$ from $i$ to $j$, given the current network configuration $x$. 
@@ -1079,7 +1394,7 @@ And we will have
 p_{ij}(x) = \frac{exp(f_i(i \mapsto j) + g_i(x, j) - f_i(x))}{\sum_{h=1, h \neq i}^{g} exp(f_i(i \mapsto h) + g_i(x, j) - f_i(x))}
 \end{equation}
 
-\paragraph*{Markov Chain Transition Rate Matrix}
+\subsection*{Markov Chain Transition Rate Matrix}
 The components of the developers-oriented model, described above, define a continuous-time Markov chain on the space $\chi$ of all directed graphs on this set of $g$ developers. This Markov chain is used to estimate the model parameters stochastically, instead of calculating them exactly, which is not possible for us.
 
 This Markov chain has a transition rate matrix. The transition rate matrix (also called intensity matrix), for this model is given by 
@@ -1090,7 +1405,7 @@ q_{ij}(x) = \lim_{dt \to 0} \frac{1}{dt} \mathrm {P} \big({X(t + dt) = X(i \maps
 
 Expression (\ref{intensityMatrix}) shows the rate at which developer $i$ makes ministeps, multiplied by the probability that he changes the arc variable $X_{ij}$, if he makes a ministep.\\
 
-\paragraph*{Markov Chain Simulation}
+\subsection*{Markov Chain Simulation}
 \label{MarkovChainSimulationSteps}
 Our Markov chain can be simulated by repeating the following steps \cite{Snijders2004}:
 
@@ -1105,14 +1420,14 @@ p_{ij}(x) = \frac{exp(f_i(i \mapsto j) + g_i(x, j) - f_i(x))}{\sum_{h=1, h \neq 
 \item Now change $t$ to $t + \Delta t$ and change $x_{ij}$ to $(1 - x_{ij})$
 \end{enumerate}
 
-\paragraph*{Model Specification}
+\subsection*{Model Specification}
 In the previous sections, we described why we need a statistical model to describe the longitudinal trends, rather than numerical measurements. We then described a framework for such a model; namely the developer-oriented model. We described the components of this statistical model; the rate function; the objective function, and the gratification function.
 
 In this section, we describe what network effects can be measured and tested in these functions. Specifically, we need to supply these functions with a specific model for the rate, objective and gratification functions. These functions depend on unknown parameters that need to be estimated based on the data. The estimation is explained in section \ref{estimation}. 
 
 In the following, we explain what model effects can be included in the objective and gratification functions, to be estimated later.
 
-\paragraph*{Objective Function}
+\subsection*{Objective Function}
 The following weighted sum represents the objective function:
 
 \begin{equation}
@@ -1121,7 +1436,7 @@ f_i(\beta, x) = \sum_{k = 1}^{L} \beta_k s_{ik}(x)
 
 Parameters $\beta = (\beta_1, ..., \beta_L)$ is to be estimated. Functions $s_{ik}(x)$ can be the following \cite{Snijders2004}:
 
-\paragraph{Structural Effects}
+\subsection{Structural Effects}
 For the structural effects, some of the following effects were used. The mathematical formulas for the following effects are included in the appendix section \ref{EffectsAppendixC}. 
 
 \begin{enumerate}
@@ -1194,7 +1509,7 @@ We use the following developer attributes as covariates:
 %\end{tabular}
 %\end{table*}
 
-\paragraph{Behavior-related Effects\\}
+\subsection{Behavior-related Effects\\}
 Properties of developers can be called their behavior. For a behavior-related variable $s_{ik}^z(x,z)$, we can estimate the following effects.
 
 Let's denote a dependent behavior variable as $Z$.
@@ -1208,7 +1523,7 @@ Let's denote a dependent behavior variable as $Z$.
 \item{Average alter, which reflects that the developers who have alters with higher average values of $Z$, have a stronger tendency to having high values of $Z$.}
 \end{enumerate}
 
-\paragraph*{Gratification Function}
+\subsection*{Gratification Function}
 The following weighted sum represents the gratification function:
 
 \begin{equation}
@@ -1224,7 +1539,7 @@ $r_{ij1}(x) = x_{ij} x_{ji}$
 $r_{ij3}(x) = x_{ij}w_{ij}$
 \end{enumerate}
 
-\paragraph*{Markov Chain Monte Carlo (MCMC) Estimation}
+\subsection*{Markov Chain Monte Carlo (MCMC) Estimation}
 \label{estimation}
 The described statistical model for longitudinal analysis of open source software development communities is a complex model and cannot be exactly calculated, but it can be stochastically estimated. We can simulate the longitudinal evolution, and estimate the model based on the simulations. Then we can choose an estimated model that has a good fit to the network data.
 The following section described the simulation and estimation procedures. 
@@ -1269,14 +1584,14 @@ The simulation output will be the random variables $(S,R) = (S_1,...,S_L,R_1,...
 
 So far, we discussed a number of metrics for social networks. We will investigate their statistical significance and effects to describe the different social networks that we encounter, to see if there is any systematic differences between conflict-driven and non-conflict-driven forks. 
 
-\paragraph*{Hypothesis Testing}
+\subsection*{Hypothesis Testing}
 So far, we have described what we can model, how to fit a model that explains the longitudinal changes in an open source community (or any similar network). Now, we test several hypothesis about these models. For example, we test whether a particular effect's (for example, reciprocity's) statistical significance on the model, and make meaningful statements about whether the network dynamics depends on this parameter with a p-value, indicating the significance level. Such test is explained in section \ref{singleParameterTest}.
 
 Alternatively, we compare two models for two open source project communities, and make conclusions about the difference in several model effects, for example, reciprocity and three-cycles, using the method described in section \ref{multiParameterTest}. 
 
 Lastly, we compare several open source communities (or such networks) and test the statistical significance of the differences between their models, using the methods described in section \ref{MANOVA}. This allows us to compare within-group and across-group comparisons of longitudinal models of open-source projects. In this study, we do all three discussed forms of tests of significance. In the following subsections, the details of these tests are described.   
 
-\paragraph*{Single Parameter Test}
+\subsection*{Single Parameter Test}
 \label{singleParameterTest}
 Using the actor-oriented model, t-type test of single parameters can be done using the parameter estimates and their standard errors (S.E.). 
 For example, for testing the null hypothesis that a component $k$ of the parameter vector $\beta$ is 0, the test has approximately a standard normal distribution. For this null hypothesis: 
@@ -1289,42 +1604,42 @@ the t-test can be done using the following t-statistic:
 \end{equation}
 Given a p-value $\leq$ 0.05 would indicate a strong evidence that the network dynamics depends on the corresponding parameter's effect. 
 
-\paragraph*{Multi-Parameter Differences Between Groups}
+\subsection*{Multi-Parameter Differences Between Groups}
 \label{multiParameterTest}
 Given the parameter estimates $\hat{\beta_a}$ and $\hat{\beta_b}$, and their standard errors $S.E._a$ and $S.E._b$, the differences between two groups can be tested using the following t-statistics. This t-statistics, under the null hypothesis of equal parameters, has an approximately standard normal distribution:
 \begin{equation}
 \frac{\hat{\beta_a}-\hat{\beta_b}}{\sqrt{S.E._a^2 + S.E._b^2}}
 \end{equation}
 
-\paragraph*{Multivariate Analysis of Variance Between Multiple Groups}
+\subsection*{Multivariate Analysis of Variance Between Multiple Groups}
 \label{MANOVA}
 To test the statistical significance of the mean differences between groups (in our case, the different categories of forking), we may use Multivariate Analysis of Variance (MANOVA) method. In contrast to ANOVA, MANOVA method tests for the difference in two or more vectors of means.\\
 
-%\paragraph*{Research Questions and Hypotheses}
+%\subsection*{Research Questions and Hypotheses}
 %
-%\paragraph*{Behavior Models}
+%\subsection*{Behavior Models}
 %Software development is a collective effort, so, theories about human behavior from sociology and psychology could help explain how software developers interact and collectively develop software. In particular, the following theories about human behavior are the guiding theories for our hypotheses.  
 %
-%\paragraph{} \textbf{Balance theory} \cite{Heider} talks about a motivation of individuals to move toward psychological balance. Balance theory considers cognitive consistency as a motive that drives sentiment or liking relationships, as well as liking of things created by or associated with the alter in the relationship.
+%\subsection{} \textbf{Balance theory} \cite{Heider} talks about a motivation of individuals to move toward psychological balance. Balance theory considers cognitive consistency as a motive that drives sentiment or liking relationships, as well as liking of things created by or associated with the alter in the relationship.
 %
 %We may explain conflict-driven forked projects because of ``personal differences'' as a results of cognitive inconsistency between the liking relationship of other developer(s) and the software and community created by or associated with them. 
 %
-%\paragraph{} \textbf{Assortativity theories}, tries to explain collaboration, and people's preference for interacting with others who are similar to them in some way. This is related to reciprocity, in forms of contingent, direct, and indirect reciprocity. Homophily and Heterophily, which affect diversity of networks, are also closely related to assortative selection.
+%\subsection{} \textbf{Assortativity theories}, tries to explain collaboration, and people's preference for interacting with others who are similar to them in some way. This is related to reciprocity, in forms of contingent, direct, and indirect reciprocity. Homophily and Heterophily, which affect diversity of networks, are also closely related to assortative selection.
 %
 %We may explain conflict-driven forked projects because of ``more community-driven development'' as a by-result of developers' homophile collaborator selection.
 
 %
-%\paragraph{Research Questions and Hypotheses}
+%\subsection{Research Questions and Hypotheses}
 %\label{RQs}
 %In section \ref{ResearchObjective}, we described the research objectives in general terms. Now that we have described how to model the longitudinal changes in an open source community's collaboration networks, we can be more specific about the research questions, and the hypotheses for our statistical tests. Our assumption is that patterns exist in the data, and those patterns will show statistically significant differences between different categories of forks. Statistically speaking, we'll be able to reject the following null hypotheses:
 %
-%\paragraph*{Null Hypothesis \# 1:} 
+%\subsection*{Null Hypothesis \# 1:} 
 %\hspace{10 mm} There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in conflict-driven category and No.F. category.
 %
-%\paragraph*{Null Hypothesis \# 2:} 
+%\subsection*{Null Hypothesis \# 2:} 
 %\hspace{10 mm} There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in non-conflict-driven category and No.F. category.
 %
-%\paragraph*{Null Hypothesis \# 3:} 
+%\subsection*{Null Hypothesis \# 3:} 
 %\hspace{10 mm} There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in conflict-driven category and non-conflict-driven category.\\
 
 
@@ -2231,8 +2546,8 @@ sim_{ij}^z = (1 - \abs{z_i - z_j}/max_{ij}\abs{z_i-z_j})
 %\subsection{The Body of the Paper}
 %\subsubsection{Type Changes and  Special Characters}
 %\subsubsection{Math Equations}
-%\paragraph{Inline (In-text) Equations}
-%\paragraph{Display Equations}
+%\subsection{Inline (In-text) Equations}
+%\subsection{Display Equations}
 %\subsubsection{Citations}
 %\subsubsection{Tables}
 %\subsubsection{Figures}

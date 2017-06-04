@@ -1,0 +1,291 @@
+\documentclass[12pt,letterpaper]{gthesis2}  %[gthesis2.cls] used here, with [gsize11.clo].
+%
+
+\usepackage{thesis2}            %[thesis2.sty] used here.
+\usepackage[letterpaper]{geometry}
+\usepackage{float}
+\usepackage{alltt} 
+\usepackage{graphicx}
+\usepackage{latexsym}
+%\usepackage{hyperref}
+\usepackage{amsmath,amssymb,amsfonts,amscd,amsthm}%-----amscd for "Commutative %Diagrams"
+\usepackage[mathscr]{eucal}%------call-in: \mathscr{ } (only upper-case)
+%\usepackage{eufrak}%--------------call-in: \mathfrak{ }(upper & lower case)
+\usepackage{makeidx}
+\usepackage{array}
+%\usepackage{pxfonts}
+\usepackage{MnSymbol}
+\newtheorem{axiom}{Axiom}[section]
+\newtheorem{definition}{Definition}[section]
+\newtheorem{statement}{Statement}[section]
+\newtheorem{comment}{Comment}[section]
+\newtheorem{convention}{Convention}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{remark}{Remark}[section]
+\newtheorem{notation}{Notation}[section]
+\newtheorem{assumption}{Assumption}[section]
+\allowdisplaybreaks
+%
+\makeindex
+%
+% Below is a catalog list of new (user-defined) commands (samples).
+% The new commands (as, for example,  \nat , just below ) can be typed within
+% text-mode, with or without using the $...$ commands. They also work in the
+% usual way in math mode, within formulas, etc. Copy, use, edit and/or delete
+% them as you wish.
+%
+\newcommand{\mx}{\ensuremath{\mathbf{x}}}
+\newcommand{\mX}{\ensuremath{\mathbf{X}}}
+\newcommand{\my}{\ensuremath{\mathbf{y}}}
+\newcommand{\mau}{\ensuremath{\mathbf{u}}}
+\newcommand{\mauh}{\ensuremath{\mathbf{u}_h}}
+\newcommand{\mav}{\ensuremath{\mathbf{v}}}
+\newcommand{\mavh}{\ensuremath{\mathbf{v}_h}}
+\newcommand{\mn}{\ensuremath{\mathbf{n}}}
+\newcommand{\mam}{\ensuremath{\mathbf{m}}}
+\newcommand{\mM}{\ensuremath{\mathbf{M}}}
+\newcommand{\mI}{\ensuremath{\mathbf{I}}}
+\newcommand{\rone}{\ensuremath{\mathbb{R}}}
+\newcommand{\rtwo}{\ensuremath{\mathbb{R}^2}}
+\newcommand{\rthree}{\ensuremath{\mathbb{R}^{3}}}
+\newcommand{\rd}{\ensuremath{\mathbb{R}^d}}
+\newcommand{\Var}{\ensuremath{\mathrm{Var}}}
+\newcommand{\Cov}{\ensuremath{\mathrm{Cov}}}
+\newcommand{\Clambda}{\ensuremath{\tilde{\lambda}}}
+\newcommand{\CZ}{\ensuremath{\tilde{Z}}}
+\newcommand{\Cmu}{\ensuremath{\tilde{\mu}}}
+\newcommand{\Cxi}{\ensuremath{\tilde{\xi}}}
+\newcommand{\CC}{\ensuremath{\tilde{C}}}
+\newcommand{\ProbSpace}{\ensuremath{(\Omega,\mathcal{F},P)}}
+\newcommand{\Ltwo}{\ensuremath{L^2}}
+\newcommand{\LtwoD}{\ensuremath{L^2(D)}}
+\newcommand{\Lp}{\ensuremath{L^p}}
+\newcommand{\Lloc}{\ensuremath{L^1_{\mathrm{loc}}}}
+\newcommand{\Lploc}{\ensuremath{L^p_{\mathrm{loc}}}}
+\newcommand{\Cinf}{\ensuremath{C_0^\infty}}
+\newcommand{\Wkp}{\ensuremath{W^{k,p}(D)}}
+\newcommand{\Hk}{\ensuremath{H^k(D)}}
+\newcommand{\Hko}{\ensuremath{H_0^k(D)}}
+\newcommand{\Hone}{\ensuremath{H^1(D)}}
+\newcommand{\Htwo}{\ensuremath{H^2(D)}}
+\newcommand{\Hdiv}{\ensuremath{H_{\mathrm{div}}(D)}}
+\newcommand{\dD}{\ensuremath{\partial D}}
+\newcommand{\Diff}{\ensuremath{\mathbf{D}}}
+\newcommand{\Lrho}{\ensuremath{L_{\rho,d}^2(\Gamma)}}
+\newcommand{\Lrhoone}{\ensuremath{L_{\rho,1}^2(\Gamma)}}
+\newcommand{\Lrhotwo}{\ensuremath{L_{\rho,2}^2(\Gamma)}}
+\newcommand{\Vst}{\ensuremath{\mathbb{V}}}
+\newcommand{\Wst}{\ensuremath{\mathbb{W}}}
+\newcommand{\K}{\ensuremath{\mathbf{K}}}
+\newcommand{\zinf}{\ensuremath{[0,\infty)}}
+\newcommand{\N}{\ensuremath{N_t}}
+%\newcommand{\Nm}{\ensuremath{N_{\mathrm{coll}}}}
+\newcommand{\Nm}{\ensuremath{M_{\mam}}}
+%-------Pre-set information about yourself, your committee and thesis-title:
+%
+\setmyname{Amirhosein ``Emerson'' Azarbakht} % CANDIDATE'S NAME         %###########
+\setmyday{May 18, 2017}            % DATE OF DEFENSE          %###########
+\setmycomyear{2017}                   % COMMENCEMENT YEAR        %###########
+\setmyadvisor{Carlos Jensen}       % MAJOR PROFESSOR'S NAME   %###########
+%
+%                                     % YOUR THESIS TITLE:       %###########:
+\setmytitle{Longitudinal Analysis of Collaboration in Forked Open Source Software Development Projects}
+%
+\setmymajor{Computer Science}                 % MAJOR
+\setmydept{School of Electrical Engineering and Computer Science}                  % DEPARTMENT
+\setmyschool{Oregon State University}    % SCHOOL
+\setmydegree{Doctor of Philosophy}       % DEGREE TYPE--% Change if Master's
+\setmythesis{Dissertation}                     % DISSERTATION, OR THESIS
+%
+\pagestyle{empty}
+%
+%@@@@@@@@@@@@@@@@ END PREAMBLE @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%
+%++++++++++++++ Ph.D. THESIS DOCUMENT +++++++++++++++++++++++++++++
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+%
+%
+\addtolength{\topmargin}{0.125in}
+\addtolength{\textheight}{0.25in}
+%\topmargin 2.5 in %1\@ptsize pt       
+%\oddsidemargin 1.5 in   
+%\evensidemargin 1.5in
+\addtolength{\oddsidemargin}{0.45in}
+\addtolength{\evensidemargin}{0.45in}
+\addtolength{\textwidth}{-0.325in}
+
+\begin{document}
+%
+%
+%&&&&&&&&&&& BEGIN PRETEXT PAGES &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+%
+%
+\clearpage %------INPUTS FRONT FLYLEAF PAGE (Obligatory Empty Page)
+%
+%
+%----------------------------------------------BEGIN ABSTRACT PAGE:
+%
+\begin{center}
+AN ABSTRACT OF THE DISSERTATION OF
+\end{center}
+\vspace{\baselineskip}
+%
+\underline{\myname} for the degree of
+\underline{\mydegree} in\\ \underline{\mymajor} presented on
+\underline{\myday}. \\
+%
+\newline
+%
+Title: \underline{Longitudinal Analysis of Collaboration in Forked Open Source Software}\\ \underline{Development Projects}
+\vspace*{\baselineskip}
+\hfil\strut\\
+\noindent Abstract approved: \hrulefill\\
+\phantom{Abstract approved:\ }\hfil\myadvisor\hfil\break
+
+%********************************************************************
+%
+%-----------------------(begin your abstract---Start after \indent):
+%########### :
+%
+\indent Social interactions are a ubiquitous part of our lives, and the creation of online social communities has been a natural extension of this phenomena. Free and Open Source Software (FOSS) development efforts are prime examples of how communities can be leveraged in software development, where groups are formed around communities of interest, and depend on continued interest and involvement. 
+
+Not everything works smoothly all the time in open source projects. Problems arise for a variety of reasons, including collaboration and communication problems, which results in uncertainty about the operational health and survivability of the projects. Many stake-holders are affected by this uncertainty, including industry sponsors, individual contributors, corporate developers, and users, who all have decided to invest time and effort in the project, and will be affected if a project suffers from troubles.
+
+Forking in FOSS, either as a non-friendly split or a friendly divide, affects the community. Such effects have been studied, shedding light on how forking happens. However, most existing research on forking is post-hoc. In this study, we focus on the seldom-studied run-up to forking events.
+
+We used the following two approaches to study the evolution and social dynamics of FOSS communities; 1) Time series analysis of the contents of the messages sent and received on the projects developers mailing list, for the time period of 10-month run-up to the fork was analyzed for anomalies, indicative of simmering conflicts. 2) Social network analysis using a developer-oriented approach to statistically model the changes a community goes through in the run-up to a fork, in which the model represents tie formation, tie breakage, and tie maintenance between developers. We estimated several model parameters that capture the variance in the changes the community goes through. We found that conflict-driven forks exhibited anomalies; time series analysis of sentiments showed the anomalies occurred before and close to the fork event. Whereas non-conflict-driven forks did not suffer from such pre-fork anomalies. The objective was to be able to evaluate the operational health of the project community, and intervene if need be. We suggest anomaly detection of the time series analysis may be used by the project stakeholders/investors as key indicators left in the record, that can be used to identify problems among developers, and intervene if need be.
+
+We also found that in conflict-driven forks, (1) the developers maintained a preference for interacting with developers who had similar out-degrees, in contrast to the non-conflict-driven forks, where the developers did not require similar out-degrees. The interpretation may be that a project with non-conflict-driven forks had a more inclusive and classless core developer team. (2) The interactions were reciprocal, in contrast to the non-conflict-driven forks, where the interactions did not need to be reciprocal to happen. The interpretation may be that the projects with non-conflict-driven forks were more open to interactions whether or not they would get something back in return from the other developer. (3) In conflict-driven forks, the more senior developers preferred to interact with other more senior developers, in contrast to the non-conflict-driven forks. The interpretation may be that the senior developers in projects with conflict-driven forks were less involved with junior developers than in projects with non-conflict-driven forks. (4) In non-conflict-driven forks, the developers with high source code contribution levels interacted more with other high source code contributors. (5) In non-conflict-driven forks, high levels of contribution to the source code brings you connections more rapidly, while high levels of contributions to the mailing list is not suggestive of this. This can be interpreted as a sign of meritocracy based on code, rather than talk, which captures a healthy dynamic in these projects.
+
+% ...
+%-------------------------(end your abstract)
+%
+%-------------------------------------------------END ABSTRACT PAGE.
+\clearpage
+%
+\DisplayCopyright %--------------------------INPUTS YOUR COPYRIGHT PAGE.
+%
+%
+\DisplayTitlePage %--------------------------INPUTS YOUR TITLE PAGE.
+%
+%
+%-------------------------------------------------BEGIN APPROVAL PAGE:
+%
+\thispagestyle{empty} {\baselineskip=14.5pt
+\def\ruleline{\hbox to \hsize{\hrulefill}\\[-2ex]}
+\noindent \underline{\mydegree} dissertation of \underline{\myname}
+presented on \underline{\myday}
+\strut\\
+\strut\\
+APPROVED:\\
+\strut\\
+\strut
+\ruleline
+Major Professor, representing \mymajor\\
+\strut\\
+\strut
+\ruleline
+Director of the School of Electrical Engineering and Computer Science \\
+\strut\\
+\strut
+\ruleline
+Dean of the Graduate School\\
+\strut\\
+\strut\\
+\strut\\
+\strut\\\\*[\baselineskip]
+\noindent I understand that my dissertation will become part of the permanent
+collection of Oregon State University libraries.  My signature
+below authorizes release of my dissertation to any reader upon request.\\
+\strut\\
+\strut
+\ruleline \hbox to \textwidth{\hfil \myname, Author \hfil} }
+%
+%
+%---------------------------------------------END APPROVAL PAGE
+%
+%
+%---------------------------------------------BEGIN ACKNOWLEDGEMENT PAGE:
+%
+\clearpage
+\thispagestyle{empty}
+\begin{center}
+ACKNOWLEDGEMENTS
+\end{center}
+%\vspace{\baselineskip}
+%
+%----------------------------------(begin your gratitude & appreciation:)
+%
+
+\indent I would like to express sincere appreciation to family, friends, colleagues, and committee members.
+% ...
+% ...
+%-----------------------------------(end your gratitude & appreciation)
+%
+%
+%------------------------------------END ACKNOWLEDGEMENT PAGE.
+%
+%
+\clearpage
+%
+%
+\tableofcontents %--------------------------TABLE OF CONTENTS
+%
+%
+\clearpage
+%
+%
+\listoffigures %---------LIST OF FIGURES (Only If You Have Two Or More)
+\clearpage
+%
+%
+\listoftables %----------LIST OF TABLES (Only If You Have Two Or More)
+\clearpage
+%
+%
+\listofappendices
+\clearpage
+%
+%
+%\thispagestyle{empty}
+%  \vspace*{8\baselineskip}
+%  \begin{center}
+%    {\it To the memory of my Papa, and to my Mama for your support and encouragement;\\
+% to my husband Ivan and my son Mikhail for your love and care.}
+%  \end{center}
+%\clearpage
+%
+%-----------LIST OF APPENDICES (Create This Only If You Have More Than Five)
+%
+%-----------LIST OF APPENDIX FIGURES (Only If You Have Two Or More)
+%
+%-----------LIST OF APPENDIX TABLES (Only If You Have Two Or More)
+%
+%
+%-----------LIST OF SYMBOLS, ABBREVIATIONS AND/OR NOMENCLATURE (OPTIONAL)
+%
+%
+%---------------------------------------------------DEDICATION (OPTIONAL)
+%
+%
+%---------------------------------------------------PREFACE (OPTIONAL)
+%
+%
+%&&&&&&&&&&&&&&&&& END PRETEXT PAGES &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+\DisplayTitle \vspace*{2em} \pagestyle{myheadings}
+\setcounter{page}{1} \thispagestyle{empty}
+%
+%%#####################################################%%
+%%############### NEW PART ############################%%
+%%#####################################################%%
+\section{Introduction}
+\label{part:intro}
+Lorem ipsum.
+
+\end{document}
+

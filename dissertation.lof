@@ -1,35 +1,35 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces Time Series of sentiments in developers' messages for projects (From top to bottom, left to right) Kamailio (Conflict-Driven), ffmpeg (Conflict-Driven), Amarok (Non-Conflict-Driven), Apache CouchDB (Non-Conflict-Driven), Pidgin (Non-Conflict-Driven), MPlayer (Non-Conflict-Driven). It is not easy to visually analyse these raw time series.\relax }}{33}{figure.caption.13}
-\contentsline {figure}{\numberline {2}{\ignorespaces Time Series of sentiments in developers' messages for projects (From top to bottom, left to right) Asterisk (Non-Conflict-Driven), freeglut (Non-Conflict-Driven), Ceph (Not Forked), OpenStack Neutron (Not Forked), and GlusterFS (Not Forked). It is not easy to visually analyse these raw time series.\relax }}{34}{figure.caption.14}
-\contentsline {figure}{\numberline {3}{\ignorespaces Time series decomposed into trend, seasonality and residual time Series for projects (From top to bottom, left to right) Kamailio (Conflict-Driven), ffmpeg (Conflict-Driven), Amarok (Non-Conflict-Driven), Apache CouchDB (Non-Conflict-Driven).\relax }}{35}{figure.caption.15}
-\contentsline {figure}{\numberline {4}{\ignorespaces Time series decomposed into trend, seasonality and residual time Series for projects (From top to bottom, left to right) Pidgin (Non-Conflict-Driven), MPlayer (Non-Conflict-Driven), Asterisk (Non-Conflict-Driven), and freeglut (Non-Conflict-Driven).\relax }}{36}{figure.caption.16}
-\contentsline {figure}{\numberline {5}{\ignorespaces Time series decomposed into trend, seasonality and residual time Series for projects (From top to bottom, left to right) Ceph (Not Forked), OpenStack Neutron (Not Forked), and GlusterFS (Not Forked).\relax }}{37}{figure.caption.17}
-\contentsline {figure}{\numberline {6}{\ignorespaces Time series with outliers detected for project Kamailio (conflict-driven).\relax }}{40}{figure.caption.25}
-\contentsline {figure}{\numberline {7}{\ignorespaces Time series with outliers detected for project ffmpeg (conflict-driven).\relax }}{41}{figure.caption.26}
-\contentsline {figure}{\numberline {8}{\ignorespaces Time series with outliers detected for project Amarok (non-conflict-driven).\relax }}{41}{figure.caption.27}
-\contentsline {figure}{\numberline {9}{\ignorespaces Time series with outliers detected for project Pidgin (non-conflict-driven).\relax }}{42}{figure.caption.28}
-\contentsline {figure}{\numberline {10}{\ignorespaces Time series with outliers detected for project MPlayer (non-conflict-driven).\relax }}{42}{figure.caption.29}
-\contentsline {figure}{\numberline {11}{\ignorespaces Time series with outliers detected for project Asterisk (non-conflict-driven).\relax }}{43}{figure.caption.30}
-\contentsline {figure}{\numberline {12}{\ignorespaces Time series with outliers detected for project freeglut (non-conflict-driven).\relax }}{44}{figure.caption.31}
-\contentsline {figure}{\numberline {13}{\ignorespaces Time series with outliers detected for project Ceph (Not forked).\relax }}{45}{figure.caption.32}
-\contentsline {figure}{\numberline {14}{\ignorespaces Time series with outliers detected for project OpenStack Neutron (Not forked).\relax }}{45}{figure.caption.33}
-\contentsline {figure}{\numberline {15}{\ignorespaces Time series with outliers detected for project GlusterFS (Not forked).\relax }}{46}{figure.caption.34}
-\contentsline {figure}{\numberline {16}{\ignorespaces The methodology in a glance\relax }}{47}{figure.caption.35}
-\contentsline {figure}{\numberline {17}{\ignorespaces Heat-map color-coded examples Degree, Closeness, Betweenness, Eigenvector centralities}}{89}{figure.caption.56}
-\contentsline {figure}{\numberline {18}{\ignorespaces The number of nodes and edges over time, as network-specific measurements}}{92}{figure.caption.57}
-\contentsline {figure}{\numberline {19}{\ignorespaces The network diameter change over time, as network-specific measurements}}{93}{figure.caption.58}
-\contentsline {figure}{\numberline {20}{\ignorespaces Snapshots from video visualization of Kamailio project's graph}}{94}{figure.caption.59}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{94}{subfigure.20.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{94}{subfigure.20.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{94}{subfigure.20.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{94}{subfigure.20.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{94}{subfigure.20.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{94}{subfigure.20.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{94}{subfigure.20.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{94}{subfigure.20.4}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{94}{subfigure.20.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{94}{subfigure.20.2}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{94}{subfigure.20.3}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{94}{subfigure.20.4}
-\contentsline {figure}{\numberline {21}{\ignorespaces Kamailio top contributors' betweenness centralities and network diameter over time}}{95}{figure.caption.60}
-\contentsline {figure}{\numberline {22}{\ignorespaces Amarok project's top contributors' betweenness centralities and network diameter over time}}{96}{figure.caption.61}
-\contentsline {figure}{\numberline {23}{\ignorespaces Asterisk project's top contributors' betweenness centralities and network diameter over time}}{97}{figure.caption.62}
+\contentsline {figure}{\numberline {1}{\ignorespaces Time Series of sentiments in developers' messages for projects (From top to bottom, left to right) Kamailio (Conflict-Driven), ffmpeg (Conflict-Driven), Amarok (Non-Conflict-Driven), Apache CouchDB (Non-Conflict-Driven), Pidgin (Non-Conflict-Driven), MPlayer (Non-Conflict-Driven). It is not easy to visually analyse these raw time series.\relax }}{18}{figure.caption.11}
+\contentsline {figure}{\numberline {2}{\ignorespaces Time Series of sentiments in developers' messages for projects (From top to bottom, left to right) Asterisk (Non-Conflict-Driven), freeglut (Non-Conflict-Driven), Ceph (Not Forked), OpenStack Neutron (Not Forked), and GlusterFS (Not Forked). It is not easy to visually analyse these raw time series.\relax }}{19}{figure.caption.12}
+\contentsline {figure}{\numberline {3}{\ignorespaces Time series decomposed into trend, seasonality and residual time Series for projects (From top to bottom, left to right) Kamailio (Conflict-Driven), ffmpeg (Conflict-Driven), Amarok (Non-Conflict-Driven), Apache CouchDB (Non-Conflict-Driven).\relax }}{20}{figure.caption.13}
+\contentsline {figure}{\numberline {4}{\ignorespaces Time series decomposed into trend, seasonality and residual time Series for projects (From top to bottom, left to right) Pidgin (Non-Conflict-Driven), MPlayer (Non-Conflict-Driven), Asterisk (Non-Conflict-Driven), and freeglut (Non-Conflict-Driven).\relax }}{21}{figure.caption.14}
+\contentsline {figure}{\numberline {5}{\ignorespaces Time series decomposed into trend, seasonality and residual time Series for projects (From top to bottom, left to right) Ceph (Not Forked), OpenStack Neutron (Not Forked), and GlusterFS (Not Forked).\relax }}{22}{figure.caption.15}
+\contentsline {figure}{\numberline {6}{\ignorespaces Time series with outliers detected for project Kamailio (conflict-driven).\relax }}{25}{figure.caption.23}
+\contentsline {figure}{\numberline {7}{\ignorespaces Time series with outliers detected for project ffmpeg (conflict-driven).\relax }}{26}{figure.caption.24}
+\contentsline {figure}{\numberline {8}{\ignorespaces Time series with outliers detected for project Amarok (non-conflict-driven).\relax }}{26}{figure.caption.25}
+\contentsline {figure}{\numberline {9}{\ignorespaces Time series with outliers detected for project Pidgin (non-conflict-driven).\relax }}{27}{figure.caption.26}
+\contentsline {figure}{\numberline {10}{\ignorespaces Time series with outliers detected for project MPlayer (non-conflict-driven).\relax }}{27}{figure.caption.27}
+\contentsline {figure}{\numberline {11}{\ignorespaces Time series with outliers detected for project Asterisk (non-conflict-driven).\relax }}{28}{figure.caption.28}
+\contentsline {figure}{\numberline {12}{\ignorespaces Time series with outliers detected for project freeglut (non-conflict-driven).\relax }}{29}{figure.caption.29}
+\contentsline {figure}{\numberline {13}{\ignorespaces Time series with outliers detected for project Ceph (Not forked).\relax }}{30}{figure.caption.30}
+\contentsline {figure}{\numberline {14}{\ignorespaces Time series with outliers detected for project OpenStack Neutron (Not forked).\relax }}{30}{figure.caption.31}
+\contentsline {figure}{\numberline {15}{\ignorespaces Time series with outliers detected for project GlusterFS (Not forked).\relax }}{31}{figure.caption.32}
+\contentsline {figure}{\numberline {16}{\ignorespaces The methodology in a glance\relax }}{32}{figure.caption.33}
+\contentsline {figure}{\numberline {17}{\ignorespaces Heat-map color-coded examples Degree, Closeness, Betweenness, Eigenvector centralities}}{71}{figure.caption.54}
+\contentsline {figure}{\numberline {18}{\ignorespaces The number of nodes and edges over time, as network-specific measurements}}{74}{figure.caption.55}
+\contentsline {figure}{\numberline {19}{\ignorespaces The network diameter change over time, as network-specific measurements}}{75}{figure.caption.56}
+\contentsline {figure}{\numberline {20}{\ignorespaces Snapshots from video visualization of Kamailio project's graph}}{76}{figure.caption.57}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{76}{subfigure.20.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{76}{subfigure.20.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{76}{subfigure.20.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{76}{subfigure.20.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{76}{subfigure.20.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{76}{subfigure.20.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{76}{subfigure.20.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{76}{subfigure.20.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{76}{subfigure.20.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{76}{subfigure.20.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{76}{subfigure.20.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{76}{subfigure.20.4}
+\contentsline {figure}{\numberline {21}{\ignorespaces Kamailio top contributors' betweenness centralities and network diameter over time}}{76}{figure.caption.58}
+\contentsline {figure}{\numberline {22}{\ignorespaces Amarok project's top contributors' betweenness centralities and network diameter over time}}{78}{figure.caption.59}
+\contentsline {figure}{\numberline {23}{\ignorespaces Asterisk project's top contributors' betweenness centralities and network diameter over time}}{79}{figure.caption.60}

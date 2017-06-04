@@ -1,0 +1,610 @@
+%%
+%% This is file `gthesis.cls'
+%% created by Tolga Acar <acar@ece.orst.edu>,  April 1997
+%%
+%% Originals from:
+%%      article.cls (LaTeX2e, Version 3.14159)
+%%      osuthes.sty (OSU Grad. School >:-<)
+%%
+%% This file is distributed in the hope that it will be useful,
+%% but without ANY WARRANTY; without even the implied warranty of
+%% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+%%
+%% COPYRIGHT NOTICE
+%% You can distrubute this file as you please, keeping this copyright
+%% notice and line lines above it.
+%% Please send any bugs, suggestions to Tolga Acar.
+%%
+\NeedsTeXFormat{LaTeX2e}[1995/12/01] \ProvidesClass{gthesis2}
+               [1997/04/02 v1.0, OSU Graduate Thesis class]
+
+\newcommand\@ptsize{}
+\newif\if@restonecol
+\newif\if@titlepage
+\newif\if@abstractpage
+\@titlepagefalse \@abstractpagefalse
+
+\if@compatibility\else \DeclareOption{letterpaper}
+   {\setlength\paperheight {11in}\setlength\paperwidth  {8.5in}}
+\DeclareOption{a4paper}
+   {\setlength\paperheight {11in}\setlength\paperwidth  {8.5in}}
+\DeclareOption{a5paper}
+   {\setlength\paperheight {210mm}\setlength\paperwidth  {148mm}}
+\DeclareOption{b5paper}
+   {\setlength\paperheight {250mm}\setlength\paperwidth  {176mm}}
+\DeclareOption{legalpaper}
+   {\setlength\paperheight {14in}\setlength\paperwidth  {8.5in}}
+\DeclareOption{executivepaper}
+   {\setlength\paperheight {11in}\setlength\paperwidth  {8.5in}}
+\DeclareOption{landscape}
+   {\setlength\@tempdima   {\paperheight}%
+    \setlength\paperheight {\paperwidth}%
+    \setlength\paperwidth  {\@tempdima}}
+\fi \if@compatibility
+  \renewcommand\@ptsize{0}
+\else
+  \DeclareOption{10pt}{\renewcommand\@ptsize{0}}
+\fi \DeclareOption{11pt}{\renewcommand\@ptsize{1}}
+\DeclareOption{12pt}{\renewcommand\@ptsize{2}}
+\if@compatibility\else
+  \DeclareOption{oneside}{\@twosidefalse \@mparswitchfalse}
+\fi \DeclareOption{twoside}{\@twosidetrue  \@mparswitchtrue}
+\DeclareOption{draft}{\setlength\overfullrule{5pt}}
+\if@compatibility\else
+  \DeclareOption{final}{\setlength\overfullrule{0pt}}
+\fi \DeclareOption{titlepage}{\@titlepagetrue}
+\if@compatibility\else
+  \DeclareOption{notitlepage}{\@titlepagefalse}
+\fi \if@compatibility\else
+  \DeclareOption{onecolumn}{\@twocolumnfalse}
+\fi \DeclareOption{twocolumn}{\@twocolumntrue}
+\DeclareOption{leqno}{\input{leqno.clo}}
+\DeclareOption{fleqn}{\input{fleqn.clo}}
+\DeclareOption{openbib}{%
+  \AtEndOfPackage{%
+   \renewcommand\@openbib@code{%
+      \advance\leftmargin\bibindent
+      \itemindent -\bibindent
+      \listparindent \itemindent
+      \parsep \z@
+      }%
+   \renewcommand\newblock{\par}}%
+} \ExecuteOptions{letterpaper,11pt,oneside,onecolumn,final}
+\ProcessOptions
+
+
+% -->-->I just changed textheight to 8.375 from 8.7 (Wendy BLack)
+%\textheight 8.5 in \topmargin 1\@ptsize pt
+
+%\textwidth 5.8 in
+
+
+
+%\topmargin 
+%\addtolength{\textheight}{-\topmargin} \topmargin +2.5 in
+% -->--> changed topmargin to +.25 from +.49 (Wendy Black)
+
+
+\input{gsize1\@ptsize.clo}
+
+%
+% page layout
+%
+\newlength{\headwidth}\setlength{\headwidth}{\textwidth}
+\addtolength{\headwidth}{-6pt}
+\newlength{\@headheight} \setlength{\@headheight}{\headheight}
+\newlength{\@extraheadheight} \setlength{\@extraheadheight}{4\baselineskip}
+\newcounter{reducedpagenumber}
+\newlength{\@pagenumberwidth}
+
+\if@compatibility\else\@settopoint\textwidth\fi
+\setlength\lineskip{1pt} \setlength\normallineskip{1pt}
+\renewcommand\baselinestretch{1.5}
+\def\resetbaselineskip{\def\baselinestretch{1}\large\normalsize\relax}
+
+\@lowpenalty   51 \@medpenalty  151 \@highpenalty 301
+\@beginparpenalty -\@lowpenalty \@endparpenalty   -\@lowpenalty
+\@itempenalty     -\@lowpenalty
+
+\displaywidth\textwidth \linewidth\textwidth
+\def\footnoterule{\kern-5.25pt\hrule width.5in\kern4.85pt}
+\parskip 0pt plus 1pt
+\columnsep 10pt \columnseprule 0pt \arraycolsep 3pt \tabcolsep 2pt
+\arrayrulewidth .4pt \doublerulesep 2pt \tabbingsep \labelsep
+\fboxsep 3pt \fboxrule .4pt
+
+
+
+\setcounter{topnumber}{2}
+\renewcommand\topfraction{.8}
+\setcounter{bottomnumber}{1}
+\renewcommand\bottomfraction{.3}
+\setcounter{totalnumber}{3}
+\renewcommand\textfraction{.2}
+\renewcommand\floatpagefraction{.5}
+\setcounter{dbltopnumber}{2}
+\renewcommand\dbltopfraction{.7}
+\renewcommand\dblfloatpagefraction{.5}
+
+% OSU graduate thesis is always one column, oddside prints.
+% didn't bother to set twocolumn & twoside options
+
+% head styles
+\def\ps@headings{%
+    \setlength{\headheight}{\@headheight}
+    \let\@oddfoot\@empty \let\@evenfoot\@empty
+    \def\@oddhead{{\slshape\rightmark}\normalfont\hfil\rmfamily\thepage}%
+    \let\@mkboth\markboth
+    \def\sectionmark##1{%
+      \markright {\MakeUppercase{%
+        \ifnum \c@secnumdepth >\m@ne
+          \thesection\quad\relax
+        \fi
+        ##1}
+      }
+    }
+    \def\partmark##1{}
+  }
+\def\ps@myheadings{
+    \setlength{\headheight}{\@headheight}
+    \let\@oddfoot\@empty \let\@evenfoot\@empty
+    \def\@evenhead{\normalfont\rmfamily\thepage\hfil\slshape\leftmark}%
+    \def\@oddhead{{\rightmark}\hfil\normalfont\rmfamily\thepage}%
+    \let\@mkboth\@gobbletwo
+    \let\sectionmark\@gobble \let\subsectionmark\@gobble \let\partmark\@gobble
+}
+\def\ps@pretext{
+    \setlength{\headheight}{\@headheight}
+    \let\@oddfoot\@empty \let\@evenfoot\@empty
+    \let\@evenhead{\normalfont\rmfamily\thepage\hfil\slshape\leftmark}%
+    \def\@oddhead{{\rightmark}\normalfont\hfil\rmfamily\thepage}
+    \let\@mkboth\@gobbletwo
+    \def\sectionmark##1{} \def\subsectionmark##1{} \def\partmark##1{}
+}
+\def\ps@tocone{
+    \setlength{\headheight}{\@headheight}
+    \addtolength{\headheight}{\@extraheadheight}
+    \def\@oddhead{\normalsize
+     \parbox[b]{\headwidth}{\centering\normalfont\contentsname
+     \normalfont\rmfamily \flushright\underline{Page}}
+    }
+    \let\@evenhead\@empty \let\@oddfoot\@empty \let\@evenfoot\@empty
+}
+\def\ps@tocrest{
+    \setlength{\headheight}{\@headheight}
+    \addtolength{\headheight}{\@extraheadheight}
+    \def\@oddhead{\normalsize
+     \parbox[b]{\headwidth}{\centering\normalfont\contentscont
+%-->--> changed bfseries to normalfont...also in lofone, lofrest (Wendy Black)
+      \normalfont\rmfamily \flushright\underline{Page}}
+    }
+    \let\@evenhead\@empty \let\@oddfoot\@empty \let\@evenfoot\@empty
+}
+
+\def\ps@loaone{
+    \setlength{\headheight}{\@headheight}
+    \addtolength{\headheight}{\@extraheadheight}
+    \def\@oddhead{\normalsize
+     \parbox[b]{\headwidth}{\centering\normalfont\listappname
+     \normalfont\rmfamily \flushright\underline{Page}}
+    }
+    \let\@evenhead\@empty \let\@oddfoot\@empty \let\@evenfoot\@empty
+}
+\def\ps@loarest{
+    \setlength{\headheight}{\@headheight}
+    \addtolength{\headheight}{\@extraheadheight}
+    \def\@oddhead{\normalsize
+     \parbox[b]{\headwidth}{\centering\normalfont\listappnamecont
+      \normalfont\rmfamily \flushright\underline{Page}}
+    }
+    \let\@evenhead\@empty \let\@oddfoot\@empty \let\@evenfoot\@empty
+}
+\def\ps@lofone{
+    \setlength{\headheight}{\@headheight}
+    \addtolength{\headheight}{\@extraheadheight}
+    \def\@oddhead{\normalsize
+     \parbox[b]{\headwidth}{\centering\normalfont\listfigurename
+      \normalfont\rmfamily\flushleft\hspace*{1.5em}  % look at \l@figure
+      \underline{Figure}\hfill\underline{Page}}
+    }
+    \let\@evenhead\@empty \let\@oddfoot\@empty \let\@evenfoot\@empty
+}
+\def\ps@lofrest{
+    \setlength{\headheight}{\@headheight}
+    \addtolength{\headheight}{\@extraheadheight}
+    \def\@oddhead{\normalsize
+     \parbox[b]{\headwidth}{\centering\normalfont\listfigurecont
+      \normalfont\rmfamily\flushleft\hspace*{1.5em}  % look at \l@figure
+      \underline{Figure}\hfill\underline{Page}}
+    }
+    \let\@evenhead\@empty \let\@oddfoot\@empty \let\@evenfoot\@empty
+}
+\def\ps@lotone{
+    \setlength{\headheight}{\@headheight}
+    \addtolength{\headheight}{\@extraheadheight}
+    \def\@oddhead{\normalsize
+     \parbox[b]{\headwidth}{\centering\normalfont\listtablename
+      \normalfont\rmfamily\flushleft\hspace*{1.5em}  % look at \l@figure
+      \underline{Table}\hfill\underline{Page}}
+    }
+    \let\@evenhead\@empty \let\@oddfoot\@empty \let\@evenfoot\@empty
+}
+\def\ps@lotrest{
+    \setlength{\headheight}{\@headheight}
+    \addtolength{\headheight}{\@extraheadheight}
+    \def\@oddhead{\normalsize
+     \parbox[b]{\headwidth}{\centering\normalfont\listtablecont
+      \normalfont\rmfamily\flushleft\hspace*{1.5em} % look at \l@figure
+      \underline{Table}\hfill\underline{Page}}
+    }
+    \let\@evenhead\@empty \let\@oddfoot\@empty \let\@evenfoot\@empty
+}
+
+\setcounter{secnumdepth}{4}
+\newcounter {part}
+\newcounter {section}[part]
+\newcounter {subsection}[section]
+\newcounter {subsubsection}[subsection]
+\newcounter {paragraph}[subsubsection]
+%\newcounter {subparagraph}[paragraph]
+\renewcommand\thepart         {\@arabic\c@part}
+\renewcommand\thesection      {\thepart.\@arabic\c@section}
+\renewcommand\thesubsection   {\thesection.\@arabic\c@subsection}
+%\renewcommand\thesubsection   {\thesection\@arabic\c@subsection}
+%--->--->--removed dot (Chris Bryant)
+\renewcommand\thesubsubsection{\thesubsection.\@arabic\c@subsubsection}
+%-->---removed dot ( ... )
+%\renewcommand\theparagraph    {\thesubsubsection\@arabic\c@paragraph}
+%--->---removed dot ( ... )
+%\renewcommand\thesubparagraph {\theparagraph\@arabic\c@subparagraph}
+%--->----removed dot ( ... )
+\newcommand{\nohyphens}{\hyphenpenalty=10000\exhyphenpenalty=10000\relax}
+
+\newcommand\part{%
+           \@startsection {part}{1}{-\parindent}%
+           {0pt}%
+           {2em}%
+           {\resetbaselineskip\normalfont\large\bfseries%
+            \centering\nohyphens}}
+\def\@part[#1]#2{%
+    \ifnum \c@secnumdepth >\m@ne
+      \refstepcounter{part}%
+      \addcontentsline{toc}{part}{\thepart.~#1}%
+    \else
+      \addcontentsline{toc}{part}{#1}%
+    \fi
+    {\normalfont\centering\thepart\bfseries #2
+     \markboth{}{}\par}%
+    \nobreak \vskip 3ex
+}
+\def\@spart#1{
+    {\baselineskip 14.5pt\centering\normalfont\bfseries #1\par}
+    \nobreak\vskip 3ex
+}
+
+\newcommand\section{%
+                   \@startsection {section}{2}{\z@}%
+                   {3em}%
+                   {1em}
+                   {\resetbaselineskip\normalfont\large\bfseries}}
+\newcommand\subsection{%
+                      \@startsection{subsection}{3}{\z@}%
+                      {3.25ex\@plus1ex \@minus.2ex}%
+                      {1.5ex \@plus .2ex}%
+                      {\resetbaselineskip\normalfont\large\bfseries}}
+\newcommand\subsubsection{%
+                         \@startsection{subsubsection}{4}{\z@}%
+                         {3.25ex\@plus1ex \@minus.2ex}%
+                         {1.5ex \@plus .2ex}%
+                         {\resetbaselineskip\normalfont\normalsize\bfseries}}
+\newcommand\paragraph{%
+                     \@startsection{paragraph}{5}{\z@}%
+                     {3.25ex \@plus1ex \@minus.2ex}%
+                     {-1em}%
+                     {\resetbaselineskip\normalfont\normalsize\itseries}}
+\newcommand\subparagraph{%
+                        \@startsection{subparagraph}{6}{\parindent}%
+                        {3.25ex \@plus1ex \@minus .2ex}%
+                        {-1em}%
+                        {\resetbaselineskip\normalfont\normalsize\bfseries}}
+\setlength\leftmargini  {2.5em} \leftmargin\leftmargini
+\setlength\leftmarginii  {2.2em} \setlength\leftmarginiii {1.87em}
+\setlength\leftmarginiv  {1.7em} \setlength\leftmarginv  {1em}
+\setlength\leftmarginvi {1em}
+
+\setlength  \labelsep  {.5em} \setlength
+\labelwidth{\leftmargini} \addtolength\labelwidth{-\labelsep}
+\@beginparpenalty -\@lowpenalty \@endparpenalty   -\@lowpenalty
+\@itempenalty     -\@lowpenalty
+\renewcommand\theenumi{\@arabic\c@enumi}
+\renewcommand\theenumii{\@alph\c@enumii}
+\renewcommand\theenumiii{\@roman\c@enumiii}
+\renewcommand\theenumiv{\@Alph\c@enumiv}
+\newcommand\labelenumi{\theenumi.}
+\newcommand\labelenumii{(\theenumii)}
+\newcommand\labelenumiii{\theenumiii.}
+\newcommand\labelenumiv{\theenumiv.}
+\renewcommand\p@enumii{\theenumi}
+\renewcommand\p@enumiii{\theenumi(\theenumii)}
+\renewcommand\p@enumiv{\p@enumiii\theenumiii}
+\newcommand\labelitemi{$\m@th\bullet$}
+\newcommand\labelitemii{\normalfont\bfseries --}
+\newcommand\labelitemiii{$\m@th\ast$}
+\newcommand\labelitemiv{$\m@th\cdot$}
+\newenvironment{description}
+               {\list{}{\labelwidth\z@ \itemindent-\leftmargin
+                        \let\makelabel\descriptionlabel}}
+               {\endlist}
+\newcommand*\descriptionlabel[1]{\hspace\labelsep
+                                \normalfont\bfseries #1}
+\newenvironment{verse}
+               {\let\\\@centercr
+                \list{}{\itemsep      \z@
+                        \itemindent   -1.5em%
+                        \listparindent\itemindent
+                        \rightmargin  \leftmargin
+                        \advance\leftmargin 1.5em}%
+                \item\relax}
+               {\endlist}
+\newenvironment{quotation}
+               {\list{}{\listparindent 1.5em%
+                        \itemindent    \listparindent
+                        \rightmargin   \leftmargin
+                        \parsep        \z@ \@plus\p@}%
+                \item\relax}
+               {\endlist}
+\newenvironment{quote}
+               {\list{}{\rightmargin\leftmargin}%
+                \item\relax}
+               {\endlist}
+\if@compatibility
+ \newenvironment{titlepage}
+    {\newpage \thispagestyle{empty} \setcounter{page}\z@}%
+    {\if@restonecol\twocolumn \else \newpage \fi }
+\else
+ \newenvironment{titlepage}
+    {\newpage \thispagestyle{empty} \setcounter{page}\@ne}%
+    {\newpage \if@twoside\else\setcounter{page}\@ne\fi }
+\fi
+
+\newcommand\appendix{\par%
+\setcounter{part}{0}%
+\setcounter{section}{0}%
+%\setcounter{subsection}{0}%
+\renewcommand\thepart{\@Alph\c@part}
+%\renewcommand\thesection{\@Alph\c@section}
+\@addtoreset{equation}{part}
+\renewcommand\theequation{\@Alph\c@part.\@arabic\c@equation}
+\@addtoreset{theorem}{part}
+\renewcommand{\thetheorem}{\@Alph\c@part.\@arabic\c@section.\arabic{theorem}}
+\@addtoreset{lemma}{part}
+\renewcommand{\thelemma}{\@Alph\c@part.\@arabic\c@section.\arabic{lemma}}
+\@addtoreset{definition}{part}
+\renewcommand{\thedefinition}{\@Alph\c@part.\@arabic\c@section.\arabic{definition}}
+\@addtoreset{remark}{part}
+\renewcommand{\theremark}{\@Alph\c@part.\@arabic\c@section.\arabic{remark}}
+}
+
+\setlength\arraycolsep{5\p@} \setlength\tabcolsep{6\p@}
+\setlength\arrayrulewidth{.4\p@} \setlength\doublerulesep{2\p@}
+\setlength\tabbingsep{\labelsep} \skip\@mpfootins = \skip\footins
+\setlength\fboxsep{3\p@} \setlength\fboxrule{.4\p@}
+
+\@addtoreset{equation}{part}
+\renewcommand\theequation{\@arabic\c@part.\@arabic\c@equation}%
+\newcounter{figure}
+\@addtoreset{figure}{part}
+\renewcommand\thefigure{\@arabic\c@figure}
+\def\fps@figure{tbp}
+\def\ftype@figure{1}
+\def\ext@figure{lof}
+\def\fnum@figure{\figurename~\thefigure}
+\newenvironment{figure}
+               {\@float{figure}}
+               {\vskip 0.2em\end@float}
+\newenvironment{figure*}
+               {\@dblfloat{figure}}
+               {\vskip 0.2em\end@dblfloat}
+
+\newcounter{table}
+\@addtoreset{table}{part}
+\renewcommand\thetable{\@arabic\c@table}
+\def\fps@table{tbp}
+\def\ftype@table{2}
+\def\ext@table{lot}
+\def\fnum@table{\tablename~\thetable}
+\newenvironment{table}
+               {\@float{table}}
+               {\vskip 1.5em \end@float}
+\newenvironment{table*}
+               {\@dblfloat{table}}
+               {\vskip 1.5em \end@dblfloat}
+\newlength\abovecaptionskip
+\newlength\belowcaptionskip
+\setlength\abovecaptionskip{0.1em}
+\setlength\belowcaptionskip{0.1em}
+
+\long\def\@makecaption#1#2{%
+  \vskip\abovecaptionskip
+  \reset@font\normalsize\normalfont\rmfamily
+  \baselineskip 1\@ptsize pt \@plus 2pt \@minus 1pt
+  \sbox\@tempboxa{#1: #2}%
+  \ifdim \wd\@tempboxa >\hsize
+    #1: #2\par
+  \else
+    \global \@minipagefalse
+    \hb@xt@\hsize{\hfil\box\@tempboxa\hfil}%
+  \fi
+  \vskip\belowcaptionskip
+} \DeclareOldFontCommand{\rm}{\normalfont\rmfamily}{\mathrm}
+\DeclareOldFontCommand{\sf}{\normalfont\sffamily}{\mathsf}
+\DeclareOldFontCommand{\tt}{\normalfont\ttfamily}{\mathtt}
+\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
+\DeclareOldFontCommand{\it}{\normalfont\itshape}{\mathit}
+\DeclareOldFontCommand{\sl}{\normalfont\slshape}{\@nomath\sl}
+\DeclareOldFontCommand{\sc}{\normalfont\scshape}{\@nomath\sc}
+\DeclareRobustCommand*\cal{\@fontswitch\relax\mathcal}
+\DeclareRobustCommand*\mit{\@fontswitch\relax\mathnormal}
+
+\newcommand\@pnumwidth{2.55em}
+\newcommand\@tocrmarg{3.55em}
+\newcommand\@dotsep{1.5}
+\setcounter{tocdepth}{3}
+
+\newcommand\tableofcontents{%
+    \pagestyle{tocrest}\thispagestyle{tocone}
+    \setcounter{reducedpagenumber}{\value{page}}
+    \@starttoc{toc}}
+
+\newcommand\listofappendices{%
+    \pagestyle{loarest}\thispagestyle{loaone}
+   \setcounter{reducedpagenumber}{\value{page}}
+   \@starttoc{loa}}
+
+
+\newcommand*\l@part[2]{%
+    \ifnum\value{page}=\value{reducedpagenumber}
+      \stepcounter{reducedpagenumber}
+      \enlargethispage{-\@extraheadheight}
+    \fi
+    \addpenalty\@secpenalty
+    \addvspace{1.25em \@plus\p@}%
+    \setlength\@tempdima{1.5pc}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode
+       \advance\leftskip\@tempdima
+       \hskip -\leftskip \resetbaselineskip
+       \parskip \z@\interlinepenalty 10000
+       %\MakeUppercase
+{#1}
+       \dotfill\nobreak\hb@xt@\@pnumwidth{\hss #2\hspace*{2ex}}\par
+       \nobreak
+       \if@compatibility
+         \global\@nobreaktrue
+         \everypar{\global\@nobreakfalse\everypar{}}%
+      \fi
+    \endgroup
+}
+\newcommand*\l@section[2]{%
+    \ifnum\value{page}=\value{reducedpagenumber}
+      \stepcounter{reducedpagenumber}
+      \enlargethispage{-\@extraheadheight}
+    \fi
+    \addpenalty\@secpenalty
+    \addvspace{0.5em \@plus\p@}%
+    \setlength\@tempdima{2.5pc}%
+    \begingroup
+      \parindent \z@ \rightskip \@pnumwidth
+      \parfillskip -\@pnumwidth
+      \leavevmode
+      \advance\leftskip\@tempdima
+      \hskip -\leftskip \hangindent 1.5pc \hangafter 0
+      \baselineskip 1.6em \parskip \z@\interlinepenalty 10000
+      #1\nobreak\dotfill\nobreak%
+      \hb@xt@\@pnumwidth{\hss #2\hspace*{2ex}}\par
+    \endgroup
+    \addvspace{0.5em}
+}
+\newcommand*\l@subsection[2]{\vskip .3em%\vskip 6pt
+            {\baselineskip 1\@ptsize pt
+             \@dottedtocline{2}{4pc}{2.8em}{#1}{#2\hspace*{2ex}}}}
+\newcommand*\l@subsubsection[2]{\vskip 0.3em
+            {\baselineskip 1\@ptsize pt
+             \@dottedtocline{3}{6.5pc}{3.7em}{#1}{#2\hspace*{2ex}}}}
+\newcommand*\l@paragraph[2]{\@dottedtocline{4}{7.0em}{4.1em}{#1}{#2}}
+\newcommand*\l@subparagraph{\@dottedtocline{5}{10em}{5em}}
+
+\newcommand\listoffigures{%
+    \pagestyle{lofrest}\thispagestyle{lofone}
+    \@starttoc{lof}}
+
+\newcommand*\l@figure[2]{\vskip 9.5pt
+            {\baselineskip 14.5pt
+            \@dottedtocline{1}{1.5em}{2.3em}{#1}{#2\hspace*{2ex}}}}
+\newcommand\listoftables{%
+    \pagestyle{lotrest}\thispagestyle{lotone}
+    \setcounter{reducedpagenumber}{\value{page}}
+    \@starttoc{lot}%
+}
+\let\l@table\l@figure
+
+%
+% bibliography
+\newdimen\bibindent
+\setlength\bibindent{1ex}
+\newenvironment{thebibliography}[1]
+ {\part*{\refname
+            \@mkboth{\refname}{\refname}}%
+  \addcontentsline{toc}{part}{\refname}% bibliography TOC entry
+  \list{\@biblabel{\@arabic\c@enumiv}}%
+  {\settowidth\labelwidth{\@biblabel{#1}}%
+   \leftmargin\labelwidth
+   \advance\leftmargin\labelsep
+   \@openbib@code
+   \usecounter{enumiv}%
+   \let\p@enumiv\@empty
+   \renewcommand\theenumiv{\@arabic\c@enumiv}}%
+  \sloppy\clubpenalty4000\widowpenalty4000%
+  \sfcode`\.\@m%
+  \baselineskip 14.5pt
+ }
+ {\def\@noitemerr
+  {\@latex@warning{Empty `thebibliography' environment}}%
+  \endlist%
+  \resetbaselineskip
+ }
+\renewcommand{\@biblabel}[1]{#1.\hspace{\bibindent}}
+\newcommand\newblock{\hskip .11em\@plus.33em\@minus.07em}
+\let\@openbib@code\@empty
+
+%
+% index
+\newenvironment{theindex}
+               {\if@twocolumn
+                  \@restonecolfalse
+                \else
+                  \@restonecoltrue
+                \fi
+                \columnseprule \z@
+                \columnsep 35\p@
+                \twocolumn[\section*{\indexname}]%
+                \@mkboth{\indexname}%
+                        {\indexname}%
+                \thispagestyle{myheadings}\parindent\z@
+                \parskip\z@ \@plus .3\p@\relax
+                \let\item\@idxitem}
+               {\if@restonecol\onecolumn\else\clearpage\fi}
+\newcommand\@idxitem{\par\hangindent 40\p@}
+\newcommand\subitem{\@idxitem \hspace*{20\p@}}
+\newcommand\subsubitem{\@idxitem \hspace*{30\p@}}
+\newcommand\indexspace{\par \vskip 10\p@ \@plus5\p@ \@minus3\p@\relax}
+
+% footnote
+\renewcommand\footnoterule{%
+  \kern-3\p@
+  \hrule\@width.4\columnwidth
+  \kern2.6\p@}
+\newcommand\@makefntext[1]{%
+    \parindent 1em%
+    \noindent
+    \baselineskip 1\@ptsize pt
+    \hb@xt@1.8em{\hss\@makefnmark}#1}
+\addtolength{\skip\footins}{1em \@plus 4\p@ \@minus 2\p@}
+% date
+\newcommand\today{}
+\edef\today{\ifcase\month\or
+  January\or February\or March\or April\or May\or June\or
+  July\or August\or September\or October\or November\or December\fi
+  \space\number\day, \number\year}
+\setlength\columnsep{10\p@} \setlength\columnseprule{0\p@}
+\pagestyle{plain} \pagenumbering{arabic} \if@twoside \else
+  \raggedbottom
+\fi
+
+\onecolumn
+
+\endinput
+%%
+%% End of file `gthesis2.cls'.

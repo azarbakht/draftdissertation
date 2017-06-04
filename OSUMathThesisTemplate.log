@@ -1,0 +1,54 @@
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  4 JUN 2017 12:11
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**OSUMathThesisTemplate.tex
+(./OSUMathThesisTemplate.tex
+LaTeX2e <2011/06/27>
+Babel <3.9h> and hyphenation patterns for 4 languages loaded.
+(./gthesis2.cls
+Document Class: gthesis2 1997/04/02 v1.0, OSU Graduate Thesis class
+(./gsize11.clo
+File: gsize11.clo 1997/04/04 v1.1 OSU Graduate Thesis File (size 11pt)
+)
+\headwidth=\skip41
+\@headheight=\skip42
+\@extraheadheight=\skip43
+\c@reducedpagenumber=\count79
+\@pagenumberwidth=\skip44
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip45
+\belowcaptionskip=\skip46
+\bibindent=\dimen102
+)
+
+! LaTeX Error: File `thesis2.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.81 \usepackage
+                {latexsym}^^M
+*** (cannot \read from terminal in nonstop modes)
+
+ 
+Here is how much of TeX's memory you used:
+ 219 strings out of 494985
+ 2307 string characters out of 6180356
+ 47916 words of memory out of 5000000
+ 3526 multiletter control sequences out of 15000+600000
+ 3940 words of font info for 15 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 21i,0n,19p,197b,36s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!

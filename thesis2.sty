@@ -1,0 +1,173 @@
+%%
+%% This if file `thesis2.sty'
+%%
+%% This file is typically used as a package with the ``gthesis.cls''
+%% LaTeX2e Oregon State University graduate thesis class file.
+%%
+%% Tolga Acar <acar@ece.orst.edu>   April 1997
+%%
+%% This file is distributed in the hope that it will be useful,
+%% but without ANY WARRANTY; without even the implied warranty of
+%% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+%%
+%%
+%% COPYRIGHT NOTICE
+%% You can distrubute this file as you please, keeping this copyright
+%% notice and line lines above it.
+%%
+
+%
+\newif\if@mytitle      \@mytitlefalse
+\newif\if@mytitleone   \@mytitleonefalse
+\newif\if@mytitletwo   \@mytitletwofalse
+\newif\if@mytitlethree \@mytitlethreefalse
+\newif\if@mytitlefour  \@mytitlefourfalse
+\newif\if@mytitlefive  \@mytitlefivefalse
+% User specified variables are empty by default
+\let\myname\empty
+\let\myday\empty
+\let\mycomyear\empty
+\let\myadvisor\empty
+\let\mycommitteea\empty \let\mycommitteeb\empty \let\mycommitteec\empty
+\let\mygcr\empty
+\let\mygcrdept\empty
+\let\mytitle\empty \let\mytitleone\empty \let\mytitletwo\empty
+\let\mytitlethree\empty \let\mytitlefour\empty \let\mytitlefive\empty
+\let\mydept\empty
+\let\mymajor\empty
+\let\myminor\empty
+\let\myschool\empty
+\let\mydegree\empty
+\let\mythesis\empty
+\newcommand{\setmyname}[1]{\def\myname{#1}}
+\newcommand{\setmyday}[1]{\def\myday{#1}}
+\newcommand{\setmycomyear}[1]{\def\mycomyear{#1}}
+\newcommand{\setmyadvisor}[1]{\def\myadvisor{#1}}
+\newcommand{\setmycommitteea}[1]{\def\mycommitteea{#1}}
+\newcommand{\setmycommitteeb}[1]{\def\mycommitteeb{#1}}
+\newcommand{\setmycommitteec}[1]{\def\mycommitteec{#1}}
+\newcommand{\setmygcr}[1]{\def\mygcr{#1}}
+\newcommand{\setmygcrdept}[1]{\def\mygcrdept{#1}}
+\newcommand{\setmytitle}[1]{\def\mytitle{#1}\@mytitletrue}
+\newcommand{\setmytitleone}[1]{\def\mytitleone{#1}\@mytitleonetrue}
+\newcommand{\setmytitletwo}[1]{\def\mytitletwo{#1}\@mytitletwotrue}
+\newcommand{\setmytitlethree}[1]{\def\mytitlethree{#1}\@mytitlethreetrue}
+\newcommand{\setmytitlefour}[1]{\def\mytitlefour{#1}\@mytitlefourtrue}
+\newcommand{\setmytitlefive}[1]{\def\mytitlefive{#1}\@mytitlefivetrue}
+\newcommand{\setmydept}[1]{\def\mydept{#1}}
+\newcommand{\setmymajor}[1]{\def\mymajor{#1}}
+\newcommand{\setmyminor}[1]{\def\myminor{#1}}
+\newcommand{\setmyschool}[1]{\def\myschool{#1}}
+\newcommand{\setmydegree}[1]{\def\mydegree{#1}}
+\newcommand{\setmythesis}[1]{\def\mythesis{#1}}
+
+\newcommand\partname{CHAPTER}
+\newcommand\contentsname{TABLE OF CONTENTS}
+\newcommand\contentscont{TABLE OF CONTENTS (Continued)}
+\newcommand\listfigurename{LIST OF FIGURES}
+\newcommand\listfigurecont{LIST OF FIGURES (Continued)}
+\newcommand\listtablename{LIST OF TABLES}
+\newcommand\listtablecont{LIST OF TABLES (Continued)}
+\newcommand\listappname{LIST OF APPENDICES}
+\newcommand\listappnamecont{LIST OF APPENDICES (Continued)}
+\newcommand\refname{Bibliography}
+\newcommand\indexname{INDEX}
+\newcommand\figurename{FIGURE}
+\newcommand\tablename{TABLE}
+\newcommand\appendixname{Appendix}
+\newcommand\appendicesname{Appendices}
+
+
+%
+% enable indentation after part/section/subsection/...
+\let\@afterindentfalse\@afterindenttrue
+\@afterindenttrue
+
+
+\newenvironment{abstract}
+  {\thispagestyle{empty}
+   \if@mytitle\else
+     \global\def\mytitle{\mytitleone\space\mytitletwo\space\mytitlethree%
+                         \space\mytitlefour\space\mytitlefive}
+   \fi
+   \vspace*{-\abovedisplayskip}
+   \centerline{\bfseries AN ABSTRACT OF THE THESIS OF}
+   \begin{flushleft}
+    \parindent 0pt
+    \underline{\myname}~ for the degree of
+             \underline{\mydegree} in \underline{\mymajor}
+             presented on \underline{\myday}. Title:
+             \newlength{\@stringlength}\settowidth{\@stringlength}{\mytitle}
+             \newlength{\@remaining}\settowidth{\@remaining}{\hfill}
+             \ifnum\@stringlength>\@remaining\newline\fi
+             \underline{\mytitle}. % -->took out \nobreak at the beginning
+    \break \hfil\strut \break
+    Abstract approved: \hrulefill \break
+    \phantom{Abstract approved:\quad}\hfil\myadvisor\hfil
+   \end{flushleft}
+   \bigskip\medskip}
+  {\newpage}
+
+\newenvironment{acknowledgments}
+  {\centerline{\bfseries\centerline{ACKNOWLEDGMENTS}}\vspace*{\baselineskip}}
+  {\newpage}
+
+% The Thesis Title centered on the very first page of the first chapter
+\newcommand{\DisplayTitle}{
+  \begin{center}
+    \large
+    \linespread{1}
+    \if@mytitle      \textbf{{\mytitle}}
+    \else
+      \if@mytitleone   \textbf{\MakeUppercase{\mytitleone}} \\ \fi
+      \if@mytitletwo   \textbf{\MakeUppercase{\mytitletwo}} \\ \fi
+      \if@mytitlethree \textbf{\MakeUppercase{\mytitlethree}} \\ \fi
+      \if@mytitlefour  \textbf{\MakeUppercase{\mytitlefour}} \\ \fi
+      \if@mytitlefive  \textbf{\MakeUppercase{\mytitlefive}} \\ \fi
+    \fi
+    \linespread{1.6}
+    \vspace*{3em}
+  \end{center}
+}
+
+
+% Copyright page
+\newcommand{\DisplayCopyright}{
+  \thispagestyle{empty}
+  \vspace*{10\baselineskip}
+  \begin{center}
+    \raisebox{.4em}{\scriptsize\copyright}Copyright by \myname\\
+    \myday \\
+    All Rights Reserved
+  \end{center}
+  \vspace*{\stretch{3}}
+  \clearpage
+}
+
+% Titlepage
+\newcommand{\DisplayTitlePage}{
+  \thispagestyle{empty}
+  %\vspace*{.2in}
+  \begin{center}
+    \resetbaselineskip
+    \mytitle \\*[2\baselineskip]
+    by \\
+    \myname \\*[1.25in]
+    A \MakeUppercase{\mythesis} \\*[\baselineskip]
+    submitted to \\*[\baselineskip]
+    Oregon State University \\*[1.25in]
+    in partial fulfillment of \\
+    the requirements for the \\
+    degree of \\*[\baselineskip]
+    \mydegree \\*[1.25in]
+    Presented \myday \\
+    Commencement June \mycomyear
+  \end{center}
+  \clearpage
+}
+
+\newenvironment{dedication}
+  {\parindent 0pt\vspace*{\stretch{1}}}
+  {\vspace*{\stretch{3}}}
+%% End of file `thesis2.sty'.
+

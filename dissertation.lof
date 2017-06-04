@@ -14,10 +14,10 @@
 \contentsline {figure}{\numberline {14}{\ignorespaces Time series with outliers detected for project OpenStack Neutron (Not forked).\relax }}{30}{figure.caption.31}
 \contentsline {figure}{\numberline {15}{\ignorespaces Time series with outliers detected for project GlusterFS (Not forked).\relax }}{31}{figure.caption.32}
 \contentsline {figure}{\numberline {16}{\ignorespaces The methodology in a glance\relax }}{32}{figure.caption.33}
-\contentsline {figure}{\numberline {17}{\ignorespaces Heat-map color-coded examples Degree, Closeness, Betweenness, Eigenvector centralities}}{71}{figure.caption.54}
-\contentsline {figure}{\numberline {18}{\ignorespaces The number of nodes and edges over time, as network-specific measurements}}{74}{figure.caption.55}
-\contentsline {figure}{\numberline {19}{\ignorespaces The network diameter change over time, as network-specific measurements}}{75}{figure.caption.56}
-\contentsline {figure}{\numberline {20}{\ignorespaces Snapshots from video visualization of Kamailio project's graph}}{76}{figure.caption.57}
+\contentsline {figure}{\numberline {17}{\ignorespaces Heat-map color-coded examples Degree, Closeness, Betweenness, Eigenvector centralities}}{71}{figure.caption.55}
+\contentsline {figure}{\numberline {18}{\ignorespaces The number of nodes and edges over time, as network-specific measurements}}{74}{figure.caption.56}
+\contentsline {figure}{\numberline {19}{\ignorespaces The network diameter change over time, as network-specific measurements}}{75}{figure.caption.57}
+\contentsline {figure}{\numberline {20}{\ignorespaces Snapshots from video visualization of Kamailio project's graph}}{76}{figure.caption.58}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {}}}{76}{subfigure.20.1}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{76}{subfigure.20.2}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{76}{subfigure.20.3}
@@ -30,6 +30,6 @@
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {}}}{76}{subfigure.20.2}
 \contentsline {subfigure}{\numberline {(c)}{\ignorespaces {}}}{76}{subfigure.20.3}
 \contentsline {subfigure}{\numberline {(d)}{\ignorespaces {}}}{76}{subfigure.20.4}
-\contentsline {figure}{\numberline {21}{\ignorespaces Kamailio top contributors' betweenness centralities and network diameter over time}}{76}{figure.caption.58}
-\contentsline {figure}{\numberline {22}{\ignorespaces Amarok project's top contributors' betweenness centralities and network diameter over time}}{78}{figure.caption.59}
-\contentsline {figure}{\numberline {23}{\ignorespaces Asterisk project's top contributors' betweenness centralities and network diameter over time}}{79}{figure.caption.60}
+\contentsline {figure}{\numberline {21}{\ignorespaces Kamailio top contributors' betweenness centralities and network diameter over time}}{76}{figure.caption.59}
+\contentsline {figure}{\numberline {22}{\ignorespaces Amarok project's top contributors' betweenness centralities and network diameter over time}}{78}{figure.caption.60}
+\contentsline {figure}{\numberline {23}{\ignorespaces Asterisk project's top contributors' betweenness centralities and network diameter over time}}{79}{figure.caption.61}

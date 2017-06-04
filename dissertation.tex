@@ -553,8 +553,6 @@ For the rest of the discussion, we define conflict-driven forks as projects that
 We defined conflict-driven (undesirable) as the projects forked because of ``Personal differences among developers team'', or because of the need for ``more community-driven development''. These situations are undesirable because they imply an increase in cost of maintenance, redundant or wasted efforts, and the loss of shared values. One-fifth (20.5\%) of the 220 forked projects fall into this category\cite{Robles}. Examples include Kamailio and OpenSIPS projects. We defined non-conflict-driven as projects forked for ``technical differences (Addition of functionality)'', and were not forked for personal differences. More than a quarter (27.3\%) of the 220 forked projects studied by \cite{Robles} fall into this category. Examples include Amarok and Clementine Player projects.
 Conflict-driven forks are especially important, as they are destructive, lead to resentment, and the dilution of the community workforce. In contrast, the non-conflict driven forks are friendly and often temporary splits, where developers experimentally modify the code and/or add new features, often with the intention of returning back to the original project and merging the new features back into the original project. In summary, conflict-driven forks are like violent exits with no intention of coming back, whereas non-conflict-driven forks are temporary trips. 
 
-\subsection{Research Goals}
-
 In this study, we analyze, quantify and visualize how the community is structured, how it evolves, and the degree to which community involvement changes over time. 
 
 Specifically, our overall research objective is to identify these traces/social patterns associated with different types of conflict-driven forking. 
@@ -1715,7 +1713,7 @@ We describe what the findings mean and how to interpret the findings in section 
 
 \onehalfspacing
 
-\captionof{table}{Estimates parameters in the model for Project Kamailio (Conflict-Driven)}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project Kamailio (Conflict-Driven). The outdegree density, transitive triplets, out-out-degree assortativity, and developers' seniority effects are statistically significant. The interpretations are discussed in section \ref{Discussion}.}   % Table based on sienaFit object ans
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -2119,6 +2117,26 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 \end{tabular}
 
 \doublespacing
+
+Table \ref{summaryConflictVsNonConflict} illustrates the distinct patterns associated with Conflict-Driven vs. Non-Conflict-Driven forking categories. 
+
+
+\begin{table}[!htbp]
+\caption{Conflict-Driven vs. Non-Conflict-Driven parameter effects}
+\label{summaryConflictVsNonConflict} 
+\begin{tabular}{l l l}
+\hline\noalign{\smallskip}
+\textbf{Parameter Effects} & \textbf{Conflict-Driven} & \textbf{Non-Conflict-Driven}\\
+\noalign{\smallskip}\hline\noalign{\smallskip}
+Negative three-cycles & {\footnotesize Statistically Significant (*)} &  \\ \hline
+Positive transitive triplets & {\footnotesize Statistically Significant (*)}  & \\ \hline
+Out-out degree assortativity & {\footnotesize Statistically Significant (*)} & \\ \hline
+Developer’s source code activity &  & {\footnotesize Statistically Significant (*)} \\
+\noalign{\smallskip}\hline
+\end{tabular}
+\end{table}
+
+
 
 \pagebreak
 \section{Discussion}

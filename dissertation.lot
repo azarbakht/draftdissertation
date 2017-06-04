@@ -10,7 +10,7 @@
 \contentsline {table}{\numberline {10}{\ignorespaces Anomalies detected in the time series of sentiments for project MPlayer (Non-Conflict-Driven). Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 225.5: log likelihood = -1251.94, aic = 2517.88)\relax }}{24}{table.caption.20}
 \contentsline {table}{\numberline {11}{\ignorespaces Anomalies detected in the time series of sentiments for project Asterisk (Non-Conflict-Driven). Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 358.2: log likelihood = -1227.85, aic = 2463.7 )\relax }}{24}{table.caption.21}
 \contentsline {table}{\numberline {12}{\ignorespaces Anomalies detected in the time series of sentiments for project freeglut (Non-Conflict-Driven). Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 348.6: log likelihood = -1307.6, aic = 2619.2)\relax }}{25}{table.caption.22}
-\contentsline {table}{\numberline {13}{\ignorespaces Estimates parameters in the model for Project Kamailio (Conflict-Driven)\relax }}{53}{table.13}
+\contentsline {table}{\numberline {13}{\ignorespaces Estimates parameters in the model for Project Kamailio (Conflict-Driven). The outdegree density, transitive triplets, out-out-degree assortativity, and developers' seniority effects are statistically significant. The interpretations are discussed in section \ref {Discussion}.\relax }}{53}{table.13}
 \contentsline {table}{\numberline {14}{\ignorespaces Estimates parameters in the model for Project ffmpeg (Conflict-Driven)\relax }}{54}{table.14}
 \contentsline {table}{\numberline {15}{\ignorespaces Estimates parameters in the model for Project Amarok (Non-Conflict-Driven)\relax }}{55}{table.15}
 \contentsline {table}{\numberline {16}{\ignorespaces Estimates parameters in the model for Project Apache CouchDB (Non-Conflict-Driven)\relax }}{56}{table.16}
@@ -20,5 +20,6 @@
 \contentsline {table}{\numberline {20}{\ignorespaces Estimates parameters in the model for Project Ceph (Not forked)\relax }}{60}{table.20}
 \contentsline {table}{\numberline {21}{\ignorespaces Estimates parameters in the model for Project OpenStack Neutron (Not forked)\relax }}{61}{table.21}
 \contentsline {table}{\numberline {22}{\ignorespaces Estimates parameters in the model for Project GlusterFS (Not forked)\relax }}{62}{table.22}
-\contentsline {table}{\numberline {23}{\ignorespaces List of all projects forked because of ``\textit {personal differences among the developer team}'' conflict-driven}}{68}{table.caption.52}
-\contentsline {table}{\numberline {24}{\ignorespaces List of all projects forked because of the need for ``\textit {more community-driven development}'' conflict-driven}}{69}{table.caption.53}
+\contentsline {table}{\numberline {23}{\ignorespaces Conflict-Driven vs. Non-Conflict-Driven parameter effects\relax }}{63}{table.caption.50}
+\contentsline {table}{\numberline {24}{\ignorespaces List of all projects forked because of ``\textit {personal differences among the developer team}'' conflict-driven}}{68}{table.caption.53}
+\contentsline {table}{\numberline {25}{\ignorespaces List of all projects forked because of the need for ``\textit {more community-driven development}'' conflict-driven}}{69}{table.caption.54}

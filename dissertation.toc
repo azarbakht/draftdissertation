@@ -15,7 +15,7 @@
 \contentsline {subsubsection}{\numberline {3.2.3}Structural Effects}{47}{subsubsection.3.2.3}
 \contentsline {subsubsection}{\numberline {3.2.4}Behavior-related Effects\\}{49}{subsubsection.3.2.4}
 \contentsline {subsubsection}{\numberline {3.2.5}Results}{54}{subsubsection.3.2.5}
-\contentsline {section}{\numberline {4}Discussion}{66}{section.4}
+\contentsline {section}{\numberline {4}Discussion}{65}{section.4}
 \contentsline {section}{\numberline {5}Threats to Validity}{69}{section.5}
 \contentsline {section}{Appendices}{71}{section*.55}
 \contentsline {section}{\numberline {A}Appendix A: List of projects forked for undesirable reasons}{71}{Appendix.1.A}

@@ -1,32 +1,32 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{section.1}
 \contentsline {section}{\numberline {2}Related Work}{7}{section.2}
 \contentsline {section}{\numberline {3}Methodology and Results}{11}{section.3}
-\contentsline {subsection}{\numberline {3.1}Time series analysis of open source developers’ collaboration communication sentiments}{13}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.1}Time series analysis of open source developers’ collaboration communication sentiments}{12}{subsection.3.1}
 \contentsline {subsubsection}{\numberline {3.1.1}Data}{14}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Analysis}{14}{subsubsection.3.1.2}
-\contentsline {subsection}{\numberline {3.2}Outlier Detection Models}{15}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Outlier Estimation}{16}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}Outlier Detection}{17}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}Results}{17}{subsubsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.2}Summary}{29}{subsubsection.3.4.2}
-\contentsline {subsection}{\numberline {3.5}Social network analysis of open source developers’ interaction graphs}{31}{subsection.3.5}
-\contentsline {subsubsection}{\numberline {3.5.1}Data}{33}{subsubsection.3.5.1}
-\contentsline {subsubsection}{\numberline {3.5.2}Analysis}{34}{subsubsection.3.5.2}
-\contentsline {subsection}{\numberline {3.6}Structural Effects}{44}{subsection.3.6}
-\contentsline {subsection}{\numberline {3.7}Behavior-related Effects\\}{46}{subsection.3.7}
-\contentsline {subsubsection}{\numberline {3.7.1}Results}{51}{subsubsection.3.7.1}
-\contentsline {section}{\numberline {4}Discussion}{63}{section.4}
-\contentsline {section}{\numberline {5}Threats to Validity}{66}{section.5}
-\contentsline {section}{Appendices}{68}{section*.52}
-\contentsline {section}{\numberline {A}Appendix A: List of projects forked for undesirable reasons}{68}{Appendix.1.A}
-\contentsline {section}{\numberline {B}Appendix B: Initial study: Temporal analysis using the network-specific measurement approach}{70}{Appendix.1.B}
-\contentsline {subsection}{\numberline {B.1}Visualization}{72}{subsection.1.B.1}
-\contentsline {subsection}{\numberline {B.2}Initial study results and discussion}{73}{subsection.1.B.2}
-\contentsline {subsubsection}{\numberline {B.2.1}Kamailio Project}{73}{subsubsection.1.B.2.1}
-\contentsline {subsubsection}{\numberline {B.2.2}Amarok Project}{77}{subsubsection.1.B.2.2}
-\contentsline {subsubsection}{\numberline {B.2.3}Asterisk Project}{78}{subsubsection.1.B.2.3}
-\contentsline {subsubsection}{\numberline {B.2.4}Initial study conclusion}{79}{subsubsection.1.B.2.4}
-\contentsline {section}{\numberline {C}Appendix C: Mathematical Definition of Effects in the Statistical Model}{81}{Appendix.1.C}
-\contentsline {subsection}{\numberline {C.1}Structural Effects for the Objective Function}{81}{subsection.1.C.1}
-\contentsline {subsection}{\numberline {C.2}Behavior-related Effects}{83}{subsection.1.C.2}
-\contentsline {part}{Bibliography}{85}{section*.62}
+\contentsline {subsubsection}{\numberline {3.1.2}Analysis}{15}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Outlier Detection Models}{16}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}Outlier Estimation}{17}{subsubsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.5}Outlier Detection}{18}{subsubsection.3.1.5}
+\contentsline {subsubsection}{\numberline {3.1.6}Results}{18}{subsubsection.3.1.6}
+\contentsline {subsubsection}{\numberline {3.1.7}Summary}{34}{subsubsection.3.1.7}
+\contentsline {subsection}{\numberline {3.2}Social network analysis of open source developers’ interaction graphs}{34}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Data}{36}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Analysis}{37}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Structural Effects}{47}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Behavior-related Effects\\}{49}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}Results}{54}{subsubsection.3.2.5}
+\contentsline {section}{\numberline {4}Discussion}{66}{section.4}
+\contentsline {section}{\numberline {5}Threats to Validity}{69}{section.5}
+\contentsline {section}{Appendices}{71}{section*.55}
+\contentsline {section}{\numberline {A}Appendix A: List of projects forked for undesirable reasons}{71}{Appendix.1.A}
+\contentsline {section}{\numberline {B}Appendix B: Initial study: Temporal analysis using the network-specific measurement approach}{73}{Appendix.1.B}
+\contentsline {subsection}{\numberline {B.1}Visualization}{75}{subsection.1.B.1}
+\contentsline {subsection}{\numberline {B.2}Initial study results and discussion}{76}{subsection.1.B.2}
+\contentsline {subsubsection}{\numberline {B.2.1}Kamailio Project}{76}{subsubsection.1.B.2.1}
+\contentsline {subsubsection}{\numberline {B.2.2}Amarok Project}{80}{subsubsection.1.B.2.2}
+\contentsline {subsubsection}{\numberline {B.2.3}Asterisk Project}{81}{subsubsection.1.B.2.3}
+\contentsline {subsubsection}{\numberline {B.2.4}Initial study conclusion}{82}{subsubsection.1.B.2.4}
+\contentsline {section}{\numberline {C}Appendix C: Mathematical Definition of Effects in the Statistical Model}{84}{Appendix.1.C}
+\contentsline {subsection}{\numberline {C.1}Structural Effects for the Objective Function}{84}{subsection.1.C.1}
+\contentsline {subsection}{\numberline {C.2}Behavior-related Effects}{86}{subsection.1.C.2}
+\contentsline {part}{Bibliography}{88}{section*.65}

@@ -467,14 +467,14 @@ Most existing research on forking, however, is post-hoc. It looks at the forking
 
 Additionally, studies of FOSS communities tend to suffer from an important limitation. They treat community as a static structure rather than a dynamic process. Longitudinal studies on open source forking are rare. To better understand and measure the evolution, social dynamics of forked FOSS projects, and integral components to understanding their evolution and direction, we need new and better tools. Before making such new tools, we need to gain a better understanding of the context. With this knowledge and these tools, we could help projects reflect on their actions, and help community leaders make informed decisions about possible changes or interventions. This could also help potential sponsors make informed decisions when investing in a project, and throughout their involvement to ensure a sustainable engagement. 
 
-Identification is the first step to rectify an undesirable dynamic before the damage is done. A community that does not manage growing pains may end up stagnating or dissolving. Managing growing pains is especially important in the case of FOSS projects, where near half the project contributors are volunteers \cite{Forrest}. Oh et al. \cite{Oh} have argued that openness in FOSS is \textit{``[...] generally perceived as having a positive connotation, however, the term can also be interpreted as referring to some nonconstructive characteristics, such as unobstructed exit, susceptible, vulnerable, fragile, lacking effective regulation, and so on. The unobstructed exit and lack of regulatory force inherent in the FOSS community can result in a community's susceptibility and vulnerability to herded exits by its participants. Commercial vendor intervention, an alternative project becoming available, and licensing issues can result in some original core members ceasing to provide their loyal service for the community, which can prompt their coworkers to leave as well''} \cite{Oh}. Identification of recipes for success or stagnation, sustainability or fragmentation may lead to a set of best practices and pitfalls.
+Identification is the first step to rectify an undesirable dynamic before the damage is done. A community that does not manage growing pains may end up stagnating or dissolving. Managing growing pains is especially important in the case of FOSS projects, where near half the project contributors are volunteers \cite{Forrest}. Oh et al. \cite{Oh} have argued that openness in FOSS is\\ \indent  \textit{``[...] generally perceived as having a positive connotation, however, the term can also be interpreted as referring to some nonconstructive characteristics, such as unobstructed exit, susceptible, vulnerable, fragile, lacking effective regulation, and so on. The unobstructed exit and lack of regulatory force inherent in the FOSS community can result in a community's susceptibility and vulnerability to herded exits by its participants. Commercial vendor intervention, an alternative project becoming available, and licensing issues can result in some original core members ceasing to provide their loyal service for the community, which can prompt their coworkers to leave as well''} \cite{Oh}.\\ Identification of recipes for success or stagnation, sustainability or fragmentation may lead to a set of best practices and pitfalls.
 
 In this research, we use time series analysis and longitudinal social network analysis to study the evolution and social dynamics of FOSS communities. Specifically, we use anomaly detection algorithms to analyze the time series of sentiments in communications of open source developers, in the run up to the fork, and we also use longitudinal social network analysis to investigate the driving forces in formation and dissolution of communities. With these techniques we aim to identify measures associated with unhealthy group dynamics, for example a simmering conflict, in addition to early indicators of major events in the lifespan of a community. One set of dynamics we were especially interested in, are those that are associated with FOSS projects that have forked.
 
 
 \begin{table}[!ht]
 \centering
-\caption[The main reasons for forking]{Robles and Gonzalez-Barahona \cite{Robles} defined the following categories as the reasons for forking.}
+\caption[The main reasons for forking]{Robles and Gonzalez-Barahona \cite{Robles} defined the following reasons for forking.}
 \label{tableReasonsForForking}
 \begin{tabular}{p{0.5\columnwidth} p{0.4\columnwidth}}
 \hline\noalign{\smallskip}
@@ -519,7 +519,7 @@ Legal issues & X.Org \& XFree\\
 %\epsfig{file=ForkingReasonsPieChart.png, width=\columnwidth}
 %\end{figure}
 
-\subsection*{Research Goals}
+\subsubsection*{Research Goals}
 \label{ResearchGoals}
 \label{ResearchObjective}
 
@@ -550,22 +550,22 @@ Social interactions reflect the changes the community goes through, and so, it c
 
 For the rest of the discussion, we define conflict-driven forks as projects that have forked for personal differences, and non-conflict driven forks as projects that have forked for technical experimentation, and were not forked for personal differences. 
 
-We defined conflict-driven (undesirable) as the projects forked because of ``Personal differences among developers team'', or because of the need for ``more community-driven development''. These situations are undesirable because they imply an increase in cost of maintenance, redundant or wasted efforts, and the loss of shared values. One-fifth (20.5\%) of the 220 forked projects fall into this category\cite{Robles}. Examples include Kamailio and OpenSIPS projects. We defined non-conflict-driven as projects forked for ``technical differences (Addition of functionality)'', and were not forked for personal differences. More than a quarter (27.3\%) of the 220 forked projects studied by \cite{Robles} fall into this category. Examples include Amarok and Clementine Player projects.
+We defined conflict-driven (undesirable) as the projects forked because of ``Personal differences among developers team'', or because of the need for ``more community-driven development''. These situations are undesirable because they imply an increase in cost of maintenance, redundant or wasted efforts, and the loss of shared values. One-fifth (20.5\%) of the 220 forked projects studied by \cite{Robles} fall into this category. Examples include Kamailio and OpenSIPS projects. We defined non-conflict-driven as projects forked for ``technical differences (Addition of functionality)'', and were not forked for personal differences. More than a quarter (27.3\%) of the 220 forked projects studied by \cite{Robles} fall into this category. Examples include Amarok and Clementine Player projects.
 Conflict-driven forks are especially important, as they are destructive, lead to resentment, and the dilution of the community workforce. In contrast, the non-conflict driven forks are friendly and often temporary splits, where developers experimentally modify the code and/or add new features, often with the intention of returning back to the original project and merging the new features back into the original project. In summary, conflict-driven forks are like violent exits with no intention of coming back, whereas non-conflict-driven forks are temporary trips. 
 
 In this study, we analyze, quantify and visualize how the community is structured, how it evolves, and the degree to which community involvement changes over time. 
 
 Specifically, our overall research objective is to identify these traces/social patterns associated with different types of conflict-driven forking. 
 
-\subsection*{\hspace{4 mm} Do forks leave traces in the collaboration artifacts of open source projects in the period leading up to the fork?\\}
+\subsubsection*{\hspace{4 mm} Do forks leave traces in the collaboration artifacts of open source projects in the period leading up to the fork?\\}
 
 To study the properties of possible social patterns, we need to verify their existence. More specifically, we need to check whether the possible social patterns are manifested in the the collaboration artifacts of open source projects, e.g., mailing list communications data, source code data. This is going to be accomplished as explained in section \ref{methodology}.
 
-\subsection*{\hspace{4 mm} Do conflict-driven forks and non-conflict-driven forks leave different types of traces?\\}
+\subsubsection*{\hspace{4 mm} Do conflict-driven forks and non-conflict-driven forks leave different types of traces?\\}
 
 If forks leave traces in the collaboration artifacts, do forks exhibit different social patterns? Are there patterns that exemplify these categories? For example, is there a distinct ``conflict-driven'' fork collaboration pattern? If so, do different forking reasons have distinctly different social patterns associated with them? We are going to investigate this by statistical modeling of the interaction graphs, as explained in detail in section \ref{statisticalModel}.
 
-\subsection*{\hspace{4 mm} What are the key indicators that let us distinguish between conflict-driven and non-conflict-driven forks?\\}
+\subsubsection*{\hspace{4 mm} What are the key indicators that let us distinguish between conflict-driven and non-conflict-driven forks?\\}
 
 What quantitative measure(s) can be used as an early warning sign of an inflection point (fork)? Are there metrics that can be used to monitor the odds of change, (e.g. forking-related patterns), ahead of time? This will be accomplished by time series analysis and statistical modeling of developer interactions as explained in more detail in section \ref{methodology}.\\
 
@@ -633,7 +633,8 @@ We did the following two types of analysis:
 \end{itemize}
 In the following sections, the details of each method as well as the results of each method are described.
 
-One of the challenges of studying that you face is finding projects that have gone through a variety of different types of forking. We also need for those projects to have survived, and additionally for the records to have survived. Unfortunately, that leaves us with a small sample, which is typical of studies in this domain, even though our study features more projects that is typical of related work as discussed in section \ref{relatedwork}, which typically feature only 1-3 projects \cite{Baishakhi}\cite{JoseWebKit}\cite{Hannemann}. Table \ref{forkedProjectsDataCollected} lists all the attainable projects that meet the criteria. 
+One of the challenges of studying the run-up to forking that you face is finding projects that have gone through a variety of different types of forking. We also need for those projects to have survived, and additionally for the records to have survived. Unfortunately, that leaves us with a small sample, which is typical of studies in this domain, even though our study features more projects that is typical of related work as discussed in section \ref{relatedwork}, which typically feature only 1-3 projects \cite{Baishakhi}\cite{JoseWebKit}\cite{Hannemann}. Table \ref{forkedProjectsDataCollected} lists all the attainable projects that meet the criteria. Of the projects listed in Table \ref{forkedProjectsDataCollected}, projects fall into three categories; conflict-driven, non-conflict-driven, and not forked. To find these projects, we looked at the list of all significant open source software forks in the past three decades as compiled by Robles and Gonzalez-Barahona \cite{Robles}. Their study found the reasons behind each fork, listed in Table \ref{tableReasonsForForking}. We applied three selection criteria to the 220 forked projects on that list to find projects in conflict-driven and non-conflict-driven categories. A project was short-listed as either a conflict-driven or non-conflict-driven if the forking was relatively recent, i.e., happened after the year 2000, its data was existent and available to access and download online, or was made accessible to us after our requests; and the project had a sizable developer community, i.e., more than a dozen developers, which means it would be large enough that requires a meaningful statistical analysis. For the Not Forked category, we chose well-known, stable projects that had been around for a while (two years), and had large communities; and had not forked; and were similar in size of the development team. The preceding criteria resulted in the projects listed in Table \ref{forkedProjectsDataCollected}.
+
 
 \begin{table}
 \centering
@@ -714,7 +715,7 @@ To detect outliers, we used the R (Statistical Computing) \cite{R} package tsout
 
 Figures \ref{figureOutliers_1}-\ref{figureOutliers_12} show the detected outliers in the sentiments time series, and includes both the original and adjusted time series, as well as the outlier effects.
 
-\subsection{Outlier Detection Models}
+\subsubsection{Outlier Detection Models}
 \label{OutlierDetectionModels}
 We were interested in detecting anomalies that might have happened before the forking event, that could be used as indicators associated with forking. For this purpose, we used the following anomaly detection approach. All the following description from \cite{Chen} describes outlier models. 
 
@@ -742,7 +743,7 @@ X^*_t = X_t + \text{ outlier effect}
 \text{IO:}\hspace{1cm}X^*_t &= X_t + \frac{\theta(B)}{\alpha(B) \phi(B)} \omega I_t(t_1) = \frac{\theta(B)}{\alpha(B) \phi(B)}\left[Z_t + \omega I_t(t_1)\right]
 \end{align}
 
-\subsection{Outlier Estimation} 
+\subsubsection{Outlier Estimation} 
 
 The following Iterative procedure for detecting outliers, adjusting series,
 and fitting (seasonal) ARIMA model from \cite{Chen} describes how the outliers are detected by estimation. 
@@ -770,7 +771,7 @@ Divide by standard error:
 
 Approximately $\sim$ Normal(0, 1)
 
-\subsection{Outlier Detection}
+\subsubsection{Outlier Detection}
 
 At each $t = 1, \dots, n$, for each outlier type (AO, LS, TC, IO), Estimate outlier effect $\hat{\omega}$ and calculate $\hat{\tau}$. Large $|\hat{\tau}|$ ($> C$) indicates an outlier. Once outlier is detected, estimated effect can be subtracted to obtain adjusted series.\cite{Chen}
 
@@ -779,24 +780,24 @@ At each $t = 1, \dots, n$, for each outlier type (AO, LS, TC, IO), Estimate outl
 The time series shown in Figures \ref{figureTS_1to6} and \ref{figureTS_7to12} show the daily mean sentiment scores of the developers' messages.
 
 \begin{figure}[!htbp]
-\epsfig{file=PLOTS_PDF/TS_1.pdf, width=0.55\columnwidth}
-\epsfig{file=PLOTS_PDF/TS_2.pdf, width=0.55\columnwidth}
-\epsfig{file=PLOTS_PDF/TS_3.pdf, width=0.55\columnwidth}
-\epsfig{file=PLOTS_PDF/TS_4.pdf, width=0.55\columnwidth}
-\epsfig{file=PLOTS_PDF/TS_5.pdf, width=0.55\columnwidth}
-\epsfig{file=PLOTS_PDF/TS_6.pdf, width=0.55\columnwidth}
+\epsfig{file=PLOTS_PDF/TS_1.pdf, width=0.5\columnwidth}
+\epsfig{file=PLOTS_PDF/TS_2.pdf, width=0.5\columnwidth}
+\epsfig{file=PLOTS_PDF/TS_3.pdf, width=0.5\columnwidth}
+\epsfig{file=PLOTS_PDF/TS_4.pdf, width=0.5\columnwidth}
+\epsfig{file=PLOTS_PDF/TS_5.pdf, width=0.5\columnwidth}
+\epsfig{file=PLOTS_PDF/TS_6.pdf, width=0.5\columnwidth}
 \caption{Time Series of sentiments in developers' messages for projects (From top to bottom, left to right) Kamailio (Conflict-Driven), ffmpeg (Conflict-Driven), Amarok (Non-Conflict-Driven), Apache CouchDB (Non-Conflict-Driven), Pidgin (Non-Conflict-Driven), MPlayer (Non-Conflict-Driven). It is not easy to visually analyse these raw time series.}
 \label{figureTS_1to6}
 \end{figure}
 
 
 \begin{figure}[!htbp]
-\epsfig{file=PLOTS_PDF/TS_7.pdf, width=0.55\columnwidth}
+\epsfig{file=PLOTS_PDF/TS_7.pdf, width=0.5\columnwidth}
 %\epsfig{file=PLOTS_PDF/TS_8.pdf, width=0.55\columnwidth}
-\epsfig{file=PLOTS_PDF/TS_9.pdf, width=0.55\columnwidth}
-\epsfig{file=PLOTS_PDF/TS_10.pdf, width=0.55\columnwidth}
-\epsfig{file=PLOTS_PDF/TS_11.pdf, width=0.55\columnwidth}
-\epsfig{file=PLOTS_PDF/TS_12.pdf, width=0.55\columnwidth}
+\epsfig{file=PLOTS_PDF/TS_9.pdf, width=0.5\columnwidth}
+\epsfig{file=PLOTS_PDF/TS_10.pdf, width=0.5\columnwidth}
+\epsfig{file=PLOTS_PDF/TS_11.pdf, width=0.5\columnwidth}
+\epsfig{file=PLOTS_PDF/TS_12.pdf, width=0.5\columnwidth}
 \caption{Time Series of sentiments in developers' messages for projects (From top to bottom, left to right) Asterisk (Non-Conflict-Driven), freeglut (Non-Conflict-Driven), Ceph (Not Forked), OpenStack Neutron (Not Forked), and GlusterFS (Not Forked). It is not easy to visually analyse these raw time series.}
 \label{figureTS_7to12}
 \end{figure}
@@ -843,8 +844,9 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 \label{figureDecpmposed_9to12}
 \end{figure}
 
+\pagebreak
 
-\begin{table}
+\begin{table} [!htbp]
 \centering
 \caption{Anomalies detected in the time series of sentiments for project Kamailio (Conflict-Driven). Type column refers to the different anomalies as described in section \ref{OutlierDetectionModels}. Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value. ($sigma^2$ estimated as 128.8:  log likelihood = -1170.2,  aic = 2356.41)}
 \label{AnomaliesKamailio}
@@ -861,8 +863,16 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 \end{tabular}
 \end{table}
 
+\begin{figure} [!htbp]
+\centering
+\epsfig{file=PLOTS_PDF/O_1.pdf, width=0.7\columnwidth}
+\caption{Time series with outliers detected for project Kamailio (conflict-driven).}
+\label{figureOutliers_1}
+\end{figure}
 
-\begin{table}
+\pagebreak
+
+\begin{table} [!htbp]
 \centering
 \caption{Anomalies detected in the time series of sentiments for project ffmpeg (Conflict-Driven). Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value. ($sigma^2$ estimated as 57.33:  log likelihood = -1043.78,  aic = 2101.57)}
 \begin{tabular}{rlrrrr}
@@ -876,7 +886,17 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 \end{table}
 
 
-\begin{table}
+\begin{figure} [!htbp]
+\centering
+\epsfig{file=PLOTS_PDF/O_2.pdf, width=0.7\columnwidth}
+\caption{Time series with outliers detected for project ffmpeg (conflict-driven).}
+\label{figureOutliers_2}
+\end{figure}
+
+\pagebreak
+
+
+\begin{table} [!htbp]
 \centering
 \caption{Anomalies detected in the time series of sentiments for project Amarok (Non-Conflict-Driven). Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 375.6:  log likelihood = -1326.61,  aic = 2661.22)}
 \begin{tabular}{rlrrrr}
@@ -892,8 +912,16 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 \end{tabular}
 \end{table}
 
+\begin{figure} [!htbp]
+\centering
+\epsfig{file=PLOTS_PDF/O_3.pdf, width=0.7\columnwidth}
+\caption{Time series with outliers detected for project Amarok (non-conflict-driven).}
+\label{figureOutliers_3}
+\end{figure}
 
-\begin{table}
+\pagebreak
+
+\begin{table} [!htbp]
 \centering
 \caption{Anomalies detected in the time series of sentiments for project Pidgin (Non-Conflict-Driven). Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 312.3:  log likelihood = -1307.25,  aic = 2622.49)}
 \begin{tabular}{rlrrrr}
@@ -905,9 +933,16 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 \end{tabular}
 \end{table}
 
+\begin{figure} [!htbp]
+\centering
+\epsfig{file=PLOTS_PDF/O_5.pdf, width=0.7\columnwidth}
+\caption{Time series with outliers detected for project Pidgin (non-conflict-driven).}
+\label{figureOutliers_5}
+\end{figure}
 
+\pagebreak
 
-\begin{table}
+\begin{table} [!htbp]
 \centering
 \caption{Anomalies detected in the time series of sentiments for project MPlayer (Non-Conflict-Driven). Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 225.5:  log likelihood = -1251.94,  aic = 2517.88)}
 \begin{tabular}{rlrrrr}
@@ -923,8 +958,16 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 \end{tabular}
 \end{table}
 
+\begin{figure} [!htbp]
+\centering
+\epsfig{file=PLOTS_PDF/O_6.pdf, width=0.7\columnwidth}
+\caption{Time series with outliers detected for project MPlayer (non-conflict-driven).}
+\label{figureOutliers_6}
+\end{figure}
 
-\begin{table}
+\pagebreak
+
+\begin{table} [!htbp]
 \centering
 \caption{Anomalies detected in the time series of sentiments for project Asterisk (Non-Conflict-Driven). Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 358.2:  log likelihood = -1227.85,  aic = 2463.7
   )}
@@ -943,6 +986,15 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 \end{tabular}
 \end{table}
 
+\begin{figure} [!htbp]
+\centering
+\epsfig{file=PLOTS_PDF/O_7.pdf, width=0.7\columnwidth}
+\caption{Time series with outliers detected for project Asterisk (non-conflict-driven).}
+\label{figureOutliers_7}
+\end{figure}
+
+\pagebreak
+
 %
 %\begin{table}
 %\centering
@@ -957,7 +1009,7 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 %\end{table}
 
 
-\begin{table}
+\begin{table} [!htbp]
 \centering
 \caption{Anomalies detected in the time series of sentiments for project freeglut (Non-Conflict-Driven). Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.($sigma^2$ estimated as 348.6:  log likelihood = -1307.6,  aic = 2619.2)}
 \begin{tabular}{rlrrrr}
@@ -971,71 +1023,31 @@ Figures \ref{figureDecpmposed_1to4}-\ref{figureDecpmposed_9to12} show the decomp
 \end{tabular}
 \end{table}
 
-
-%Anomalies detected in the time series of sentiments for project Ceph: \\
-%\input{R_Environment_Variables/outlier_table_project_10.tex}\\
-%
-%Anomalies detected in the time series of sentiments for project OpenStack Neutron: \\
-%\input{R_Environment_Variables/outlier_table_project_11.tex}\\
-%
-%Anomalies detected in the time series of sentiments for project GlusterFS: \\
-%\input{R_Environment_Variables/outlier_table_project_12.tex}\\
-
-No anomalies were found in the time series of sentiments for project Apache CouchDB (Non-Conflict-Driven). \\
-%\input{R_Environment_Variables/outlier_table_project_4.tex}\\
-
-\begin{figure}
-\centering
-\epsfig{file=PLOTS_PDF/O_1.pdf, width=0.7\columnwidth}
-\caption{Time series with outliers detected for project Kamailio (conflict-driven).}
-\label{figureOutliers_1}
-\end{figure}
-
-
-\begin{figure}
-\centering
-\epsfig{file=PLOTS_PDF/O_2.pdf, width=0.7\columnwidth}
-\caption{Time series with outliers detected for project ffmpeg (conflict-driven).}
-\label{figureOutliers_2}
-\end{figure}
-
-\begin{figure}
-\centering
-\epsfig{file=PLOTS_PDF/O_3.pdf, width=0.7\columnwidth}
-\caption{Time series with outliers detected for project Amarok (non-conflict-driven).}
-\label{figureOutliers_3}
-\end{figure}
-
-\begin{figure}
-\centering
-\epsfig{file=PLOTS_PDF/O_5.pdf, width=0.7\columnwidth}
-\caption{Time series with outliers detected for project Pidgin (non-conflict-driven).}
-\label{figureOutliers_5}
-\end{figure}
-
-\begin{figure}
-\centering
-\epsfig{file=PLOTS_PDF/O_6.pdf, width=0.7\columnwidth}
-\caption{Time series with outliers detected for project MPlayer (non-conflict-driven).}
-\label{figureOutliers_6}
-\end{figure}
-
-\begin{figure}
-\centering
-\epsfig{file=PLOTS_PDF/O_7.pdf, width=0.7\columnwidth}
-\caption{Time series with outliers detected for project Asterisk (non-conflict-driven).}
-\label{figureOutliers_7}
-\end{figure}
-
-\clearpage
-
-\begin{figure}
+\begin{figure} [!htbp]
 \centering
 \epsfig{file=PLOTS_PDF/O_9.pdf, width=0.7\columnwidth}
 \caption{Time series with outliers detected for project freeglut (non-conflict-driven).}
 \label{figureOutliers_9}
 \end{figure}
 
+\pagebreak
+
+
+\begin{table} [!htbp]
+\centering
+\caption{Anomalies detected in the time series of sentiments for project Ceph (Not forked). Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.}
+\begin{tabular}{rlrrrr}
+  \hline
+ & type & ind & coefhat & tstat & statistical significance (*) \\ 
+  \hline
+1 & IO &   7 & -0.09 & -4.07 & * \\ 
+  2 & TC &  49 & 0.08 & 4.47 & * \\ 
+  3 & AO & 154 & -0.10 & -4.72  & *\\ 
+  4 & TC & 245 & -0.10 & -5.91 & * \\ 
+  5 & AO & 250 & 0.13 & 6.14  & *\\ 
+   \hline
+\end{tabular}
+\end{table}
 
 \begin{figure}
 \centering
@@ -1044,19 +1056,123 @@ No anomalies were found in the time series of sentiments for project Apache Couc
 \label{figureOutliers_10}
 \end{figure}
 
-\begin{figure}
+\pagebreak
+
+\begin{table} [!htbp]
+\centering
+\caption{Anomalies detected in the time series of sentiments for project OpenStack Neutron (Not forked). Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.}
+\begin{tabular}{rlrrrrr}
+  \hline
+ & type & ind & coefhat & tstat & statistical significance (*) \\ 
+  \hline
+1 & AO &   6 & 0.11 & 6.34 & * \\ 
+  2 & AO &  20 & -0.10 & -5.87  & *  \\ 
+  3 & IO &  62 & -0.09 & -5.65  & * \\ 
+  4 & AO & 125 & 0.09 & 5.06  & * \\ 
+  5 & IO & 166 & 0.08 & 5.01  & * \\ 
+   \hline
+\end{tabular}
+\end{table}
+
+
+\begin{figure}[!htbp]
 \centering
 \epsfig{file=PLOTS_PDF/O_11.pdf, width=0.7\columnwidth}
 \caption{Time series with outliers detected for project OpenStack Neutron (Not forked).}
 \label{figureOutliers_11}
 \end{figure}
 
-\begin{figure}
+\pagebreak
+
+
+\begin{table} [!htbp]
+\centering
+\caption{Anomalies detected in the time series of sentiments for project GlusterFS (Not forked). Note that all listed outliers are statistically significant with t-statistics greater than 1.96 in absolute value.}
+\begin{tabular}{rlrrrr}
+  \hline
+ & type & ind & coefhat & tstat & statistical significance (*) \\ 
+  \hline
+1 & IO & 305 & 0.28 & 5.77  & *\\ 
+   \hline
+\end{tabular}
+\end{table}
+
+\begin{figure} [!htbp]
 \centering
 \epsfig{file=PLOTS_PDF/O_12.pdf, width=0.7\columnwidth}
 \caption{Time series with outliers detected for project GlusterFS (Not forked).}
 \label{figureOutliers_12}
 \end{figure}
+
+
+%Anomalies detected in the time series of sentiments for project OpenStack Neutron: \\
+%\input{R_Environment_Variables/outlier_table_project_11.tex}\\
+%
+%Anomalies detected in the time series of sentiments for project GlusterFS: \\
+%\input{R_Environment_Variables/outlier_table_project_12.tex}\\
+
+No anomalies were found in the time series of sentiments for project Apache CouchDB (Non-Conflict-Driven). \\
+
+%\input{R_Environment_Variables/outlier_table_project_4.tex}\\
+
+%\begin{figure}
+%\centering
+%\epsfig{file=PLOTS_PDF/O_3.pdf, width=0.7\columnwidth}
+%\caption{Time series with outliers detected for project Amarok (non-conflict-driven).}
+%\label{figureOutliers_3}
+%\end{figure}
+%
+%\begin{figure}
+%\centering
+%\epsfig{file=PLOTS_PDF/O_5.pdf, width=0.7\columnwidth}
+%\caption{Time series with outliers detected for project Pidgin (non-conflict-driven).}
+%\label{figureOutliers_5}
+%\end{figure}
+%
+%\begin{figure}
+%\centering
+%\epsfig{file=PLOTS_PDF/O_6.pdf, width=0.7\columnwidth}
+%\caption{Time series with outliers detected for project MPlayer (non-conflict-driven).}
+%\label{figureOutliers_6}
+%\end{figure}
+%
+%\begin{figure}
+%\centering
+%\epsfig{file=PLOTS_PDF/O_7.pdf, width=0.7\columnwidth}
+%\caption{Time series with outliers detected for project Asterisk (non-conflict-driven).}
+%\label{figureOutliers_7}
+%\end{figure}
+%
+%\clearpage
+%
+%\begin{figure}
+%\centering
+%\epsfig{file=PLOTS_PDF/O_9.pdf, width=0.7\columnwidth}
+%\caption{Time series with outliers detected for project freeglut (non-conflict-driven).}
+%\label{figureOutliers_9}
+%\end{figure}
+%
+
+%\begin{figure}
+%\centering
+%\epsfig{file=PLOTS_PDF/O_10.pdf, width=0.7\columnwidth}
+%\caption{Time series with outliers detected for project Ceph (Not forked).}
+%\label{figureOutliers_10}
+%\end{figure}
+%
+%\begin{figure}
+%\centering
+%\epsfig{file=PLOTS_PDF/O_11.pdf, width=0.7\columnwidth}
+%\caption{Time series with outliers detected for project OpenStack Neutron (Not forked).}
+%\label{figureOutliers_11}
+%\end{figure}
+
+%\begin{figure}
+%\centering
+%\epsfig{file=PLOTS_PDF/O_12.pdf, width=0.7\columnwidth}
+%\caption{Time series with outliers detected for project GlusterFS (Not forked).}
+%\label{figureOutliers_12}
+%\end{figure}
 
 \pagebreak
 
@@ -1279,7 +1395,7 @@ To find projects in conflict-driven and non-conflict-driven categories, we looke
 
 
 \subsubsection{Analysis}
-\subsection*{Sociogram Formation and Statistical Study}
+\subsubsection*{Sociogram Formation and Statistical Study}
 
 Social connections and non-connections can be represented as graphs, in which the nodes represent actors (developers) and the edges represent the interaction(s) between actors or lack thereof. Such graphs can be a snapshot of a network -- a static sociogram -- or a changing network, also called a dynamic sociogram. In this phase, we process interactions data to form a communication sociogram of the community.
 
@@ -1287,7 +1403,7 @@ Two types of analysis can be done on sociograms: Either a \textit{cross-sectiona
 
 A longitudinal study can look at the sociograms in the following two distinct approaches: 
 \begin{enumerate}
-\item A \textit{network-specific} approach, which can be called a skin-deep \textit{measurement-specific} look, in which, we focus on the observed networks, measure their properties, to describe the structure of the \textit{observed networks} with numeric summaries/descriptors, e.g. see Appendix B \ref{sectionInitialStudy}
+\item A \textit{network-specific} approach, which can be called a skin-deep \textit{measurement-specific} look, in which, we focus on the observed networks, measure their properties, to describe the structure of the \textit{observed networks} with numeric summaries/descriptors, e.g. see Appendix \ref{sectionInitialStudy}
 Figures \ref{figureNodesEdgesTimeR} and \ref{figureDiameterTimeR}. Many studies measuring centralities as their only metrics, fall into this category. 
 
 \item A \textit{population-processes} approach, in which we treat an observed network as one instance from a set of all possible networks with the same number of nodes, and with similar characteristics. In a population-processes approach, the observed network is only good to help us understand the social forces/processes that generated it, because we are interested in the forces/processes that underlie the structure and changes of the network; these reflect the values shared or not shared by the community members, and represent the group behavior, and behavior change trends that lead to a forking event. 
@@ -1302,7 +1418,7 @@ As an example of expressiveness, Appendix B \ref{sectionInitialStudy} Figure \re
 
 The following subsection lists the reasons why we need to use a statistical model, used in the \textit{population-processes} approach.
 
-\subsection*{Why a statistical model is needed?}
+\subsubsection*{Why a statistical model is needed?}
 One may wonder why we should look beyond the observed network. We can do measurements on the observed networks data, and get some descriptive statistics. This would be a superficial look at the data, and even though necessary, is not good enough and has several shortcomings. 
 There is another way of looking at these networks, in a less-superficial way; namely, finding a model that fits the data and its longitudinal change. So, instead of a superficial look at the data, we can find a well-fitting statistical model of our observed interactions network. The following lists the reasons why we need to go beyond a superficial measurement-only approach. 
 
@@ -1328,7 +1444,7 @@ In summary, a measurement-only approach is not capable of explaining the longitu
 %
 %We may explain the increase of decrease in preferential attachment in conflict-driven projects, as a result of software developers signaling others in the community of their status, by helping others in need (i.e., peripheral community members), which in turn brings them social prestige.
 
-\subsection*{The Statistical Model}
+\subsubsection*{The Statistical Model}
 \label{statisticalModel}
 
 Longitudinal evolution of a network data is the result of many small atomic changes occurring between the consecutively observed networks. In our case, software developers are the actors in the networks, and they can form a connection with another developer, break off an existing connection, or maintain their status quo. These are the four possibilities of atomic change within our evolving networks: (1) forming a new tie; (2) breaking off an existing tie; (3) maintaining a non-connection; and (4) maintaining a connection. We assume a continuous-time network evolution, even though our observations are made at two or more discrete time points. 
@@ -1343,7 +1459,7 @@ For each change, the model focuses on the developer whose tie is changing. We as
 
 These above three functions and their definitions taken from \cite{Snijders2004} are explained in detail the following subsections.
 
-\subsection*{Rate Function}
+\subsubsection*{Rate Function}
 
 The \textit{rate function} $\lambda_i(x)$ for developer $i$ is the rate at which developer $i$'s outgoing connections changes occur. It models how frequently the developers make ministeps.\\
 The rate function is formally defined \cite{Snijders2004} by
@@ -1353,7 +1469,7 @@ The rate function is formally defined \cite{Snijders2004} by
 
 The simplest specification of the rate of change is that all developers have the same rate of change of their ties. 
 
-\subsection*{Objective Function}
+\subsubsection*{Objective Function}
 
 The \textit{objective function} $f_i(s)$ for developer $i$ is the value attached to the network configuration $x$. 
 
@@ -1375,7 +1491,7 @@ $U(j)$ is chosen to have Gumbel distribution with mean 0 and scale parameter 1. 
 p_{ij}(x) = \frac{exp(f_i(i \mapsto j) - f_i(x))}{\sum_{h=1, h \neq i}^{g} exp(f_i(i \mapsto h) - f_i(x))}
 \end{equation}
 
-\subsection*{Gratification Function}
+\subsubsection*{Gratification Function}
 Sometimes the order in which changes occur makes a difference for the desirability of the network. Such differences cannot be represented by the objective function. So, we need another function, called gratification function. \\
 
 The \textit{gratification function} $g_i(x,j)$ for developer $i$ is the value attached to this developer (in addition to what follows from the objective function) to the act of changing the tie variable $x_{ij}$ from $i$ to $j$, given the current network configuration $x$. 
@@ -1392,7 +1508,7 @@ And we will have
 p_{ij}(x) = \frac{exp(f_i(i \mapsto j) + g_i(x, j) - f_i(x))}{\sum_{h=1, h \neq i}^{g} exp(f_i(i \mapsto h) + g_i(x, j) - f_i(x))}
 \end{equation}
 
-\subsection*{Markov Chain Transition Rate Matrix}
+\subsubsection*{Markov Chain Transition Rate Matrix}
 The components of the developers-oriented model, described above, define a continuous-time Markov chain on the space $\chi$ of all directed graphs on this set of $g$ developers. This Markov chain is used to estimate the model parameters stochastically, instead of calculating them exactly, which is not possible for us.
 
 This Markov chain has a transition rate matrix. The transition rate matrix (also called intensity matrix), for this model is given by 
@@ -1403,7 +1519,7 @@ q_{ij}(x) = \lim_{dt \to 0} \frac{1}{dt} \mathrm {P} \big({X(t + dt) = X(i \maps
 
 Expression (\ref{intensityMatrix}) shows the rate at which developer $i$ makes ministeps, multiplied by the probability that he changes the arc variable $X_{ij}$, if he makes a ministep.\\
 
-\subsection*{Markov Chain Simulation}
+\subsubsection*{Markov Chain Simulation}
 \label{MarkovChainSimulationSteps}
 Our Markov chain can be simulated by repeating the following steps \cite{Snijders2004}:
 
@@ -1418,14 +1534,14 @@ p_{ij}(x) = \frac{exp(f_i(i \mapsto j) + g_i(x, j) - f_i(x))}{\sum_{h=1, h \neq 
 \item Now change $t$ to $t + \Delta t$ and change $x_{ij}$ to $(1 - x_{ij})$
 \end{enumerate}
 
-\subsection*{Model Specification}
+\subsubsection*{Model Specification}
 In the previous sections, we described why we need a statistical model to describe the longitudinal trends, rather than numerical measurements. We then described a framework for such a model; namely the developer-oriented model. We described the components of this statistical model; the rate function; the objective function, and the gratification function.
 
 In this section, we describe what network effects can be measured and tested in these functions. Specifically, we need to supply these functions with a specific model for the rate, objective and gratification functions. These functions depend on unknown parameters that need to be estimated based on the data. The estimation is explained in section \ref{estimation}. 
 
 In the following, we explain what model effects can be included in the objective and gratification functions, to be estimated later.
 
-\subsection*{Objective Function}
+\subsubsection*{Objective Function}
 The following weighted sum represents the objective function:
 
 \begin{equation}
@@ -1434,7 +1550,7 @@ f_i(\beta, x) = \sum_{k = 1}^{L} \beta_k s_{ik}(x)
 
 Parameters $\beta = (\beta_1, ..., \beta_L)$ is to be estimated. Functions $s_{ik}(x)$ can be the following \cite{Snijders2004}:
 
-\subsection{Structural Effects}
+\subsubsection{Structural Effects}
 For the structural effects, some of the following effects were used. The mathematical formulas for the following effects are included in the appendix section \ref{EffectsAppendixC}. 
 
 \begin{enumerate}
@@ -1507,7 +1623,7 @@ We use the following developer attributes as covariates:
 %\end{tabular}
 %\end{table*}
 
-\subsection{Behavior-related Effects\\}
+\subsubsection{Behavior-related Effects\\}
 Properties of developers can be called their behavior. For a behavior-related variable $s_{ik}^z(x,z)$, we can estimate the following effects.
 
 Let's denote a dependent behavior variable as $Z$.
@@ -1521,7 +1637,7 @@ Let's denote a dependent behavior variable as $Z$.
 \item{Average alter, which reflects that the developers who have alters with higher average values of $Z$, have a stronger tendency to having high values of $Z$.}
 \end{enumerate}
 
-\subsection*{Gratification Function}
+\subsubsection*{Gratification Function}
 The following weighted sum represents the gratification function:
 
 \begin{equation}
@@ -1537,7 +1653,7 @@ $r_{ij1}(x) = x_{ij} x_{ji}$
 $r_{ij3}(x) = x_{ij}w_{ij}$
 \end{enumerate}
 
-\subsection*{Markov Chain Monte Carlo (MCMC) Estimation}
+\subsubsection*{Markov Chain Monte Carlo (MCMC) Estimation}
 \label{estimation}
 The described statistical model for longitudinal analysis of open source software development communities is a complex model and cannot be exactly calculated, but it can be stochastically estimated. We can simulate the longitudinal evolution, and estimate the model based on the simulations. Then we can choose an estimated model that has a good fit to the network data.
 The following section described the simulation and estimation procedures. 
@@ -1582,14 +1698,14 @@ The simulation output will be the random variables $(S,R) = (S_1,...,S_L,R_1,...
 
 So far, we discussed a number of metrics for social networks. We will investigate their statistical significance and effects to describe the different social networks that we encounter, to see if there is any systematic differences between conflict-driven and non-conflict-driven forks. 
 
-\subsection*{Hypothesis Testing}
+\subsubsection*{Hypothesis Testing}
 So far, we have described what we can model, how to fit a model that explains the longitudinal changes in an open source community (or any similar network). Now, we test several hypothesis about these models. For example, we test whether a particular effect's (for example, reciprocity's) statistical significance on the model, and make meaningful statements about whether the network dynamics depends on this parameter with a p-value, indicating the significance level. Such test is explained in section \ref{singleParameterTest}.
 
 Alternatively, we compare two models for two open source project communities, and make conclusions about the difference in several model effects, for example, reciprocity and three-cycles, using the method described in section \ref{multiParameterTest}. 
 
 Lastly, we compare several open source communities (or such networks) and test the statistical significance of the differences between their models, using the methods described in section \ref{MANOVA}. This allows us to compare within-group and across-group comparisons of longitudinal models of open-source projects. In this study, we do all three discussed forms of tests of significance. In the following subsections, the details of these tests are described.   
 
-\subsection*{Single Parameter Test}
+\subsubsection*{Single Parameter Test}
 \label{singleParameterTest}
 Using the actor-oriented model, t-type test of single parameters can be done using the parameter estimates and their standard errors (S.E.). 
 For example, for testing the null hypothesis that a component $k$ of the parameter vector $\beta$ is 0, the test has approximately a standard normal distribution. For this null hypothesis: 
@@ -1602,14 +1718,14 @@ the t-test can be done using the following t-statistic:
 \end{equation}
 Given a p-value $\leq$ 0.05 would indicate a strong evidence that the network dynamics depends on the corresponding parameter's effect. 
 
-\subsection*{Multi-Parameter Differences Between Groups}
+\subsubsection*{Multi-Parameter Differences Between Groups}
 \label{multiParameterTest}
 Given the parameter estimates $\hat{\beta_a}$ and $\hat{\beta_b}$, and their standard errors $S.E._a$ and $S.E._b$, the differences between two groups can be tested using the following t-statistics. This t-statistics, under the null hypothesis of equal parameters, has an approximately standard normal distribution:
 \begin{equation}
 \frac{\hat{\beta_a}-\hat{\beta_b}}{\sqrt{S.E._a^2 + S.E._b^2}}
 \end{equation}
 
-\subsection*{Multivariate Analysis of Variance Between Multiple Groups}
+\subsubsection*{Multivariate Analysis of Variance Between Multiple Groups}
 \label{MANOVA}
 To test the statistical significance of the mean differences between groups (in our case, the different categories of forking), we may use Multivariate Analysis of Variance (MANOVA) method. In contrast to ANOVA, MANOVA method tests for the difference in two or more vectors of means.\\
 
@@ -1639,7 +1755,6 @@ To test the statistical significance of the mean differences between groups (in 
 %
 %\subsection*{Null Hypothesis \# 3:} 
 %\hspace{10 mm} There are no statistically significant differences in vectors of means of the developer-oriented model of longitudinal changes of software projects in conflict-driven category and non-conflict-driven category.\\
-
 
 If the data does not exhibit statistically significant differences, then our study will not reject the null hypotheses, and our assumptions cannot be verified. We argue that based on the guiding theories and the collaboration data we gathered, if the forking reasons were socially-related, they should be reflected in the data, and so, should be reflected in the longitudinal model of their collaboration network evolution. This is a conjecture, and our study will try to show that this conjecture is true, using sound statistical modeling.
 
@@ -1752,7 +1867,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 
 
 \pagebreak
-\captionof{table}{Estimates parameters in the model for Project ffmpeg (Conflict-Driven)}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project ffmpeg (Conflict-Driven). The outdegree density, transitive triplets, reciprocity, 3-cycles and out-out-degree assortativity are statistically significant. The interpretations are discussed in section \ref{Discussion}.}   % Table based on sienaFit object ans
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -1786,7 +1901,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 \end{tabular}
 
 \pagebreak
-\captionof{table}{Estimates parameters in the model for Project Amarok (Non-Conflict-Driven)}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project Amarok (Non-Conflict-Driven). The outdegree density, transitive triplets, and developers' source code activity effects are statistically significant. The interpretations are discussed in section \ref{Discussion}.}
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -1824,7 +1939,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 \end{tabular}
 
 \pagebreak
-\captionof{table}{Estimates parameters in the model for Project Apache CouchDB (Non-Conflict-Driven)}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project Apache CouchDB (Non-Conflict-Driven). The outdegree density, transitive triplets, and developers' source code activity effects are statistically significant. The interpretations are discussed in section \ref{Discussion}.}
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -1862,7 +1977,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 \end{tabular}
 
 \pagebreak
-\captionof{table}{Estimates parameters in the model for Project Pidgin (Non-Conflict-Driven)}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project Pidgin (Non-Conflict-Driven). The outdegree density, transitive triplets, and developers' source code activity effects are statistically significant. The interpretations are discussed in section \ref{Discussion}.}
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -1900,7 +2015,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 \end{tabular}
 
 \pagebreak
-\captionof{table}{Estimates parameters in the model for Project MPlayer (Non-Conflict-Driven)}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project MPlayer (Non-Conflict-Driven). The outdegree density, transitive triplets, and developers' source code activity effects are statistically significant. The interpretations are discussed in section \ref{Discussion}.}
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -1972,7 +2087,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 %\end{tabular}
 
 \pagebreak
-\captionof{table}{Estimates parameters in the model for Project freeglut (Non-Conflict-Driven)}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project freeglut (Non-Conflict-Driven). The outdegree density, transitive triplets effects are statistically significant. The interpretations are discussed in section \ref{Discussion}.}
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -2003,7 +2118,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 \end{tabular}
 
 \pagebreak
-\captionof{table}{Estimates parameters in the model for Project Ceph (Not forked)}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project Ceph (Not forked). The outdegree density, reciprocity, transitive triplets, 3-cycles, out-out degree assortativity and developers' alter source code activity effects are statistically significant. The interpretations are discussed in section \ref{Discussion}.}
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -2041,7 +2156,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 \end{tabular}
 
 \pagebreak
-\captionof{table}{Estimates parameters in the model for Project OpenStack Neutron (Not forked)}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project OpenStack Neutron (Not forked). The outdegree density, reciprocity, transitive triplets, 3-cycles, out-out degree assortativity and developers' seniority effects are statistically significant. The interpretations are discussed in section \ref{Discussion}.}
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -2079,7 +2194,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 \end{tabular}
 
 \pagebreak
-\captionof{table}{Estimates parameters in the model for Project GlusterFS (Not forked)}   % Table based on sienaFit object ans
+\captionof{table}{Estimates parameters in the model for Project GlusterFS (Not forked). The outdegree density, transitive triplets, out-out degree assortativity and developers' alter seniority effects are statistically significant. The interpretations are discussed in section \ref{Discussion}.}
 \begin{tabular}{l | r@{.}l r@{.}l r@{.}l | }
 \hline
 \rule{0pt}{2ex}\relax
@@ -2116,6 +2231,7 @@ $^{\ast\ast\ast}$ $p$ $<$ 0.001;}}
 \label{ans12}
 \end{tabular}
 
+\pagebreak
 \doublespacing
 
 Table \ref{summaryConflictVsNonConflict} illustrates the distinct patterns associated with Conflict-Driven vs. Non-Conflict-Driven forking categories. 

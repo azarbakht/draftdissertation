@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  6 JUN 2017 16:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.5.16)  6 JUN 2017 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2386,6 +2386,10 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2713.
 
 Package rerunfilecheck Info: File `dissertation.out' has not changed.
 (rerunfilecheck)             Checksum: 629D636D3801994D22729A18FFFEE988;1281.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2713.
  ) 
 Here is how much of TeX's memory you used:
@@ -2418,7 +2422,7 @@ mr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on dissertation.pdf (108 pages, 3138772 bytes).
+Output written on dissertation.pdf (108 pages, 3138793 bytes).
 PDF statistics:
  1627 PDF objects out of 1728 (max. 8388607)
  1373 compressed objects within 14 object streams
